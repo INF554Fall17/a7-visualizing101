@@ -32,3 +32,17 @@ Using visualization wheel for good design.
 Evaluate using feedback provided by friends, classmates, TA & Professor.
 (Image: Viz Wheel)
 
+11. Deliverables:
+Our deliverables would be:
+1) The datasets collected (we plan to make some of them according to the verbal information online).
+2) The Visualizations we have created - in the form of a website. 
+3) Paper
+4) Demo/Video
+5) Final Presentation
+(Image: WebAnalytics)
+12. Working together:
+This project sure is a fun way to make friends! We have distributed the work among us equally. While the visualizations are done by all of us together, we are splitting up the data we will be using. For our datasets, we will start from data pre-processing, cleaning, analysis, visualizing and website integration. (Image: WorkingTogether)
+13 and 14.Timelines:
+Our project is spread out over the course of the next 6-7 weeks ending with the paper, demo, video and final presentation. (Now, talk a bit about each step and the technology you can use)(Image: 2)
+15. Thank you slide:
+Thank you for taking your time to join us in our fight against cancer. In conclusion we would like to say that apart from the many many awesome visualizations we plan to have, we are also planning to do a little bit of analysis to make the webiste more attractive and interactive - with some analysis and predicitions to help in raising awareness. (Image: Thank you slide)
