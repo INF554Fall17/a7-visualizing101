@@ -16,7 +16,7 @@
           "referenceElementId": "image18",
           "outlineElementId": "Layer_0_1_",
           "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
+          "transitionTimingFunction": "easeInOut",
           "transitionRelativeZoom": 0,
           "transitionPathId": ""
         },
@@ -25,7 +25,7 @@
           "referenceElementId": "",
           "outlineElementId": "Layer_0_1_",
           "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
+          "transitionTimingFunction": "easeInOut",
           "transitionRelativeZoom": 0,
           "transitionPathId": ""
         },
@@ -34,7 +34,7 @@
           "referenceElementId": "",
           "outlineElementId": "Layer_0_1_",
           "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
+          "transitionTimingFunction": "easeInOut",
           "transitionRelativeZoom": 0,
           "transitionPathId": ""
         },
@@ -43,7 +43,7 @@
           "referenceElementId": "",
           "outlineElementId": "Layer_0_1_",
           "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
+          "transitionTimingFunction": "easeInOut",
           "transitionRelativeZoom": 0,
           "transitionPathId": ""
         },
@@ -52,7 +52,7 @@
           "referenceElementId": "",
           "outlineElementId": "Layer_0_1_",
           "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
+          "transitionTimingFunction": "easeInOut",
           "transitionRelativeZoom": 0,
           "transitionPathId": ""
         },
@@ -61,7 +61,7 @@
           "referenceElementId": "",
           "outlineElementId": "Layer_0_1_",
           "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
+          "transitionTimingFunction": "easeInOut",
           "transitionRelativeZoom": 0,
           "transitionPathId": ""
         },
@@ -70,7 +70,7 @@
           "referenceElementId": "",
           "outlineElementId": "Layer_0_1_",
           "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
+          "transitionTimingFunction": "easeInOut",
           "transitionRelativeZoom": 0,
           "transitionPathId": ""
         },
@@ -79,7 +79,7 @@
           "referenceElementId": "",
           "outlineElementId": "Layer_0_1_",
           "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
+          "transitionTimingFunction": "easeInOut",
           "transitionRelativeZoom": 0,
           "transitionPathId": ""
         },
@@ -88,7 +88,7 @@
           "referenceElementId": "",
           "outlineElementId": "Layer_0_1_",
           "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
+          "transitionTimingFunction": "easeInOut",
           "transitionRelativeZoom": 0,
           "transitionPathId": ""
         },
@@ -97,7 +97,7 @@
           "referenceElementId": "",
           "outlineElementId": "Layer_0_1_",
           "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
+          "transitionTimingFunction": "easeInOut",
           "transitionRelativeZoom": 0,
           "transitionPathId": ""
         },
@@ -106,7 +106,7 @@
           "referenceElementId": "",
           "outlineElementId": "Layer_0_1_",
           "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
+          "transitionTimingFunction": "easeInOut",
           "transitionRelativeZoom": 0,
           "transitionPathId": ""
         },
@@ -115,7 +115,7 @@
           "referenceElementId": "",
           "outlineElementId": "Layer_0_1_",
           "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
+          "transitionTimingFunction": "easeInOut",
           "transitionRelativeZoom": 0,
           "transitionPathId": ""
         },
@@ -124,7 +124,7 @@
           "referenceElementId": "",
           "outlineElementId": "Layer_0_1_",
           "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
+          "transitionTimingFunction": "easeInOut",
           "transitionRelativeZoom": 0,
           "transitionPathId": ""
         },
@@ -133,7 +133,7 @@
           "referenceElementId": "",
           "outlineElementId": "Layer_0_1_",
           "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
+          "transitionTimingFunction": "easeInOut",
           "transitionRelativeZoom": 0,
           "transitionPathId": ""
         },
@@ -142,7 +142,7 @@
           "referenceElementId": "",
           "outlineElementId": "Layer_0_1_",
           "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
+          "transitionTimingFunction": "easeInOut",
           "transitionRelativeZoom": 0,
           "transitionPathId": ""
         },
@@ -151,7 +151,7 @@
           "referenceElementId": "Layer_0_1_",
           "outlineElementId": "Layer_0_1_",
           "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
+          "transitionTimingFunction": "easeInOut",
           "transitionRelativeZoom": 0,
           "transitionPathId": ""
         }
@@ -370,15 +370,15 @@
         "layer1": {
           "deltaX": -1173.968767060991,
           "deltaY": 62.99106789671907,
-          "widthFactor": 1.6779150438415684,
-          "heightFactor": 2.361127630923725,
+          "widthFactor": 1.6779150438415689,
+          "heightFactor": 2.3611276309237255,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
           "deltaX": 3.970686064008987,
           "deltaY": -5.210165013437177,
-          "widthFactor": 1.0976563390348653,
-          "heightFactor": 1.105211495744053,
+          "widthFactor": 1.0976563390348655,
+          "heightFactor": 1.1052114957440533,
           "deltaAngle": 0
         }
       }
@@ -752,563 +752,98 @@
           "deltaX": -3.441229136945367,
           "deltaY": -6.829623928411479,
           "widthFactor": 1.007543503720156,
-          "heightFactor": 1.4177945508759529,
+          "heightFactor": 1.417794550875953,
           "deltaAngle": 0
         },
         "layer1_1_": {
           "deltaX": -976.2566588244454,
           "deltaY": -75.38455556903648,
           "widthFactor": 1.0202906033438148,
-          "heightFactor": 1.4491083931549833,
+          "heightFactor": 1.4491083931549835,
           "deltaAngle": 0
         },
         "layer1_2_": {
           "deltaX": -3198.7175963244454,
           "deltaY": -177.60037588153648,
-          "widthFactor": 0.6575518240821479,
-          "heightFactor": 0.7793206803936567,
+          "widthFactor": 0.657551824082148,
+          "heightFactor": 0.7793206803936568,
           "deltaAngle": 0
         },
         "layer1_3_": {
           "deltaX": -1928.5017760119454,
           "deltaY": -177.47885488544273,
-          "widthFactor": 0.8788180448673951,
-          "heightFactor": 1.492387525612293,
+          "widthFactor": 0.8788180448673953,
+          "heightFactor": 1.4923875256122932,
           "deltaAngle": 0
         },
         "layer1_4_": {
           "deltaX": 1265.7781922497734,
           "deltaY": -1145.6308324245051,
-          "widthFactor": 0.8021156964712424,
-          "heightFactor": 0.7559724816742408,
+          "widthFactor": 0.8021156964712425,
+          "heightFactor": 0.7559724816742409,
           "deltaAngle": 0
         },
         "layer1_6_": {
           "deltaX": 380.35674449586713,
           "deltaY": -1179.8245580104426,
-          "widthFactor": 0.8784944691640463,
-          "heightFactor": 2.5909730210544937,
+          "widthFactor": 0.8784944691640464,
+          "heightFactor": 2.590973021054494,
           "deltaAngle": 0
         },
         "layer1_7_": {
           "deltaX": -578.4893248400704,
           "deltaY": -1101.3450658229426,
-          "widthFactor": 1.7307065194491948,
-          "heightFactor": 1.1966311451795744,
+          "widthFactor": 1.730706519449195,
+          "heightFactor": 1.1966311451795746,
           "deltaAngle": 0
         },
         "layer1_8_": {
           "deltaX": -2911.7117369494454,
           "deltaY": -2288.3909642604426,
-          "widthFactor": 1.1709035665006282,
-          "heightFactor": 0.5854517832503141,
+          "widthFactor": 1.1709035665006284,
+          "heightFactor": 0.5854517832503142,
           "deltaAngle": 0
         },
         "layer1_9_": {
           "deltaX": -679.7923033556954,
           "deltaY": -1950.6077611354426,
-          "widthFactor": 0.8048503861779203,
-          "heightFactor": 0.839211814816058,
+          "widthFactor": 0.8048503861779204,
+          "heightFactor": 0.8392118148160582,
           "deltaAngle": 0
         },
         "layer1_10_": {
           "deltaX": -1832.0017760119454,
           "deltaY": -1950.9688451198176,
-          "widthFactor": 0.9998996421602363,
-          "heightFactor": 0.9573507212172474,
+          "widthFactor": 0.9998996421602364,
+          "heightFactor": 0.9573507212172475,
           "deltaAngle": 0
         },
         "layer1_11_": {
           "deltaX": 415.21416637086713,
           "deltaY": -1950.9429662135676,
-          "widthFactor": 0.9661654116183478,
-          "heightFactor": 0.7927511069689007,
+          "widthFactor": 0.9661654116183479,
+          "heightFactor": 0.7927511069689008,
           "deltaAngle": 0
         },
         "layer1_12_": {
           "deltaX": -2632.7874205431954,
           "deltaY": -1012.4085423854427,
-          "widthFactor": 0.8788180448673951,
-          "heightFactor": 0.6986876381554445,
+          "widthFactor": 0.8788180448673953,
+          "heightFactor": 0.6986876381554447,
           "deltaAngle": 0
         },
         "layer1_14_": {
           "deltaX": -1494.4458678088204,
           "deltaY": -1101.1071507838801,
-          "widthFactor": 0.7776720775164582,
-          "heightFactor": 0.9216854252046912,
+          "widthFactor": 0.7776720775164583,
+          "heightFactor": 0.9216854252046914,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
           "deltaX": 1174.4982239880546,
           "deltaY": -75.03085683856773,
-          "widthFactor": 0.6591135336505464,
-          "heightFactor": 0.6636502049736082,
-          "deltaAngle": 0
-        }
-      }
-    },
-    {
-      "frameId": "frame7497",
-      "title": "New frame",
-      "timeoutMs": 20000,
-      "timeoutEnable": true,
-      "transitionDurationMs": 1000,
-      "showInFrameList": true,
-      "showFrameNumber": true,
-      "layerProperties": {
-        "layer1": {
-          "link": false,
-          "referenceElementId": "image18",
-          "outlineElementId": "image37",
-          "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
-          "transitionRelativeZoom": 0,
-          "transitionPathId": ""
-        },
-        "layer1_1_": {
-          "link": false,
-          "referenceElementId": "image37",
-          "outlineElementId": "image37",
-          "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
-          "transitionRelativeZoom": 0,
-          "transitionPathId": ""
-        },
-        "layer1_2_": {
-          "link": false,
-          "referenceElementId": "image334",
-          "outlineElementId": "image37",
-          "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
-          "transitionRelativeZoom": 0,
-          "transitionPathId": ""
-        },
-        "layer1_3_": {
-          "link": false,
-          "referenceElementId": "image18_1_",
-          "outlineElementId": "image37",
-          "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
-          "transitionRelativeZoom": 0,
-          "transitionPathId": ""
-        },
-        "layer1_4_": {
-          "link": false,
-          "referenceElementId": "image238",
-          "outlineElementId": "image37",
-          "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
-          "transitionRelativeZoom": 0,
-          "transitionPathId": ""
-        },
-        "layer1_5_": {
-          "link": false,
-          "referenceElementId": "",
-          "outlineElementId": "image37",
-          "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
-          "transitionRelativeZoom": 0,
-          "transitionPathId": ""
-        },
-        "layer1_6_": {
-          "link": false,
-          "referenceElementId": "image18_2_",
-          "outlineElementId": "image37",
-          "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
-          "transitionRelativeZoom": 0,
-          "transitionPathId": ""
-        },
-        "layer1_7_": {
-          "link": false,
-          "referenceElementId": "image18_3_",
-          "outlineElementId": "image37",
-          "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
-          "transitionRelativeZoom": 0,
-          "transitionPathId": ""
-        },
-        "layer1_8_": {
-          "link": false,
-          "referenceElementId": "image18_4_",
-          "outlineElementId": "image37",
-          "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
-          "transitionRelativeZoom": 0,
-          "transitionPathId": ""
-        },
-        "layer1_9_": {
-          "link": false,
-          "referenceElementId": "image72",
-          "outlineElementId": "image37",
-          "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
-          "transitionRelativeZoom": 0,
-          "transitionPathId": ""
-        },
-        "layer1_10_": {
-          "link": false,
-          "referenceElementId": "image72_1_",
-          "outlineElementId": "image37",
-          "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
-          "transitionRelativeZoom": 0,
-          "transitionPathId": ""
-        },
-        "layer1_11_": {
-          "link": false,
-          "referenceElementId": "image37_1_",
-          "outlineElementId": "image37",
-          "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
-          "transitionRelativeZoom": 0,
-          "transitionPathId": ""
-        },
-        "layer1_12_": {
-          "link": false,
-          "referenceElementId": "image78",
-          "outlineElementId": "image37",
-          "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
-          "transitionRelativeZoom": 0,
-          "transitionPathId": ""
-        },
-        "layer1_13_": {
-          "link": false,
-          "referenceElementId": "",
-          "outlineElementId": "image37",
-          "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
-          "transitionRelativeZoom": 0,
-          "transitionPathId": ""
-        },
-        "layer1_14_": {
-          "link": false,
-          "referenceElementId": "image72_2_",
-          "outlineElementId": "image37",
-          "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
-          "transitionRelativeZoom": 0,
-          "transitionPathId": ""
-        },
-        "__sozi_auto__": {
-          "link": false,
-          "referenceElementId": "Layer_0_1_",
-          "outlineElementId": "image37",
-          "outlineElementAuto": true,
-          "transitionTimingFunction": "linear",
-          "transitionRelativeZoom": 0,
-          "transitionPathId": ""
-        }
-      },
-      "cameraStates": {
-        "layer1": {
-          "cx": 2812.9807311799277,
-          "cy": 607.7033164437761,
-          "width": 991.7706505183735,
-          "height": 557.8709909165851,
-          "opacity": 1,
-          "angle": 0,
-          "clipped": true,
-          "clipXOffset": 18.28033488738579,
-          "clipYOffset": 11.54854627552851,
-          "clipWidthFactor": 0.6816353887399361,
-          "clipHeightFactor": 0.9946380697050805
-        },
-        "layer1_1_": {
-          "cx": 2812.9807311799277,
-          "cy": 607.7033164437761,
-          "width": 991.7706505183735,
-          "height": 557.8709909165851,
-          "opacity": 1,
-          "angle": 0,
-          "clipped": true,
-          "clipXOffset": 18.28033488738579,
-          "clipYOffset": 11.54854627552851,
-          "clipWidthFactor": 0.6816353887399361,
-          "clipHeightFactor": 0.9946380697050805
-        },
-        "layer1_2_": {
-          "cx": 2812.9807311799277,
-          "cy": 607.7033164437761,
-          "width": 991.7706505183735,
-          "height": 557.8709909165851,
-          "opacity": 1,
-          "angle": 0,
-          "clipped": true,
-          "clipXOffset": 18.28033488738579,
-          "clipYOffset": 11.54854627552851,
-          "clipWidthFactor": 0.6816353887399361,
-          "clipHeightFactor": 0.9946380697050805
-        },
-        "layer1_3_": {
-          "cx": 2812.9807311799277,
-          "cy": 607.7033164437761,
-          "width": 991.7706505183735,
-          "height": 557.8709909165851,
-          "opacity": 1,
-          "angle": 0,
-          "clipped": true,
-          "clipXOffset": 18.28033488738579,
-          "clipYOffset": 11.54854627552851,
-          "clipWidthFactor": 0.6816353887399361,
-          "clipHeightFactor": 0.9946380697050805
-        },
-        "layer1_4_": {
-          "cx": 2812.9807311799277,
-          "cy": 607.7033164437762,
-          "width": 991.7706505183735,
-          "height": 557.8709909165851,
-          "opacity": 1,
-          "angle": 0,
-          "clipped": true,
-          "clipXOffset": 18.28033488738579,
-          "clipYOffset": 11.54854627552851,
-          "clipWidthFactor": 0.6816353887399361,
-          "clipHeightFactor": 0.9946380697050805
-        },
-        "layer1_5_": {
-          "cx": 2812.9807311799277,
-          "cy": 607.7033164437761,
-          "width": 991.7706505183735,
-          "height": 557.8709909165851,
-          "opacity": 1,
-          "angle": 0,
-          "clipped": true,
-          "clipXOffset": 18.28033488738579,
-          "clipYOffset": 11.54854627552851,
-          "clipWidthFactor": 0.6816353887399361,
-          "clipHeightFactor": 0.9946380697050805
-        },
-        "layer1_6_": {
-          "cx": 2812.9807311799277,
-          "cy": 607.7033164437762,
-          "width": 991.7706505183735,
-          "height": 557.8709909165851,
-          "opacity": 1,
-          "angle": 0,
-          "clipped": true,
-          "clipXOffset": 18.28033488738579,
-          "clipYOffset": 11.54854627552851,
-          "clipWidthFactor": 0.6816353887399361,
-          "clipHeightFactor": 0.9946380697050805
-        },
-        "layer1_7_": {
-          "cx": 2812.9807311799277,
-          "cy": 607.7033164437761,
-          "width": 991.7706505183734,
-          "height": 557.8709909165851,
-          "opacity": 1,
-          "angle": 0,
-          "clipped": true,
-          "clipXOffset": 18.28033488738579,
-          "clipYOffset": 11.54854627552851,
-          "clipWidthFactor": 0.6816353887399361,
-          "clipHeightFactor": 0.9946380697050805
-        },
-        "layer1_8_": {
-          "cx": 2812.9807311799277,
-          "cy": 607.7033164437762,
-          "width": 991.7706505183735,
-          "height": 557.8709909165851,
-          "opacity": 1,
-          "angle": 0,
-          "clipped": true,
-          "clipXOffset": 18.28033488738579,
-          "clipYOffset": 11.54854627552851,
-          "clipWidthFactor": 0.6816353887399361,
-          "clipHeightFactor": 0.9946380697050805
-        },
-        "layer1_9_": {
-          "cx": 2812.9807311799277,
-          "cy": 607.7033164437762,
-          "width": 991.7706505183735,
-          "height": 557.8709909165851,
-          "opacity": 1,
-          "angle": 0,
-          "clipped": true,
-          "clipXOffset": 18.28033488738579,
-          "clipYOffset": 11.54854627552851,
-          "clipWidthFactor": 0.6816353887399361,
-          "clipHeightFactor": 0.9946380697050805
-        },
-        "layer1_10_": {
-          "cx": 2812.9807311799277,
-          "cy": 607.7033164437762,
-          "width": 991.7706505183735,
-          "height": 557.8709909165851,
-          "opacity": 1,
-          "angle": 0,
-          "clipped": true,
-          "clipXOffset": 18.28033488738579,
-          "clipYOffset": 11.54854627552851,
-          "clipWidthFactor": 0.6816353887399361,
-          "clipHeightFactor": 0.9946380697050805
-        },
-        "layer1_11_": {
-          "cx": 2812.9807311799277,
-          "cy": 607.7033164437762,
-          "width": 991.7706505183735,
-          "height": 557.8709909165851,
-          "opacity": 1,
-          "angle": 0,
-          "clipped": true,
-          "clipXOffset": 18.28033488738579,
-          "clipYOffset": 11.54854627552851,
-          "clipWidthFactor": 0.6816353887399361,
-          "clipHeightFactor": 0.9946380697050805
-        },
-        "layer1_12_": {
-          "cx": 2812.9807311799277,
-          "cy": 607.7033164437761,
-          "width": 991.7706505183735,
-          "height": 557.8709909165851,
-          "opacity": 1,
-          "angle": 0,
-          "clipped": true,
-          "clipXOffset": 18.28033488738579,
-          "clipYOffset": 11.54854627552851,
-          "clipWidthFactor": 0.6816353887399361,
-          "clipHeightFactor": 0.9946380697050805
-        },
-        "layer1_13_": {
-          "cx": 2812.9807311799277,
-          "cy": 607.7033164437761,
-          "width": 991.7706505183735,
-          "height": 557.8709909165851,
-          "opacity": 1,
-          "angle": 0,
-          "clipped": true,
-          "clipXOffset": 18.28033488738579,
-          "clipYOffset": 11.54854627552851,
-          "clipWidthFactor": 0.6816353887399361,
-          "clipHeightFactor": 0.9946380697050805
-        },
-        "layer1_14_": {
-          "cx": 2812.9807311799277,
-          "cy": 607.7033164437761,
-          "width": 991.7706505183735,
-          "height": 557.8709909165851,
-          "opacity": 1,
-          "angle": 0,
-          "clipped": true,
-          "clipXOffset": 18.28033488738579,
-          "clipYOffset": 11.54854627552851,
-          "clipWidthFactor": 0.6816353887399361,
-          "clipHeightFactor": 0.9946380697050805
-        },
-        "__sozi_auto__": {
-          "cx": 2812.9807311799277,
-          "cy": 607.7033164437761,
-          "width": 991.7706505183735,
-          "height": 557.8709909165851,
-          "opacity": 1,
-          "angle": 0,
-          "clipped": true,
-          "clipXOffset": 18.28033488738579,
-          "clipYOffset": 11.54854627552851,
-          "clipWidthFactor": 0.6816353887399361,
-          "clipHeightFactor": 0.9946380697050805
-        }
-      },
-      "cameraOffsets": {
-        "layer1": {
-          "deltaX": 963.0412780549277,
-          "deltaY": 72.90454935393234,
-          "widthFactor": 1.4805220280814986,
-          "heightFactor": 1.7578351925721485,
-          "deltaAngle": 0
-        },
-        "layer1_1_": {
-          "deltaX": -9.774151632572284,
-          "deltaY": 4.349617713307339,
-          "widthFactor": 1.4992530920179872,
-          "heightFactor": 1.7966592760324251,
-          "deltaAngle": 0
-        },
-        "layer1_2_": {
-          "deltaX": -2232.2350891325723,
-          "deltaY": -97.86620259919266,
-          "widthFactor": 0.9662311915706463,
-          "heightFactor": 0.9662311915706463,
-          "deltaAngle": 0
-        },
-        "layer1_3_": {
-          "deltaX": -962.0192688200723,
-          "deltaY": -97.74468160309891,
-          "widthFactor": 1.291368034529132,
-          "heightFactor": 1.8503183778327865,
-          "deltaAngle": 0
-        },
-        "layer1_4_": {
-          "deltaX": 2232.2606994416465,
-          "deltaY": -1065.8966591421613,
-          "widthFactor": 1.1786587410973453,
-          "heightFactor": 0.9372832136236299,
-          "deltaAngle": 0
-        },
-        "layer1_6_": {
-          "deltaX": 1346.8392516877402,
-          "deltaY": -1100.0903847280988,
-          "widthFactor": 1.2908925603140822,
-          "heightFactor": 3.2123861363415935,
-          "deltaAngle": 0
-        },
-        "layer1_7_": {
-          "deltaX": 387.9931823518027,
-          "deltaY": -1021.6108925405989,
-          "widthFactor": 2.5431647534104718,
-          "heightFactor": 1.4836284553534071,
-          "deltaAngle": 0
-        },
-        "layer1_8_": {
-          "deltaX": -1945.2292297575723,
-          "deltaY": -2208.656790978099,
-          "widthFactor": 1.7205694012839974,
-          "heightFactor": 0.7258652161666865,
-          "deltaAngle": 0
-        },
-        "layer1_9_": {
-          "deltaX": 286.6902038361777,
-          "deltaY": -1870.8735878530988,
-          "widthFactor": 1.1826771962169058,
-          "heightFactor": 1.040486480354005,
-          "deltaAngle": 0
-        },
-        "layer1_10_": {
-          "deltaX": -865.5192688200723,
-          "deltaY": -1871.2346718374738,
-          "widthFactor": 1.4692898526198126,
-          "heightFactor": 1.1869595551416705,
-          "deltaAngle": 0
-        },
-        "layer1_11_": {
-          "deltaX": 1381.6966735627402,
-          "deltaY": -1871.2087929312238,
-          "widthFactor": 1.4197195152267013,
-          "heightFactor": 0.9828827413107933,
-          "deltaAngle": 0
-        },
-        "layer1_12_": {
-          "deltaX": -1666.3049133513223,
-          "deltaY": -932.6743691030989,
-          "widthFactor": 1.291368034529132,
-          "heightFactor": 0.8662593026655049,
-          "deltaAngle": 0
-        },
-        "layer1_14_": {
-          "deltaX": -527.9633606169473,
-          "deltaY": -1021.3729775015364,
-          "widthFactor": 1.1427403751161578,
-          "heightFactor": 1.1427403751161578,
-          "deltaAngle": 0
-        },
-        "__sozi_auto__": {
-          "deltaX": 2140.9807311799277,
-          "deltaY": 4.703316443776089,
-          "widthFactor": 0.9685260258968491,
-          "heightFactor": 0.8228185706734293,
+          "widthFactor": 0.6591135336505465,
+          "heightFactor": 0.6636502049736083,
           "deltaAngle": 0
         }
       }
@@ -1681,99 +1216,99 @@
         "layer1": {
           "deltaX": 1926.8083855795012,
           "deltaY": 166.94542592748087,
-          "widthFactor": 0.9392075810895836,
-          "heightFactor": 1.3216336423127268,
+          "widthFactor": 0.9392075810895837,
+          "heightFactor": 1.321633642312727,
           "deltaAngle": 0
         },
         "layer1_1_": {
           "deltaX": 953.9929558920012,
           "deltaY": 98.39049428685587,
-          "widthFactor": 0.9510901177336486,
-          "heightFactor": 1.3508236454767761,
+          "widthFactor": 0.9510901177336487,
+          "heightFactor": 1.3508236454767766,
           "deltaAngle": 0
         },
         "layer1_2_": {
           "deltaX": -1268.4679816079988,
           "deltaY": -3.825326025644131,
-          "widthFactor": 0.612953838575658,
-          "heightFactor": 0.7264638086822613,
+          "widthFactor": 0.6129538385756581,
+          "heightFactor": 0.7264638086822615,
           "deltaAngle": 0
         },
         "layer1_3_": {
           "deltaX": 1.7478387045011914,
           "deltaY": -3.703805029550381,
-          "widthFactor": 0.8192128350688419,
-          "heightFactor": 1.3911674015099404,
+          "widthFactor": 0.819212835068842,
+          "heightFactor": 1.3911674015099407,
           "deltaAngle": 0
         },
         "layer1_4_": {
           "deltaX": 3196.02780696622,
           "deltaY": -971.8557825686129,
-          "widthFactor": 0.7477127689823159,
-          "heightFactor": 0.7046991849602149,
+          "widthFactor": 0.747712768982316,
+          "heightFactor": 0.7046991849602151,
           "deltaAngle": 0
         },
         "layer1_6_": {
           "deltaX": 2310.6063592123137,
           "deltaY": -1006.0495081545504,
-          "widthFactor": 0.8189112056577846,
-          "heightFactor": 2.415242115886693,
+          "widthFactor": 0.8189112056577847,
+          "heightFactor": 2.4152421158866932,
           "deltaAngle": 0
         },
         "layer1_7_": {
           "deltaX": 1351.7602898763762,
           "deltaY": -927.5700159670504,
-          "widthFactor": 1.613322578832615,
-          "heightFactor": 1.1154704875480235,
+          "widthFactor": 1.6133225788326153,
+          "heightFactor": 1.1154704875480237,
           "deltaAngle": 0
         },
         "layer1_8_": {
           "deltaX": -981.4621222329988,
           "deltaY": -2114.6159144045505,
-          "widthFactor": 1.09148786362248,
-          "heightFactor": 0.54574393181124,
+          "widthFactor": 1.0914878636224803,
+          "heightFactor": 0.5457439318112401,
           "deltaAngle": 0
         },
         "layer1_9_": {
           "deltaX": 1250.4573113607512,
           "deltaY": -1776.8327112795505,
-          "widthFactor": 0.7502619803016842,
-          "heightFactor": 0.7822928694442849,
+          "widthFactor": 0.7502619803016843,
+          "heightFactor": 0.782292869444285,
           "deltaAngle": 0
         },
         "layer1_10_": {
           "deltaX": 98.24783870450119,
           "deltaY": -1777.1937952639255,
-          "widthFactor": 0.9320821590116601,
-          "heightFactor": 0.8924190884154193,
+          "widthFactor": 0.9320821590116602,
+          "heightFactor": 0.8924190884154194,
           "deltaAngle": 0
         },
         "layer1_11_": {
           "deltaX": 2345.4637810873137,
           "deltaY": -1777.1679163576755,
-          "widthFactor": 0.9006359286998368,
-          "heightFactor": 0.7389833261126866,
+          "widthFactor": 0.900635928699837,
+          "heightFactor": 0.7389833261126868,
           "deltaAngle": 0
         },
         "layer1_12_": {
           "deltaX": -702.5378058267488,
           "deltaY": -838.6334925295504,
-          "widthFactor": 0.8192128350688419,
-          "heightFactor": 0.6512996452721228,
+          "widthFactor": 0.819212835068842,
+          "heightFactor": 0.6512996452721229,
           "deltaAngle": 0
         },
         "layer1_14_": {
           "deltaX": 435.8037469076262,
           "deltaY": -927.3321009279879,
-          "widthFactor": 0.7249270211244498,
-          "heightFactor": 0.8591727657771258,
+          "widthFactor": 0.72492702112445,
+          "heightFactor": 0.859172765777126,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
           "deltaX": 3104.747838704501,
           "deltaY": 98.74419301732462,
-          "widthFactor": 0.6144096263016314,
-          "heightFactor": 0.6186386011139338,
+          "widthFactor": 0.6144096263016315,
+          "heightFactor": 0.6186386011139339,
           "deltaAngle": 0
         }
       }
@@ -2146,113 +1681,113 @@
         "layer1": {
           "deltaX": 3197.492157466294,
           "deltaY": 151.86380448530372,
-          "widthFactor": 1.312269225073758,
-          "heightFactor": 1.5580673453087275,
+          "widthFactor": 1.3122692250737582,
+          "heightFactor": 1.558067345308728,
           "deltaAngle": 0
         },
         "layer1_1_": {
           "deltaX": 2224.676727778794,
           "deltaY": 83.30887284467872,
-          "widthFactor": 1.3288716114554013,
-          "heightFactor": 1.5924792952495435,
+          "widthFactor": 1.3288716114554016,
+          "heightFactor": 1.5924792952495437,
           "deltaAngle": 0
         },
         "layer1_2_": {
           "deltaX": 2.2157902787939747,
           "deltaY": -18.906947467821283,
-          "widthFactor": 0.856424580624145,
-          "heightFactor": 0.856424580624145,
+          "widthFactor": 0.8564245806241451,
+          "heightFactor": 0.8564245806241452,
           "deltaAngle": 0
         },
         "layer1_3_": {
           "deltaX": 1272.431610591294,
           "deltaY": -18.785426471727533,
           "widthFactor": 1.1446114936584262,
-          "heightFactor": 1.640040349122521,
+          "heightFactor": 1.6400403491225213,
           "deltaAngle": 0
         },
         "layer1_4_": {
           "deltaX": 4466.711578853013,
           "deltaY": -986.93740401079,
-          "widthFactor": 1.0447109623964892,
-          "heightFactor": 0.8307663736758776,
+          "widthFactor": 1.0447109623964894,
+          "heightFactor": 0.8307663736758778,
           "deltaAngle": 0
         },
         "layer1_5_": {
           "deltaX": -1243.556182377456,
           "deltaY": -19.330653522508783,
-          "widthFactor": 0.9157120915278454,
-          "heightFactor": 0.9157120915278454,
+          "widthFactor": 0.9157120915278455,
+          "heightFactor": 0.9157120915278456,
           "deltaAngle": 0
         },
         "layer1_6_": {
           "deltaX": 3581.2901310991065,
           "deltaY": -1021.1311295967275,
-          "widthFactor": 1.1441900543499313,
-          "heightFactor": 2.8473169502498035,
+          "widthFactor": 1.1441900543499315,
+          "heightFactor": 2.847316950249804,
           "deltaAngle": 0
         },
         "layer1_7_": {
           "deltaX": 2622.444061763169,
           "deltaY": -942.6516374092275,
-          "widthFactor": 2.2541487238237465,
-          "heightFactor": 1.3150226247743608,
+          "widthFactor": 2.254148723823747,
+          "heightFactor": 1.315022624774361,
           "deltaAngle": 0
         },
         "layer1_8_": {
           "deltaX": 289.221649653794,
           "deltaY": -2129.6975358467275,
-          "widthFactor": 1.5250365966079926,
-          "heightFactor": 0.6433748141939969,
+          "widthFactor": 1.525036596607993,
+          "heightFactor": 0.643374814193997,
           "deltaAngle": 0
         },
         "layer1_9_": {
           "deltaX": 2521.141083247544,
           "deltaY": -1791.9143327217275,
-          "widthFactor": 1.0482727432317078,
-          "heightFactor": 0.9222411834312207,
+          "widthFactor": 1.048272743231708,
+          "heightFactor": 0.922241183431221,
           "deltaAngle": 0
         },
         "layer1_10_": {
           "deltaX": 1368.931610591294,
           "deltaY": -1792.2754167061025,
-          "widthFactor": 1.302313521673587,
-          "heightFactor": 1.0520684367243407,
+          "widthFactor": 1.3023135216735873,
+          "heightFactor": 1.052068436724341,
           "deltaAngle": 0
         },
         "layer1_11_": {
           "deltaX": 3616.1475529741065,
           "deltaY": -1792.2495377998525,
-          "widthFactor": 1.2583765676778427,
-          "heightFactor": 0.8711837776231219,
+          "widthFactor": 1.258376567677843,
+          "heightFactor": 0.871183777623122,
           "deltaAngle": 0
         },
         "layer1_12_": {
           "deltaX": 568.145966060044,
           "deltaY": -853.7151139717275,
           "widthFactor": 1.1446114936584262,
-          "heightFactor": 0.7678139212118634,
+          "heightFactor": 0.7678139212118635,
           "deltaAngle": 0
         },
         "layer1_13_": {
           "deltaX": -1243.556182377456,
           "deltaY": -853.330714557665,
-          "widthFactor": 0.9157120915278454,
-          "heightFactor": 0.9157120915278454,
+          "widthFactor": 0.9157120915278455,
+          "heightFactor": 0.9157120915278456,
           "deltaAngle": 0
         },
         "layer1_14_": {
           "deltaX": 1706.487518794419,
           "deltaY": -942.413722370165,
-          "widthFactor": 1.012874511875637,
-          "heightFactor": 1.012874511875637,
+          "widthFactor": 1.0128745118756373,
+          "heightFactor": 1.0128745118756373,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
           "deltaX": 4375.431610591294,
           "deltaY": 83.66257157514747,
-          "widthFactor": 0.8584586202438196,
-          "heightFactor": 0.7293099782602361,
+          "widthFactor": 0.8584586202438197,
+          "heightFactor": 0.7293099782602362,
           "deltaAngle": 0
         }
       }
@@ -2625,113 +2160,113 @@
         "layer1": {
           "deltaX": 4462.031240811973,
           "deltaY": 128.6308675680085,
-          "widthFactor": 1.4592046594412884,
-          "heightFactor": 1.7325249168058683,
+          "widthFactor": 1.4592046594412886,
+          "heightFactor": 1.7325249168058685,
           "deltaAngle": 0
         },
         "layer1_1_": {
           "deltaX": 3489.2158111244726,
           "deltaY": 60.07593592738351,
-          "widthFactor": 1.4776660232399987,
-          "heightFactor": 1.770789989806629,
+          "widthFactor": 1.477666023239999,
+          "heightFactor": 1.7707899898066293,
           "deltaAngle": 0
         },
         "layer1_2_": {
           "deltaX": 1266.7548736244726,
           "deltaY": -42.13988438511649,
-          "widthFactor": 0.9523188646267021,
-          "heightFactor": 0.9523188646267022,
+          "widthFactor": 0.9523188646267023,
+          "heightFactor": 0.9523188646267023,
           "deltaAngle": 0
         },
         "layer1_3_": {
           "deltaX": 2536.9706939369726,
           "deltaY": -42.01836338902274,
-          "widthFactor": 1.2727742088918916,
-          "heightFactor": 1.8236764784122625,
+          "widthFactor": 1.2727742088918919,
+          "heightFactor": 1.823676478412263,
           "deltaAngle": 0
         },
         "layer1_4_": {
           "deltaX": 5731.250662198691,
           "deltaY": -1010.1703409280852,
-          "widthFactor": 1.1616877657194664,
-          "heightFactor": 0.923787695552219,
+          "widthFactor": 1.1616877657194666,
+          "heightFactor": 0.9237876955522192,
           "deltaAngle": 0
         },
         "layer1_5_": {
           "deltaX": 20.982900968222566,
           "deltaY": -42.56359043980399,
-          "widthFactor": 1.0182448274583713,
+          "widthFactor": 1.0182448274583715,
           "heightFactor": 1.0182448274583713,
           "deltaAngle": 0
         },
         "layer1_6_": {
           "deltaX": 4845.829214444785,
           "deltaY": -1044.3640665140229,
-          "widthFactor": 1.2723055808155204,
-          "heightFactor": 3.166132437859422,
+          "widthFactor": 1.2723055808155206,
+          "heightFactor": 3.166132437859423,
           "deltaAngle": 0
         },
         "layer1_7_": {
           "deltaX": 3886.9831451088476,
           "deltaY": -965.8845743265227,
-          "widthFactor": 2.5065468716546078,
-          "heightFactor": 1.4622663586685931,
+          "widthFactor": 2.506546871654608,
+          "heightFactor": 1.4622663586685933,
           "deltaAngle": 0
         },
         "layer1_8_": {
           "deltaX": 1553.7607329994726,
           "deltaY": -2152.930472764023,
-          "widthFactor": 1.69579569883138,
-          "heightFactor": 0.7154138104444885,
+          "widthFactor": 1.6957956988313805,
+          "heightFactor": 0.7154138104444886,
           "deltaAngle": 0
         },
         "layer1_9_": {
           "deltaX": 3785.6801665932226,
           "deltaY": -1815.1472696390229,
-          "widthFactor": 1.1656483609169705,
-          "heightFactor": 1.0255049850123903,
+          "widthFactor": 1.1656483609169708,
+          "heightFactor": 1.0255049850123905,
           "deltaAngle": 0
         },
         "layer1_10_": {
           "deltaX": 2633.4706939369726,
           "deltaY": -1815.5083536233979,
-          "widthFactor": 1.4481342110058855,
-          "heightFactor": 1.1698690600878663,
+          "widthFactor": 1.4481342110058857,
+          "heightFactor": 1.1698690600878665,
           "deltaAngle": 0
         },
         "layer1_11_": {
           "deltaX": 4880.686636319785,
           "deltaY": -1815.4824747171479,
-          "widthFactor": 1.3992776145337371,
-          "heightFactor": 0.9687306562156641,
+          "widthFactor": 1.3992776145337373,
+          "heightFactor": 0.9687306562156643,
           "deltaAngle": 0
         },
         "layer1_12_": {
           "deltaX": 1832.6850494057226,
           "deltaY": -876.9480508890227,
-          "widthFactor": 1.2727742088918916,
-          "heightFactor": 0.8537864258405236,
+          "widthFactor": 1.2727742088918919,
+          "heightFactor": 0.8537864258405238,
           "deltaAngle": 0
         },
         "layer1_13_": {
           "deltaX": 20.982900968222566,
           "deltaY": -876.5636514749602,
-          "widthFactor": 1.0182448274583713,
+          "widthFactor": 1.0182448274583715,
           "heightFactor": 1.0182448274583713,
           "deltaAngle": 0
         },
         "layer1_14_": {
           "deltaX": 2971.0266021400976,
           "deltaY": -965.6466592874602,
-          "widthFactor": 1.1262865720829331,
-          "heightFactor": 1.1262865720829334,
+          "widthFactor": 1.1262865720829334,
+          "heightFactor": 1.1262865720829336,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
           "deltaX": 5639.970693936973,
           "deltaY": 60.42963465785226,
-          "widthFactor": 0.9545806566689187,
-          "heightFactor": 0.810971177347046,
+          "widthFactor": 0.9545806566689188,
+          "heightFactor": 0.8109711773470462,
           "deltaAngle": 0
         }
       }
@@ -3104,113 +2639,113 @@
         "layer1": {
           "deltaX": -1236.6724685798354,
           "deltaY": 1144.6665708481107,
-          "widthFactor": 1.5945071037354979,
-          "heightFactor": 1.8931705497044164,
+          "widthFactor": 1.5945071037354983,
+          "heightFactor": 1.893170549704417,
           "deltaAngle": 0
         },
         "layer1_1_": {
           "deltaX": -2209.4878982673354,
           "deltaY": 1076.1116392074857,
-          "widthFactor": 1.61468026829554,
-          "heightFactor": 1.9349836910824272,
+          "widthFactor": 1.6146802682955401,
+          "heightFactor": 1.9349836910824274,
           "deltaAngle": 0
         },
         "layer1_2_": {
           "deltaX": -4431.948835767335,
           "deltaY": 973.8958188949857,
-          "widthFactor": 1.0406211252436706,
-          "heightFactor": 1.0406211252436708,
+          "widthFactor": 1.0406211252436708,
+          "heightFactor": 1.040621125243671,
           "deltaAngle": 0
         },
         "layer1_3_": {
           "deltaX": -3161.7330154548354,
           "deltaY": 974.0173398910795,
-          "widthFactor": 1.3907901845012614,
-          "heightFactor": 1.9927739957033002,
+          "widthFactor": 1.3907901845012616,
+          "heightFactor": 1.9927739957033006,
           "deltaAngle": 0
         },
         "layer1_4_": {
           "deltaX": 32.54695280688327,
           "deltaY": 5.865362352016973,
           "widthFactor": 1.2694034265704297,
-          "heightFactor": 1.0094444486391971,
+          "heightFactor": 1.0094444486391974,
           "deltaAngle": 0
         },
         "layer1_5_": {
           "deltaX": -5677.720808423585,
           "deltaY": 973.4721128402982,
           "widthFactor": 1.1126599687160783,
-          "heightFactor": 1.1126599687160783,
+          "heightFactor": 1.1126599687160785,
           "deltaAngle": 0
         },
         "layer1_6_": {
           "deltaX": -852.874494947023,
           "deltaY": -28.328363233920527,
-          "widthFactor": 1.3902781036276504,
-          "heightFactor": 3.4597070608774083,
+          "widthFactor": 1.3902781036276506,
+          "heightFactor": 3.459707060877409,
           "deltaAngle": 0
         },
         "layer1_7_": {
           "deltaX": -1811.7205642829604,
           "deltaY": 50.15112895357947,
-          "widthFactor": 2.738962466190008,
-          "heightFactor": 1.5978526941815345,
+          "widthFactor": 2.7389624661900083,
+          "heightFactor": 1.5978526941815347,
           "deltaAngle": 0
         },
         "layer1_8_": {
           "deltaX": -4144.942976392335,
           "deltaY": -1136.8947694839205,
-          "widthFactor": 1.8530356730810134,
-          "heightFactor": 0.7817494245810526,
+          "widthFactor": 1.8530356730810136,
+          "heightFactor": 0.7817494245810527,
           "deltaAngle": 0
         },
         "layer1_9_": {
           "deltaX": -1913.0235427985854,
           "deltaY": -799.1115663589205,
           "widthFactor": 1.2737312616938858,
-          "heightFactor": 1.1205933128972534,
+          "heightFactor": 1.1205933128972536,
           "deltaAngle": 0
         },
         "layer1_10_": {
           "deltaX": -3065.2330154548354,
           "deltaY": -799.4726503432955,
-          "widthFactor": 1.5824101654769906,
+          "widthFactor": 1.5824101654769909,
           "heightFactor": 1.2783433185203086,
           "deltaAngle": 0
         },
         "layer1_11_": {
           "deltaX": -818.017073072023,
           "deltaY": -799.4467714370455,
-          "widthFactor": 1.5290234183643499,
-          "heightFactor": 1.0585546742522423,
+          "widthFactor": 1.52902341836435,
+          "heightFactor": 1.0585546742522425,
           "deltaAngle": 0
         },
         "layer1_12_": {
           "deltaX": -3866.0186599860854,
           "deltaY": 139.08765239107947,
-          "widthFactor": 1.3907901845012614,
-          "heightFactor": 0.9329524219014673,
+          "widthFactor": 1.3907901845012616,
+          "heightFactor": 0.9329524219014675,
           "deltaAngle": 0
         },
         "layer1_13_": {
           "deltaX": -5677.720808423585,
           "deltaY": 139.47205180514197,
           "widthFactor": 1.1126599687160783,
-          "heightFactor": 1.1126599687160783,
+          "heightFactor": 1.1126599687160785,
           "deltaAngle": 0
         },
         "layer1_14_": {
           "deltaX": -2727.6771072517104,
           "deltaY": 50.38904399264197,
           "widthFactor": 1.2307197132414294,
-          "heightFactor": 1.2307197132414296,
+          "heightFactor": 1.2307197132414298,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
           "deltaX": -58.73301545483548,
           "deltaY": 1076.4653379379545,
-          "widthFactor": 1.043092638375946,
-          "heightFactor": 0.8861671972043437,
+          "widthFactor": 1.0430926383759462,
+          "heightFactor": 0.8861671972043438,
           "deltaAngle": 0
         }
       }
@@ -3583,99 +3118,99 @@
         "layer1": {
           "deltaX": -379.02775742012,
           "deltaY": 1176.9905135230165,
-          "widthFactor": 1.133186429384683,
-          "heightFactor": 1.345440964427122,
+          "widthFactor": 1.1331864293846832,
+          "heightFactor": 1.3454409644271221,
           "deltaAngle": 0
         },
         "layer1_1_": {
           "deltaX": -1351.84318710762,
           "deltaY": 1108.4355818823915,
-          "widthFactor": 1.1475231208071475,
-          "heightFactor": 1.3751567833585656,
+          "widthFactor": 1.1475231208071477,
+          "heightFactor": 1.3751567833585658,
           "deltaAngle": 0
         },
         "layer1_2_": {
           "deltaX": -3574.30412460762,
           "deltaY": 1006.2197615698915,
-          "widthFactor": 0.7395500054496832,
-          "heightFactor": 0.7395500054496833,
+          "widthFactor": 0.7395500054496833,
+          "heightFactor": 0.7395500054496834,
           "deltaAngle": 0
         },
         "layer1_3_": {
           "deltaX": -2304.08830429512,
           "deltaY": 1006.3412825659852,
-          "widthFactor": 0.9884086182532837,
-          "heightFactor": 1.416227273915153,
+          "widthFactor": 0.9884086182532839,
+          "heightFactor": 1.4162272739151531,
           "deltaAngle": 0
         },
         "layer1_4_": {
           "deltaX": 890.1916639665988,
           "deltaY": 38.18930502692274,
-          "widthFactor": 0.9021413156668162,
-          "heightFactor": 0.7173933234513791,
+          "widthFactor": 0.9021413156668163,
+          "heightFactor": 0.7173933234513793,
           "deltaAngle": 0
         },
         "layer1_6_": {
           "deltaX": 4.770216212692503,
           "deltaY": 3.9955794409852388,
-          "widthFactor": 0.9880446919368917,
-          "heightFactor": 2.4587492158849553,
+          "widthFactor": 0.9880446919368918,
+          "heightFactor": 2.4587492158849558,
           "deltaAngle": 0
         },
         "layer1_7_": {
           "deltaX": -954.075853123245,
           "deltaY": 82.47507162848524,
-          "widthFactor": 1.9465294886484128,
+          "widthFactor": 1.9465294886484132,
           "heightFactor": 1.135564078052943,
           "deltaAngle": 0
         },
         "layer1_8_": {
           "deltaX": -3287.29826523262,
           "deltaY": -1104.5708268090148,
-          "widthFactor": 1.3169178569237932,
-          "heightFactor": 0.5555747208897253,
+          "widthFactor": 1.3169178569237934,
+          "heightFactor": 0.5555747208897254,
           "deltaAngle": 0
         },
         "layer1_9_": {
           "deltaX": -1055.37883163887,
           "deltaY": -766.7876236840148,
-          "widthFactor": 0.9052170272889379,
-          "heightFactor": 0.7963847461447476,
+          "widthFactor": 0.905217027288938,
+          "heightFactor": 0.7963847461447479,
           "deltaAngle": 0
         },
         "layer1_10_": {
           "deltaX": -2207.58830429512,
           "deltaY": -767.1487076683898,
-          "widthFactor": 1.124589361212625,
-          "heightFactor": 0.9084947299689757,
+          "widthFactor": 1.1245893612126252,
+          "heightFactor": 0.9084947299689758,
           "deltaAngle": 0
         },
         "layer1_11_": {
           "deltaX": 39.6276380876925,
           "deltaY": -767.1228287621398,
-          "widthFactor": 1.0866483967632925,
-          "heightFactor": 0.7522950439130488,
+          "widthFactor": 1.0866483967632927,
+          "heightFactor": 0.7522950439130489,
           "deltaAngle": 0
         },
         "layer1_12_": {
           "deltaX": -3008.37394882637,
           "deltaY": 171.41159506598524,
-          "widthFactor": 0.9884086182532837,
-          "heightFactor": 0.66303186814506,
+          "widthFactor": 0.9884086182532839,
+          "heightFactor": 0.6630318681450601,
           "deltaAngle": 0
         },
         "layer1_14_": {
           "deltaX": -1870.032396091995,
           "deltaY": 82.71298666754774,
-          "widthFactor": 0.8746495228237897,
-          "heightFactor": 0.8746495228237898,
+          "widthFactor": 0.8746495228237898,
+          "heightFactor": 0.87464952282379,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
           "deltaX": 798.91169570488,
           "deltaY": 1108.7892806128602,
-          "widthFactor": 0.7413064636899628,
-          "heightFactor": 0.6297824824268711,
+          "widthFactor": 0.7413064636899629,
+          "heightFactor": 0.6297824824268712,
           "deltaAngle": 0
         }
       }
@@ -4048,99 +3583,99 @@
         "layer1": {
           "deltaX": 571.9312914218053,
           "deltaY": 1092.6200849921136,
-          "widthFactor": 1.000164992403354,
-          "heightFactor": 1.1875035890573669,
+          "widthFactor": 1.0001649924033542,
+          "heightFactor": 1.187503589057367,
           "deltaAngle": 0
         },
         "layer1_1_": {
           "deltaX": -400.8841382656947,
           "deltaY": 1024.0651533514886,
-          "widthFactor": 1.0128187415974954,
-          "heightFactor": 1.213731155012216,
+          "widthFactor": 1.0128187415974956,
+          "heightFactor": 1.2137311550122163,
           "deltaAngle": 0
         },
         "layer1_2_": {
           "deltaX": -2623.3450757656947,
           "deltaY": 921.8493330389886,
-          "widthFactor": 0.6527363957086236,
-          "heightFactor": 0.6527363957086236,
+          "widthFactor": 0.6527363957086237,
+          "heightFactor": 0.6527363957086237,
           "deltaAngle": 0
         },
         "layer1_3_": {
           "deltaX": -1353.1292554531947,
           "deltaY": 921.9708540350823,
-          "widthFactor": 0.8723822246119702,
-          "heightFactor": 1.2499805009365543,
+          "widthFactor": 0.8723822246119703,
+          "heightFactor": 1.2499805009365546,
           "deltaAngle": 0
         },
         "layer1_4_": {
           "deltaX": 1841.150712808524,
           "deltaY": -46.18112350398019,
-          "widthFactor": 0.7962415880859021,
-          "heightFactor": 0.6331806217354475,
+          "widthFactor": 0.7962415880859022,
+          "heightFactor": 0.6331806217354476,
           "deltaAngle": 0
         },
         "layer1_6_": {
           "deltaX": 955.7292650546178,
           "deltaY": -80.37484908991769,
-          "widthFactor": 0.872061018540285,
-          "heightFactor": 2.1701238446374993,
+          "widthFactor": 0.8720610185402852,
+          "heightFactor": 2.1701238446374997,
           "deltaAngle": 0
         },
         "layer1_7_": {
           "deltaX": -3.1168042813196735,
           "deltaY": -1.8953569024176886,
-          "widthFactor": 1.718032091404482,
-          "heightFactor": 1.00226353585619,
+          "widthFactor": 1.7180320914044822,
+          "heightFactor": 1.0022635358561902,
           "deltaAngle": 0
         },
         "layer1_8_": {
           "deltaX": -2336.3392163906947,
           "deltaY": -1188.9412553399177,
-          "widthFactor": 1.1623287256283392,
-          "heightFactor": 0.4903574311244556,
+          "widthFactor": 1.1623287256283394,
+          "heightFactor": 0.49035743112445573,
           "deltaAngle": 0
         },
         "layer1_9_": {
           "deltaX": -104.41978279694467,
           "deltaY": -851.1580522149177,
-          "widthFactor": 0.798956250926371,
-          "heightFactor": 0.702899472605328,
+          "widthFactor": 0.7989562509263711,
+          "heightFactor": 0.7028994726053281,
           "deltaAngle": 0
         },
         "layer1_10_": {
           "deltaX": -1256.6292554531947,
           "deltaY": -851.5191361992927,
-          "widthFactor": 0.9925771088918417,
-          "heightFactor": 0.801849193685896,
+          "widthFactor": 0.9925771088918418,
+          "heightFactor": 0.8018491936858961,
           "deltaAngle": 0
         },
         "layer1_11_": {
           "deltaX": 990.5866869296178,
           "deltaY": -851.4932572930427,
-          "widthFactor": 0.9590899231682641,
-          "heightFactor": 0.6639853314241829,
+          "widthFactor": 0.9590899231682642,
+          "heightFactor": 0.663985331424183,
           "deltaAngle": 0
         },
         "layer1_12_": {
           "deltaX": -2057.4148999844447,
           "deltaY": 87.04116653508231,
-          "widthFactor": 0.8723822246119702,
-          "heightFactor": 0.5852004984974707,
+          "widthFactor": 0.8723822246119703,
+          "heightFactor": 0.5852004984974708,
           "deltaAngle": 0
         },
         "layer1_14_": {
           "deltaX": -919.0733472500697,
           "deltaY": -1.6574418633551886,
-          "widthFactor": 0.771976976308888,
-          "heightFactor": 0.771976976308888,
+          "widthFactor": 0.7719769763088881,
+          "heightFactor": 0.7719769763088882,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
           "deltaX": 1749.8707445468053,
           "deltaY": 1024.4188520819573,
-          "widthFactor": 0.6542866684589776,
-          "heightFactor": 0.5558541608147067,
+          "widthFactor": 0.6542866684589778,
+          "heightFactor": 0.5558541608147068,
           "deltaAngle": 0
         }
       }
@@ -4513,99 +4048,99 @@
         "layer1": {
           "deltaX": 1488.3426417716291,
           "deltaY": 1079.698167191306,
-          "widthFactor": 1.2764921392623703,
-          "heightFactor": 1.5155889361165142,
+          "widthFactor": 1.2764921392623705,
+          "heightFactor": 1.5155889361165147,
           "deltaAngle": 0
         },
         "layer1_1_": {
           "deltaX": 515.5272120841291,
           "deltaY": 1011.1432355506811,
-          "widthFactor": 1.2926418860553526,
-          "heightFactor": 1.5490626949739414,
+          "widthFactor": 1.2926418860553528,
+          "heightFactor": 1.549062694973942,
           "deltaAngle": 0
         },
         "layer1_2_": {
           "deltaX": -1706.9337254158709,
           "deltaY": 908.9274152381811,
-          "widthFactor": 0.8330754270156316,
-          "heightFactor": 0.8330754270156316,
+          "widthFactor": 0.8330754270156319,
+          "heightFactor": 0.8330754270156319,
           "deltaAngle": 0
         },
         "layer1_3_": {
           "deltaX": -436.71790510337087,
           "deltaY": 909.0489362342748,
           "widthFactor": 1.1134053487250062,
-          "heightFactor": 1.5953270668298598,
+          "heightFactor": 1.59532706682986,
           "deltaAngle": 0
         },
         "layer1_4_": {
           "deltaX": 2757.562063158348,
           "deltaY": -59.103041304787666,
           "widthFactor": 1.0162284581697703,
-          "heightFactor": 0.8081167532532493,
+          "heightFactor": 0.8081167532532494,
           "deltaAngle": 0
         },
         "layer1_6_": {
           "deltaX": 1872.1406154044416,
           "deltaY": -93.29676689072517,
-          "widthFactor": 1.1129953993379513,
-          "heightFactor": 2.769689051252492,
+          "widthFactor": 1.1129953993379516,
+          "heightFactor": 2.7696890512524925,
           "deltaAngle": 0
         },
         "layer1_7_": {
           "deltaX": 913.2945460685041,
           "deltaY": -14.817274703225166,
-          "widthFactor": 2.1926926820428845,
-          "heightFactor": 1.2791704715793302,
+          "widthFactor": 2.192692682042885,
+          "heightFactor": 1.2791704715793304,
           "deltaAngle": 0
         },
         "layer1_8_": {
           "deltaX": -1419.9278660408709,
           "deltaY": -1201.8631731407252,
-          "widthFactor": 1.4834587220835906,
-          "heightFactor": 0.6258341483790147,
+          "widthFactor": 1.4834587220835909,
+          "heightFactor": 0.6258341483790149,
           "deltaAngle": 0
         },
         "layer1_9_": {
           "deltaX": 811.9915675528791,
           "deltaY": -864.0799700157252,
           "widthFactor": 1.0196931323014646,
-          "heightFactor": 0.897097637177166,
+          "heightFactor": 0.8970976371771662,
           "deltaAngle": 0
         },
         "layer1_10_": {
           "deltaX": -340.21790510337087,
           "deltaY": -864.4410540001002,
-          "widthFactor": 1.2668078634382294,
+          "widthFactor": 1.2668078634382296,
           "heightFactor": 1.0233853418068142,
           "deltaAngle": 0
         },
         "layer1_11_": {
           "deltaX": 1906.9980372794416,
           "deltaY": -864.4151750938502,
-          "widthFactor": 1.2240687857192136,
-          "heightFactor": 0.8474322362671478,
+          "widthFactor": 1.2240687857192138,
+          "heightFactor": 0.847432236267148,
           "deltaAngle": 0
         },
         "layer1_12_": {
           "deltaX": -1141.0035496346209,
           "deltaY": 74.11924873427483,
           "widthFactor": 1.1134053487250062,
-          "heightFactor": 0.7468806065981408,
+          "heightFactor": 0.746880606598141,
           "deltaAngle": 0
         },
         "layer1_14_": {
           "deltaX": -2.6619969002458674,
           "deltaY": -14.579359664162666,
-          "widthFactor": 0.9852599815375462,
-          "heightFactor": 0.9852599815375462,
+          "widthFactor": 0.9852599815375463,
+          "heightFactor": 0.9852599815375465,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
           "deltaX": 2666.282094896629,
           "deltaY": 1011.4969342811498,
-          "widthFactor": 0.8350540115437547,
-          "heightFactor": 0.7094264168867297,
+          "widthFactor": 0.8350540115437548,
+          "heightFactor": 0.7094264168867298,
           "deltaAngle": 0
         }
       }
@@ -4978,113 +4513,113 @@
         "layer1": {
           "deltaX": 2610.230591947833,
           "deltaY": 1001.7509599749508,
-          "widthFactor": 1.477699212713627,
-          "heightFactor": 1.7544836421719106,
+          "widthFactor": 1.4776992127136273,
+          "heightFactor": 1.7544836421719108,
           "deltaAngle": 0
         },
         "layer1_1_": {
           "deltaX": 1637.415162260333,
           "deltaY": 933.1960283343258,
-          "widthFactor": 1.4963945633448534,
-          "heightFactor": 1.7932337022692404,
+          "widthFactor": 1.4963945633448537,
+          "heightFactor": 1.7932337022692406,
           "deltaAngle": 0
         },
         "layer1_2_": {
           "deltaX": -585.0457752396669,
           "deltaY": 830.9802080218258,
-          "widthFactor": 0.9643889411989873,
-          "heightFactor": 0.9643889411989874,
+          "widthFactor": 0.9643889411989875,
+          "heightFactor": 0.9643889411989877,
           "deltaAngle": 0
         },
         "layer1_3_": {
           "deltaX": 685.1700450728331,
           "deltaY": 831.1017290179195,
-          "widthFactor": 1.2889058668178077,
-          "heightFactor": 1.8467904957389487,
+          "widthFactor": 1.288905866817808,
+          "heightFactor": 1.846790495738949,
           "deltaAngle": 0
         },
         "layer1_4_": {
           "deltaX": 3879.450013334552,
           "deltaY": -137.05024852114298,
-          "widthFactor": 1.1764114688888008,
-          "heightFactor": 0.935496156484809,
+          "widthFactor": 1.176411468888801,
+          "heightFactor": 0.9354961564848092,
           "deltaAngle": 0
         },
         "layer1_5_": {
           "deltaX": -1830.817747895917,
           "deltaY": 830.5565019671383,
-          "widthFactor": 1.031150476493869,
-          "heightFactor": 1.0311504764938693,
+          "widthFactor": 1.0311504764938693,
+          "heightFactor": 1.0311504764938695,
           "deltaAngle": 0
         },
         "layer1_6_": {
           "deltaX": 2994.0285655806456,
           "deltaY": -171.24397410708048,
-          "widthFactor": 1.2884312991586184,
-          "heightFactor": 3.206261287956222,
+          "widthFactor": 1.2884312991586186,
+          "heightFactor": 3.206261287956223,
           "deltaAngle": 0
         },
         "layer1_7_": {
           "deltaX": 2035.182496244708,
           "deltaY": -92.76448191958048,
-          "widthFactor": 2.5383158660499383,
-          "heightFactor": 1.480799717162048,
+          "widthFactor": 2.5383158660499388,
+          "heightFactor": 1.4807997171620482,
           "deltaAngle": 0
         },
         "layer1_8_": {
           "deltaX": -298.0399158646669,
           "deltaY": -1279.8103803570805,
-          "widthFactor": 1.7172889031520464,
-          "heightFactor": 0.7244812560172696,
+          "widthFactor": 1.7172889031520466,
+          "heightFactor": 0.7244812560172698,
           "deltaAngle": 0
         },
         "layer1_9_": {
           "deltaX": 1933.879517729083,
           "deltaY": -942.0271772320805,
-          "widthFactor": 1.1804222622805034,
-          "heightFactor": 1.038502652237235,
+          "widthFactor": 1.1804222622805036,
+          "heightFactor": 1.0385026522372351,
           "deltaAngle": 0
         },
         "layer1_10_": {
           "deltaX": 781.6700450728331,
           "deltaY": -942.3882612164555,
-          "widthFactor": 1.4664884529127058,
-          "heightFactor": 1.184696456309134,
+          "widthFactor": 1.466488452912706,
+          "heightFactor": 1.1846964563091342,
           "deltaAngle": 0
         },
         "layer1_11_": {
           "deltaX": 3028.8859874556456,
           "deltaY": -942.3623823102055,
-          "widthFactor": 1.4170126280682291,
-          "heightFactor": 0.9810087425087742,
+          "widthFactor": 1.4170126280682294,
+          "heightFactor": 0.9810087425087743,
           "deltaAngle": 0
         },
         "layer1_12_": {
           "deltaX": -19.11559945841691,
           "deltaY": -3.8279584820804757,
-          "widthFactor": 1.2889058668178077,
-          "heightFactor": 0.864607662213188,
+          "widthFactor": 1.288905866817808,
+          "heightFactor": 0.8646076622131881,
           "deltaAngle": 0
         },
         "layer1_13_": {
           "deltaX": -1830.817747895917,
           "deltaY": -3.4435590680179757,
-          "widthFactor": 1.031150476493869,
-          "heightFactor": 1.0311504764938693,
+          "widthFactor": 1.0311504764938693,
+          "heightFactor": 1.0311504764938695,
           "deltaAngle": 0
         },
         "layer1_14_": {
           "deltaX": 1119.225953275958,
           "deltaY": -92.52656688051798,
-          "widthFactor": 1.1405615861274219,
-          "heightFactor": 1.1405615861274219,
+          "widthFactor": 1.140561586127422,
+          "heightFactor": 1.1405615861274223,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
           "deltaX": 3788.170045072833,
           "deltaY": 933.5497270647945,
-          "widthFactor": 0.9666794001133558,
-          "heightFactor": 0.8212497558485148,
+          "widthFactor": 0.966679400113356,
+          "heightFactor": 0.8212497558485149,
           "deltaAngle": 0
         }
       }
@@ -5457,113 +4992,113 @@
         "layer1": {
           "deltaX": 3276.035274546819,
           "deltaY": 1025.174678259804,
-          "widthFactor": 1.0001649924033895,
-          "heightFactor": 1.187503589057409,
+          "widthFactor": 1.0001649924033897,
+          "heightFactor": 1.1875035890574093,
           "deltaAngle": 0
         },
         "layer1_1_": {
           "deltaX": 2303.219844859319,
           "deltaY": 956.6197466191791,
-          "widthFactor": 1.0128187415975314,
-          "heightFactor": 1.2137311550122591,
+          "widthFactor": 1.0128187415975316,
+          "heightFactor": 1.2137311550122594,
           "deltaAngle": 0
         },
         "layer1_2_": {
           "deltaX": 80.75890735931898,
           "deltaY": 854.4039263066791,
-          "widthFactor": 0.6527363957086468,
-          "heightFactor": 0.6527363957086468,
+          "widthFactor": 0.652736395708647,
+          "heightFactor": 0.652736395708647,
           "deltaAngle": 0
         },
         "layer1_3_": {
           "deltaX": 1350.974727671819,
           "deltaY": 854.5254473027728,
-          "widthFactor": 0.8723822246120013,
-          "heightFactor": 1.249980500936599,
+          "widthFactor": 0.8723822246120014,
+          "heightFactor": 1.2499805009365992,
           "deltaAngle": 0
         },
         "layer1_4_": {
           "deltaX": 4545.254695933538,
           "deltaY": -113.62653023628968,
-          "widthFactor": 0.7962415880859305,
-          "heightFactor": 0.6331806217354701,
+          "widthFactor": 0.7962415880859306,
+          "heightFactor": 0.6331806217354702,
           "deltaAngle": 0
         },
         "layer1_5_": {
           "deltaX": -1165.013065296931,
           "deltaY": 853.9802202519916,
-          "widthFactor": 0.6979232306656905,
-          "heightFactor": 0.6979232306656905,
+          "widthFactor": 0.6979232306656906,
+          "heightFactor": 0.6979232306656906,
           "deltaAngle": 0
         },
         "layer1_6_": {
           "deltaX": 3659.8332481796315,
           "deltaY": -147.82025582222718,
-          "widthFactor": 0.872061018540316,
-          "heightFactor": 2.1701238446375766,
+          "widthFactor": 0.8720610185403161,
+          "heightFactor": 2.170123844637577,
           "deltaAngle": 0
         },
         "layer1_7_": {
           "deltaX": 2700.987178843694,
           "deltaY": -69.34076363472718,
-          "widthFactor": 1.718032091404543,
-          "heightFactor": 1.0022635358562257,
+          "widthFactor": 1.7180320914045435,
+          "heightFactor": 1.002263535856226,
           "deltaAngle": 0
         },
         "layer1_8_": {
           "deltaX": 367.764766734319,
           "deltaY": -1256.3866620722272,
-          "widthFactor": 1.1623287256283807,
-          "heightFactor": 0.4903574311244731,
+          "widthFactor": 1.162328725628381,
+          "heightFactor": 0.49035743112447316,
           "deltaAngle": 0
         },
         "layer1_9_": {
           "deltaX": 2599.684200328069,
           "deltaY": -918.6034589472272,
-          "widthFactor": 0.7989562509263995,
-          "heightFactor": 0.702899472605353,
+          "widthFactor": 0.7989562509263997,
+          "heightFactor": 0.7028994726053531,
           "deltaAngle": 0
         },
         "layer1_10_": {
           "deltaX": 1447.474727671819,
           "deltaY": -918.9645429316022,
-          "widthFactor": 0.992577108891877,
-          "heightFactor": 0.8018491936859246,
+          "widthFactor": 0.9925771088918772,
+          "heightFactor": 0.8018491936859247,
           "deltaAngle": 0
         },
         "layer1_11_": {
           "deltaX": 3694.6906700546315,
           "deltaY": -918.9386640253522,
-          "widthFactor": 0.9590899231682983,
-          "heightFactor": 0.6639853314242066,
+          "widthFactor": 0.9590899231682984,
+          "heightFactor": 0.6639853314242068,
           "deltaAngle": 0
         },
         "layer1_12_": {
           "deltaX": -0.49597545318101766,
           "deltaY": -21.071598595664682,
           "widthFactor": 1.0848191783899033,
-          "heightFactor": 0.9151104465042271,
+          "heightFactor": 0.9151104465042272,
           "deltaAngle": 0
         },
         "layer1_13_": {
           "deltaX": -1165.013065296931,
           "deltaY": 19.980159216835318,
-          "widthFactor": 0.6979232306656905,
-          "heightFactor": 0.6979232306656905,
+          "widthFactor": 0.6979232306656906,
+          "heightFactor": 0.6979232306656906,
           "deltaAngle": 0
         },
         "layer1_14_": {
           "deltaX": 1785.030635874944,
           "deltaY": -69.10284859566468,
-          "widthFactor": 0.7719769763089155,
-          "heightFactor": 0.7719769763089155,
+          "widthFactor": 0.7719769763089156,
+          "heightFactor": 0.7719769763089156,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
           "deltaX": 4453.974727671819,
           "deltaY": 956.9734453496478,
-          "widthFactor": 0.654286668459001,
-          "heightFactor": 0.5558541608147265,
+          "widthFactor": 0.6542866684590011,
+          "heightFactor": 0.5558541608147266,
           "deltaAngle": 0
         }
       }
@@ -5936,113 +5471,113 @@
         "layer1": {
           "deltaX": 4329.608065428521,
           "deltaY": 1034.728801841253,
-          "widthFactor": 1.616033113875897,
-          "heightFactor": 1.9187285471288056,
+          "widthFactor": 1.6160331138758972,
+          "heightFactor": 1.9187285471288058,
           "deltaAngle": 0
         },
         "layer1_1_": {
           "deltaX": 3356.7926357410206,
           "deltaY": 966.173870200628,
-          "widthFactor": 1.6364786182354079,
-          "heightFactor": 1.9611061702223234,
+          "widthFactor": 1.6364786182354083,
+          "heightFactor": 1.9611061702223236,
           "deltaAngle": 0
         },
         "layer1_2_": {
           "deltaX": 1134.3316982410206,
           "deltaY": 863.958049888128,
-          "widthFactor": 1.0546696176221808,
-          "heightFactor": 1.054669617622181,
+          "widthFactor": 1.054669617622181,
+          "heightFactor": 1.0546696176221813,
           "deltaAngle": 0
         },
         "layer1_3_": {
           "deltaX": 2404.5475185535206,
           "deltaY": 864.0795708842218,
-          "widthFactor": 1.4095659952484223,
-          "heightFactor": 2.0196766499081873,
+          "widthFactor": 1.4095659952484225,
+          "heightFactor": 2.0196766499081877,
           "deltaAngle": 0
         },
         "layer1_4_": {
           "deltaX": 5598.827486815239,
           "deltaY": -104.07240665484073,
-          "widthFactor": 1.2865405035822515,
+          "widthFactor": 1.2865405035822517,
           "heightFactor": 1.023072052672237,
           "deltaAngle": 0
         },
         "layer1_5_": {
           "deltaX": -111.4402744152294,
           "deltaY": 863.5343438334405,
-          "widthFactor": 1.1276809929017262,
-          "heightFactor": 1.1276809929017262,
+          "widthFactor": 1.1276809929017264,
+          "heightFactor": 1.1276809929017266,
           "deltaAngle": 0
         },
         "layer1_6_": {
           "deltaX": 4713.406039061333,
           "deltaY": -138.26613224077823,
-          "widthFactor": 1.4090470012302714,
-          "heightFactor": 3.506413462561531,
+          "widthFactor": 1.4090470012302716,
+          "heightFactor": 3.5064134625615315,
           "deltaAngle": 0
         },
         "layer1_7_": {
           "deltaX": 3754.5599697253956,
           "deltaY": -59.786640053278234,
-          "widthFactor": 2.7759387416065637,
-          "heightFactor": 1.619423870137563,
+          "widthFactor": 2.775938741606564,
+          "heightFactor": 1.6194238701375632,
           "deltaAngle": 0
         },
         "layer1_8_": {
           "deltaX": 1421.3375576160206,
           "deltaY": -1246.8325384907782,
-          "widthFactor": 1.8780518455369497,
-          "heightFactor": 0.7923031223359007,
+          "widthFactor": 1.8780518455369501,
+          "heightFactor": 0.7923031223359008,
           "deltaAngle": 0
         },
         "layer1_9_": {
           "deltaX": 3653.2569912097706,
           "deltaY": -909.0493353657782,
-          "widthFactor": 1.2909267649256568,
-          "heightFactor": 1.1357214380465102,
+          "widthFactor": 1.290926764925657,
+          "heightFactor": 1.1357214380465104,
           "deltaAngle": 0
         },
         "layer1_10_": {
           "deltaX": 2501.0475185535206,
           "deltaY": -909.4104193501532,
-          "widthFactor": 1.6037728657048718,
-          "heightFactor": 1.2956010849942947,
+          "widthFactor": 1.603772865704872,
+          "heightFactor": 1.295601084994295,
           "deltaAngle": 0
         },
         "layer1_11_": {
           "deltaX": 4748.263460936333,
           "deltaY": -909.3845404439032,
-          "widthFactor": 1.549665392007183,
-          "heightFactor": 1.0728452713895884,
+          "widthFactor": 1.5496653920071832,
+          "heightFactor": 1.0728452713895886,
           "deltaAngle": 0
         },
         "layer1_12_": {
           "deltaX": 1053.0768154285206,
           "deltaY": -11.517475014215734,
-          "widthFactor": 1.752814513766405,
-          "heightFactor": 1.4786048258407098,
+          "widthFactor": 1.7528145137664053,
+          "heightFactor": 1.47860482584071,
           "deltaAngle": 0
         },
         "layer1_13_": {
           "deltaX": -111.4402744152294,
           "deltaY": 29.534282798284266,
-          "widthFactor": 1.1276809929017262,
-          "heightFactor": 1.1276809929017262,
+          "widthFactor": 1.1276809929017264,
+          "heightFactor": 1.1276809929017266,
           "deltaAngle": 0
         },
         "layer1_14_": {
           "deltaX": 2838.6034267566456,
           "deltaY": -59.548725014215734,
           "widthFactor": 1.247334556138748,
-          "heightFactor": 1.247334556138748,
+          "heightFactor": 1.2473345561387483,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
           "deltaX": 5507.547518553521,
           "deltaY": 966.5275689310968,
-          "widthFactor": 1.0571744964363168,
-          "heightFactor": 0.8981305456450126,
+          "widthFactor": 1.057174496436317,
+          "heightFactor": 0.8981305456450127,
           "deltaAngle": 0
         }
       }
@@ -6415,91 +5950,91 @@
         "layer1": {
           "deltaX": -427.55636816440165,
           "deltaY": 1914.3490162401154,
-          "widthFactor": 1.72811142120146,
-          "heightFactor": 2.051799983557272,
+          "widthFactor": 1.7281114212014603,
+          "heightFactor": 2.0517999835572724,
           "deltaAngle": 0
         },
         "layer1_1_": {
           "deltaX": -1400.3717978519016,
           "deltaY": 1845.7940845994904,
-          "widthFactor": 1.7499749023965665,
-          "heightFactor": 2.0971166629263203,
+          "widthFactor": 1.749974902396567,
+          "heightFactor": 2.0971166629263207,
           "deltaAngle": 0
         },
         "layer1_2_": {
           "deltaX": -3622.8327353519016,
           "deltaY": 1743.5782642869904,
-          "widthFactor": 1.1278151395275386,
-          "heightFactor": 1.1278151395275386,
+          "widthFactor": 1.1278151395275389,
+          "heightFactor": 1.1278151395275389,
           "deltaAngle": 0
         },
         "layer1_3_": {
           "deltaX": -2352.6169150394016,
           "deltaY": 1743.699785283084,
-          "widthFactor": 1.5073249888325402,
-          "heightFactor": 2.159749237730207,
+          "widthFactor": 1.5073249888325404,
+          "heightFactor": 2.1597492377302077,
           "deltaAngle": 0
         },
         "layer1_4_": {
           "deltaX": 841.6630532223171,
           "deltaY": 775.5478077440216,
-          "widthFactor": 1.3757671912714924,
-          "heightFactor": 1.0940261580993114,
+          "widthFactor": 1.3757671912714926,
+          "heightFactor": 1.0940261580993116,
           "deltaAngle": 0
         },
         "layer1_5_": {
           "deltaX": -4868.604708008152,
           "deltaY": 1743.1545582323029,
           "widthFactor": 1.2058901433222304,
-          "heightFactor": 1.2058901433222304,
+          "heightFactor": 1.2058901433222307,
           "deltaAngle": 0
         },
         "layer1_6_": {
           "deltaX": -43.75839453158915,
           "deltaY": 741.3540821580841,
-          "widthFactor": 1.5067700005203573,
-          "heightFactor": 3.749597146294909,
+          "widthFactor": 1.5067700005203575,
+          "heightFactor": 3.74959714629491,
           "deltaAngle": 0
         },
         "layer1_7_": {
           "deltaX": -1002.6044638675266,
           "deltaY": 819.8335743455841,
-          "widthFactor": 2.968461105614638,
-          "heightFactor": 1.7317373398611597,
+          "widthFactor": 2.9684611056146384,
+          "heightFactor": 1.73173733986116,
           "deltaAngle": 0
         },
         "layer1_8_": {
           "deltaX": -3335.8268759769016,
           "deltaY": -367.2123240919159,
-          "widthFactor": 2.0083021913436605,
-          "heightFactor": 0.8472524869731068,
+          "widthFactor": 2.008302191343661,
+          "heightFactor": 0.847252486973107,
           "deltaAngle": 0
         },
         "layer1_9_": {
           "deltaX": -1103.9074423831516,
           "deltaY": -29.42912096691589,
-          "widthFactor": 1.380457657239565,
-          "heightFactor": 1.2144882252346236,
+          "widthFactor": 1.3804576572395653,
+          "heightFactor": 1.2144882252346239,
           "deltaAngle": 0
         },
         "layer1_10_": {
           "deltaX": -2256.1169150394016,
           "deltaY": -29.79020495129089,
-          "widthFactor": 1.7150008761828013,
+          "widthFactor": 1.7150008761828017,
           "heightFactor": 1.3854561599482074,
           "deltaAngle": 0
         },
         "layer1_11_": {
           "deltaX": -8.900972656589147,
           "deltaY": -29.76432604504089,
-          "widthFactor": 1.6571408345373217,
-          "heightFactor": 1.1472513469873766,
+          "widthFactor": 1.657140834537322,
+          "heightFactor": 1.1472513469873769,
           "deltaAngle": 0
         },
         "layer1_12_": {
           "deltaX": -3056.9025595706516,
           "deltaY": 908.7700977830841,
-          "widthFactor": 1.5073249888325402,
+          "widthFactor": 1.5073249888325404,
           "heightFactor": 1.0111248372292818,
           "deltaAngle": 0
         },
@@ -6507,21 +6042,21 @@
           "deltaX": -4868.604708008152,
           "deltaY": 909.1544971971466,
           "widthFactor": 1.2058901433222304,
-          "heightFactor": 1.2058901433222304,
+          "heightFactor": 1.2058901433222307,
           "deltaAngle": 0
         },
         "layer1_14_": {
           "deltaX": -1918.5610068362766,
           "deltaY": 820.0714893846466,
-          "widthFactor": 1.3338421558409712,
-          "heightFactor": 1.3338421558409714,
+          "widthFactor": 1.3338421558409714,
+          "heightFactor": 1.3338421558409717,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
           "deltaX": 750.3830849605984,
           "deltaY": 1846.147783329959,
-          "widthFactor": 1.1304937416244052,
-          "heightFactor": 0.9604194619109991,
+          "widthFactor": 1.1304937416244054,
+          "heightFactor": 0.9604194619109994,
           "deltaAngle": 0
         }
       }
@@ -6894,99 +6429,99 @@
         "layer1": {
           "deltaX": 642.7880602289961,
           "deltaY": 1945.6359532754996,
-          "widthFactor": 1.6112621701782615,
-          "heightFactor": 1.913063968977036,
+          "widthFactor": 1.6112621701782617,
+          "heightFactor": 1.9130639689770363,
           "deltaAngle": 0
         },
         "layer1_1_": {
           "deltaX": -330.0273694585039,
           "deltaY": 1877.0810216348746,
-          "widthFactor": 1.631647314171805,
-          "heightFactor": 1.9553164824721905,
+          "widthFactor": 1.6316473141718053,
+          "heightFactor": 1.9553164824721907,
           "deltaAngle": 0
         },
         "layer1_2_": {
           "deltaX": -2552.488306958504,
           "deltaY": 1774.8652013223746,
-          "widthFactor": 1.0515559627582567,
-          "heightFactor": 1.0515559627582567,
+          "widthFactor": 1.051555962758257,
+          "heightFactor": 1.051555962758257,
           "deltaAngle": 0
         },
         "layer1_3_": {
           "deltaX": -1282.272486646004,
           "deltaY": 1774.9867223184683,
-          "widthFactor": 1.4054045953713477,
-          "heightFactor": 2.0137140470992447,
+          "widthFactor": 1.4054045953713479,
+          "heightFactor": 2.013714047099245,
           "deltaAngle": 0
         },
         "layer1_4_": {
           "deltaX": 1912.0074816157148,
           "deltaY": 806.8347447794058,
-          "widthFactor": 1.2827423064694479,
+          "widthFactor": 1.282742306469448,
           "heightFactor": 1.020051681913734,
           "deltaAngle": 0
         },
         "layer1_6_": {
           "deltaX": 1026.5860338618086,
           "deltaY": 772.6410191934683,
-          "widthFactor": 1.404887133556478,
-          "heightFactor": 3.496061631855296,
+          "widthFactor": 1.4048871335564783,
+          "heightFactor": 3.496061631855297,
           "deltaAngle": 0
         },
         "layer1_7_": {
           "deltaX": 67.73996452587107,
           "deltaY": 851.1205113809683,
-          "widthFactor": 2.7677434593870514,
-          "heightFactor": 1.6146429160589035,
+          "widthFactor": 2.767743459387052,
+          "heightFactor": 1.614642916058904,
           "deltaAngle": 0
         },
         "layer1_8_": {
           "deltaX": -2265.482447583504,
           "deltaY": -335.9253870565317,
-          "widthFactor": 1.872507355427581,
-          "heightFactor": 0.7899640405710108,
+          "widthFactor": 1.8725073554275813,
+          "heightFactor": 0.7899640405710109,
           "deltaAngle": 0
         },
         "layer1_9_": {
           "deltaX": -33.56301398975393,
           "deltaY": 1.8578160684683098,
-          "widthFactor": 1.2871156184458303,
-          "heightFactor": 1.1323684974473402,
+          "widthFactor": 1.2871156184458306,
+          "heightFactor": 1.1323684974473405,
           "deltaAngle": 0
         },
         "layer1_10_": {
           "deltaX": -1185.772486646004,
           "deltaY": 1.4967320840933098,
-          "widthFactor": 1.5990381174002888,
+          "widthFactor": 1.5990381174002892,
           "heightFactor": 1.2917761387243027,
           "deltaAngle": 0
         },
         "layer1_11_": {
           "deltaX": 1061.4434557368086,
           "deltaY": 1.5226109903433098,
-          "widthFactor": 1.545090382824538,
-          "heightFactor": 1.069677957340065,
+          "widthFactor": 1.5450903828245384,
+          "heightFactor": 1.0696779573400652,
           "deltaAngle": 0
         },
         "layer1_12_": {
           "deltaX": -1986.558131177254,
           "deltaY": 940.0570348184683,
-          "widthFactor": 1.4054045953713477,
-          "heightFactor": 0.9427558776404072,
+          "widthFactor": 1.4054045953713479,
+          "heightFactor": 0.9427558776404074,
           "deltaAngle": 0
         },
         "layer1_14_": {
           "deltaX": -848.2165784428789,
           "deltaY": 851.3584264200308,
-          "widthFactor": 1.2436521050253668,
-          "heightFactor": 1.243652105025367,
+          "widthFactor": 1.243652105025367,
+          "heightFactor": 1.2436521050253673,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
           "deltaX": 1820.727513353996,
           "deltaY": 1877.4347203653433,
-          "widthFactor": 1.0540534465285107,
-          "heightFactor": 0.8954790342189118,
+          "widthFactor": 1.054053446528511,
+          "heightFactor": 0.8954790342189121,
           "deltaAngle": 0
         }
       }
@@ -7359,113 +6894,113 @@
         "layer1": {
           "deltaX": 1820.5037093881037,
           "deltaY": 1929.5438275837932,
-          "widthFactor": 1.4552770410064666,
-          "heightFactor": 1.727861625225755,
+          "widthFactor": 1.4552770410064668,
+          "heightFactor": 1.7278616252257553,
           "deltaAngle": 0
         },
         "layer1_1_": {
           "deltaX": 847.6882797006037,
           "deltaY": 1860.9888959431682,
-          "widthFactor": 1.4736887139051935,
-          "heightFactor": 1.7660237033483435,
+          "widthFactor": 1.4736887139051937,
+          "heightFactor": 1.7660237033483437,
           "deltaAngle": 0
         },
         "layer1_2_": {
           "deltaX": -1374.7726577993963,
           "deltaY": 1758.7730756306682,
-          "widthFactor": 0.9497555880470012,
-          "heightFactor": 0.9497555880470013,
+          "widthFactor": 0.9497555880470014,
+          "heightFactor": 0.9497555880470014,
           "deltaAngle": 0
         },
         "layer1_3_": {
           "deltaX": -104.55683748689626,
           "deltaY": 1758.894596626762,
-          "widthFactor": 1.26934838961845,
-          "heightFactor": 1.8187678418413615,
+          "widthFactor": 1.2693483896184503,
+          "heightFactor": 1.818767841841362,
           "deltaAngle": 0
         },
         "layer1_4_": {
           "deltaX": 3089.7231307748225,
           "deltaY": 790.7426190876995,
-          "widthFactor": 1.1585609484806196,
-          "heightFactor": 0.9213012139202993,
+          "widthFactor": 1.1585609484806199,
+          "heightFactor": 0.9213012139202995,
           "deltaAngle": 0
         },
         "layer1_5_": {
           "deltaX": -2620.5446304556463,
           "deltaY": 1758.3493695759807,
-          "widthFactor": 1.0155041035101497,
-          "heightFactor": 1.0155041035101497,
+          "widthFactor": 1.01550410351015,
+          "heightFactor": 1.01550410351015,
           "deltaAngle": 0
         },
         "layer1_6_": {
           "deltaX": 2204.3016830209162,
           "deltaY": 756.548893501762,
-          "widthFactor": 1.2688810229088514,
-          "heightFactor": 3.157610425508677,
+          "widthFactor": 1.2688810229088516,
+          "heightFactor": 3.1576104255086777,
           "deltaAngle": 0
         },
         "layer1_7_": {
           "deltaX": 1245.4556136849787,
           "deltaY": 835.028385689262,
-          "widthFactor": 2.4998002102886656,
-          "heightFactor": 1.4583304993155086,
+          "widthFactor": 2.499800210288666,
+          "heightFactor": 1.4583304993155088,
           "deltaAngle": 0
         },
         "layer1_8_": {
           "deltaX": -1087.7667984243963,
           "deltaY": -352.017512748238,
-          "widthFactor": 1.6912312681976596,
-          "heightFactor": 0.7134881912708877,
+          "widthFactor": 1.6912312681976598,
+          "heightFactor": 0.7134881912708878,
           "deltaAngle": 0
         },
         "layer1_9_": {
           "deltaX": 1144.1526351693537,
           "deltaY": -14.234309623238005,
-          "widthFactor": 1.1625108832771922,
-          "heightFactor": 1.0227447195087984,
+          "widthFactor": 1.1625108832771924,
+          "heightFactor": 1.0227447195087986,
           "deltaAngle": 0
         },
         "layer1_10_": {
           "deltaX": -8.056837486896256,
           "deltaY": -14.595393607613005,
-          "widthFactor": 1.444236389965881,
-          "heightFactor": 1.1667202219471713,
+          "widthFactor": 1.4442363899658812,
+          "heightFactor": 1.1667202219471715,
           "deltaAngle": 0
         },
         "layer1_11_": {
           "deltaX": 2239.1591048959162,
           "deltaY": -14.569514701363005,
-          "widthFactor": 1.3955112966846832,
-          "heightFactor": 0.9661232053970885,
+          "widthFactor": 1.3955112966846834,
+          "heightFactor": 0.9661232053970887,
           "deltaAngle": 0
         },
         "layer1_12_": {
           "deltaX": -808.8424820181463,
           "deltaY": 923.964909126762,
-          "widthFactor": 1.26934838961845,
-          "heightFactor": 0.8514883607378424,
+          "widthFactor": 1.2693483896184503,
+          "heightFactor": 0.8514883607378426,
           "deltaAngle": 0
         },
         "layer1_13_": {
           "deltaX": -2620.5446304556463,
           "deltaY": 924.3493085408245,
-          "widthFactor": 1.0155041035101497,
-          "heightFactor": 1.0155041035101497,
+          "widthFactor": 1.01550410351015,
+          "heightFactor": 1.01550410351015,
           "deltaAngle": 0
         },
         "layer1_14_": {
           "deltaX": 329.49907071622874,
           "deltaY": 835.2663007283245,
-          "widthFactor": 1.123255041259081,
-          "heightFactor": 1.1232550412590812,
+          "widthFactor": 1.1232550412590812,
+          "heightFactor": 1.1232550412590814,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
           "deltaX": 2998.4431625131037,
           "deltaY": 1861.342594673637,
-          "widthFactor": 0.9520112922138376,
-          "heightFactor": 0.8087883544471541,
+          "widthFactor": 0.9520112922138377,
+          "heightFactor": 0.8087883544471544,
           "deltaAngle": 0
         }
       }
@@ -7838,122 +7373,120 @@
         "layer1": {
           "deltaX": 2881.517821935765,
           "deltaY": 2260.332407166499,
-          "widthFactor": 2.047720939482147,
-          "heightFactor": 2.4312748231466883,
+          "widthFactor": 2.0477209394821476,
+          "heightFactor": 2.4312748231466887,
           "deltaAngle": 0
         },
         "layer1_1_": {
           "deltaX": 1908.702392248265,
           "deltaY": 2191.777475525874,
-          "widthFactor": 2.073628012199755,
-          "heightFactor": 2.4849726994024235,
+          "widthFactor": 2.0736280121997552,
+          "heightFactor": 2.484972699402424,
           "deltaAngle": 0
         },
         "layer1_2_": {
           "deltaX": -313.7585452517351,
           "deltaY": 2089.561655213374,
-          "widthFactor": 1.336401489361078,
-          "heightFactor": 1.336401489361078,
+          "widthFactor": 1.3364014893610783,
+          "heightFactor": 1.3364014893610783,
           "deltaAngle": 0
         },
         "layer1_3_": {
           "deltaX": 956.4572750607649,
           "deltaY": 2089.6831762094675,
-          "widthFactor": 1.7861006555301613,
-          "heightFactor": 2.55918899896859,
+          "widthFactor": 1.7861006555301617,
+          "heightFactor": 2.5591889989685903,
           "deltaAngle": 0
         },
         "layer1_4_": {
           "deltaX": 4150.737243322484,
           "deltaY": 1121.531198670405,
-          "widthFactor": 1.6302116002801148,
-          "heightFactor": 1.2963633275009765,
+          "widthFactor": 1.630211600280115,
+          "heightFactor": 1.2963633275009767,
           "deltaAngle": 0
         },
         "layer1_5_": {
           "deltaX": -1559.530517907985,
           "deltaY": 2089.1379491586863,
-          "widthFactor": 1.4289162532582957,
-          "heightFactor": 1.428916253258296,
+          "widthFactor": 1.428916253258296,
+          "heightFactor": 1.4289162532582964,
           "deltaAngle": 0
         },
         "layer1_6_": {
           "deltaX": 3265.3157955685774,
           "deltaY": 1087.3374730844675,
-          "widthFactor": 1.7854430236355496,
-          "heightFactor": 4.4430749643170655,
+          "widthFactor": 1.7854430236355499,
+          "heightFactor": 4.443074964317066,
           "deltaAngle": 0
         },
         "layer1_7_": {
           "deltaX": 2306.46972623264,
           "deltaY": 1165.8169652719675,
-          "widthFactor": 3.5174699324533836,
-          "heightFactor": 2.0520174619593634,
+          "widthFactor": 3.517469932453384,
+          "heightFactor": 2.052017461959364,
           "deltaAngle": 0
         },
         "layer1_8_": {
           "deltaX": -26.752685876735086,
           "deltaY": -21.228933165532453,
-          "widthFactor": 2.3797322322904053,
+          "widthFactor": 2.3797322322904058,
           "heightFactor": 1.003949535497515,
           "deltaAngle": 0
         },
         "layer1_9_": {
           "deltaX": 2205.166747717015,
           "deltaY": 316.55426995946755,
-          "widthFactor": 1.6357695552018368,
-          "heightFactor": 1.439104527090286,
+          "widthFactor": 1.635769555201837,
+          "heightFactor": 1.4391045270902865,
           "deltaAngle": 0
         },
         "layer1_10_": {
           "deltaX": 1052.957275060765,
           "deltaY": 316.19318597509255,
-          "widthFactor": 2.032185634736539,
-          "heightFactor": 1.6416925174234676,
+          "widthFactor": 2.0321856347365395,
+          "heightFactor": 1.6416925174234678,
           "deltaAngle": 0
         },
         "layer1_11_": {
           "deltaX": 3300.1732174435774,
           "deltaY": 316.21906488134255,
-          "widthFactor": 1.9636245353866002,
-          "heightFactor": 1.3594323706522617,
+          "widthFactor": 1.9636245353866004,
+          "heightFactor": 1.359432370652262,
           "deltaAngle": 0
         },
         "layer1_12_": {
           "deltaX": 252.1716305295149,
           "deltaY": 1254.7534887094675,
-          "widthFactor": 1.7861006555301613,
-          "heightFactor": 1.1981296322811021,
+          "widthFactor": 1.7861006555301617,
+          "heightFactor": 1.1981296322811024,
           "deltaAngle": 0
         },
         "layer1_13_": {
           "deltaX": -1559.530517907985,
           "deltaY": 1255.13788812353,
-          "widthFactor": 1.4289162532582957,
-          "heightFactor": 1.428916253258296,
+          "widthFactor": 1.428916253258296,
+          "heightFactor": 1.4289162532582964,
           "deltaAngle": 0
         },
         "layer1_14_": {
           "deltaX": 1390.51318326389,
           "deltaY": 1166.05488031103,
-          "widthFactor": 1.580532643306425,
-          "heightFactor": 1.580532643306425,
+          "widthFactor": 1.5805326433064253,
+          "heightFactor": 1.5805326433064255,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
           "deltaX": 4059.457275060765,
           "deltaY": 2192.1311742563425,
-          "widthFactor": 1.339575491647621,
-          "heightFactor": 1.1380464353820499,
+          "widthFactor": 1.3395754916476212,
+          "heightFactor": 1.13804643538205,
           "deltaAngle": 0
         }
       }
     }
   ],
   "elementsToHide": [],
-  "selectedFrames": [
-    "frame1799"
-  ],
+  "selectedFrames": [],
   "selectedLayers": [
     "layer1",
     "layer1_1_",
