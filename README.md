@@ -1,3 +1,11 @@
 # INF 554 Assignment 7
 
-Update this README as needed.
+Team : Visualizing101
+
+Project : Visualizing the Fight Against Cancer
+
+Project Members:
+
+Aakanksha Kumar
+Abhishek Jain
+Nikita Gupta
