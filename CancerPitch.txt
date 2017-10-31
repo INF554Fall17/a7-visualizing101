@@ -1,0 +1,28 @@
+Layout:
+
+Home Page: Lets start with a parallax webiste template. First there is a gif that comes of our own that lets the fist bump into the cancer word and dismantles it slightly. 
+
+Description Page: Our mission and a little background. 
+
+Viz 1: Where does cancer lie on the death toll rate - and why is it important to keep spreading awareness and encourage education. Bar/Line chart at the top. SOURCE: http://www.who.int/healthinfo/global_burden_disease/en/
+
+Viz 2: Cancer cases on the rise over the years - Over the years mortality rate.  
+
+Viz 3: Cancer causes/symptoms - also help us see how to best prevent cancer. - Pie chart
+
+Viz 4: Countries in the world most troubled by cancer. - Make it such that diff plots/versions/maps are available. And how cancer is distributed by type, age, sex etc. 
+
+Viz 5: Cancer survival rates over years. 
+
+Viz 6.5: Cancer survival rates if you get diagnosed early.
+
+Viz 7: Best treatment centers. 
+
+Viz 8: Modeling : Lifestyle choices youre following - healthy or not?
+AND (still temp) - best cancer research facility/treatment centers nearby. 
+
+Second last slide: The co-creators.
+
+Last slide: Contact Us Information
+
+
