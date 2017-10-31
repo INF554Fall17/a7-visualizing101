@@ -1,0 +1,47 @@
+<html>
+<head>
+  <!-- Plotly.js -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+  
+  <div id="myDiv" style="width: 700px; height: 500px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+  <script>
+
+  d3.csv("Ranking.csv", function(error, data) {
+  var ranking={};
+	 ranking["Disease"] = [];
+	 ranking["Deaths in Thousands"] = [];
+    data.forEach(function(d) {
+        ranking["Disease"].push(d["Disease"]);
+        ranking["Deaths in Thousands"].push(d["Deaths in Thousands"]);
+    });
+
+    var barData = {
+  x: ranking["Disease"], 
+  y: ranking["Deaths in Thousands"], 
+  hoverinfo: 'none',
+  name: 'deaths(00s)',
+  type: 'bar'
+};
+
+var lineData = {
+  x: ranking["Disease"], 
+  y: ranking["Deaths in Thousands"], 
+  name: 'deaths(00s)',
+  type: 'scatter'
+};
+
+var dataset = [lineData, barData];
+
+var layout = {showlegend: false};
+
+Plotly.newPlot('myDiv', dataset, layout);
+  
+   }) ;
+
+  </script>
+</body>
+</html>
