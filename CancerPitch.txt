@@ -25,7 +25,7 @@ Cancer Prevention
 Viz 7: Best treatment centers. 
 
 Viz 8: Modeling : Lifestyle choices youre following - healthy or not?
-AND (still temp) - best cancer research facility/treatment centers nearby. 
+AND (still temp) - best cancer research facility/treatment centers nearby using Google Maps API.
 
 Second last slide: The co-creators.
 
