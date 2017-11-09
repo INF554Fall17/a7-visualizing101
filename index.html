@@ -70,24 +70,36 @@
 	<body>
 
 	<div id="fh5co-container">
-		<div id="fh5co-home" class="js-fullheight" data-section="home">
-
+		<div id="fh5co-home" class="js-fullheight" data-section="home">	
 			<div class="flexslider">
+				<!--<div class="fh5co-text">
+					<h1 class="to-animate">Cancer</h1>
+				</div>-->
+									
 				
-				<div class="fh5co-overlay"></div>
-				<div class="fh5co-text">
-					
-					<!--<h2 class="to-animate">Visualizing 101</h2>-->
-					
-							<!--<h1 class="to-animate">foodee</h1>-->
-							
-						
-					
-				</div>
 			  	<ul class="slides">
-			   	<li style="background-image: url(images/FrontPage.svg);" data-stellar-background-ratio="0.5"></li>
-			   	<li style="background-image: url(images/FrontPage.svg);" data-stellar-background-ratio="0.5"></li>
-			   	<li style="background-image: url(images/FrontPage.svg);" data-stellar-background-ratio="0.5"></li>
+					<li style="background-image: url(images/RhondaHat.jpg);" data-stellar-background-ratio="0.5">
+							<div class="fh5co-text">
+								<h1 class="to-animate">Cancer</h1>
+							</div>								
+					</li>
+				   <li style="background-image: url(images/stethoscope2.jpg);" data-stellar-background-ratio="0.5">
+					<div class="fh5co-text">
+						<h2 class="to-animate">Cooking is an art, but all art requires knowing something about the techniques and materials&rdquo;</h2>
+					</div>
+					</li>
+				   <li style="background-image: url(images/CancerRally.jpg);" data-stellar-background-ratio="0.5">	
+						<div class="fh5co-text">
+							<h2 class="to-animate">&ldquo;Give a man food, and he can eat for a day. Give a man a job, and he can only eat for 30 minutes on break.&rdquo;</h2>
+							
+						</div>
+					</li>
+				   <li style="background-image: url(images/stethoscope.jpg);" data-stellar-background-ratio="0.5">
+					<div class="fh5co-text">
+							<h2 class="to-animate">&ldquo;Find something you’re passionate about and keep tremendously interested in it.&rdquo;</h2>
+						
+					</div>
+					</li>
 			  	</ul>
 
 			</div>
@@ -118,9 +130,10 @@
 		<div id="fh5co-about" data-section="about">
 			<div class="fh5co-2col fh5co-bg to-animate-2" style="background-image: url(images/res_img_1.jpg)"></div>
 			<div class="fh5co-2col fh5co-text">
-				<h2 class="heading to-animate">About Us</h2>
-				<p class="to-animate"><span class="firstcharacter">F</span>ar far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
-				<p class="text-center to-animate"><a href="#" class="btn btn-primary btn-outline">Get in touch</a></p>
+				<h2 class="heading to-animate">Ranking</h2>
+				<p class="to-animate">
+						<div id="myDiv" style="width: 700px; height: 500px;">
+							</div>
 			</div>
 		</div>
 
@@ -578,7 +591,7 @@
 			<div class="container">
 				<div class="row text-center fh5co-heading row-padded">
 					<div class="col-md-8 col-md-offset-2">
-						<h2 class="heading to-animate">Reserve a Table</h2>
+						<h2 class="heading to-animate">Contact Us</h2>
 						<p class="sub-heading to-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 					</div>
 				</div>
@@ -676,8 +689,20 @@
 	<!-- Stellar Parallax -->
 	<script src="js/jquery.stellar.min.js"></script>
 
+	<!-- Animation Green Sock-->
+	<script src="js/splitText.js"></script>
+	<script src="js/tweenMax.js"></script>
+	<script src="js/morphPlugin.js"></script>
+
 	<!-- Flexslider -->
 	<script src="js/jquery.flexslider-min.js"></script>
+
+	<!-- Chart Standard Library-->
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  
+	<!-- Charts -->
+	<!--<script src="js/CancerRank.js"></script>-->
 	<script>
 		$(function () {
 	       $('#date').datetimepicker();

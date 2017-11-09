@@ -31,13 +31,17 @@
 		
 	  	$('#fh5co-home .flexslider').flexslider({
 			animation: "fade",
-			slideshowSpeed: 5000
+			slideshowSpeed: 5000,
+			directionNav: false,
+			controlNav: true,
+			smoothHeight: true,
+			reverse: true
 	  	});
 
-	  	$('#fh5co-home .flexslider .slides > li').css('height', $(window).height());	
-	  	$(window).resize(function(){
-	  		$('#fh5co-home .flexslider .slides > li').css('height', $(window).height());	
-	  	});
+	  	$('#fh5co-home .flexslider .slides > li').css('height', $(window).height()-50);	
+  	/*	$(window).resize(function(){
+	  		$('#fh5co-home .flexslider .slides > li').css('height', $(window).height()-50);	
+	  	});*/
 
 	};
 
@@ -51,6 +55,7 @@
 			reverse: true
 	  	});
 	}
+
 
 	var offcanvasMenu = function() {
 		$('body').prepend('<div id="fh5co-offcanvas" />');
@@ -569,6 +574,7 @@
 
 		fullHeight();
 		sliderMain();
+	//	sliderHomeSayings();
 		sliderSayings();
 		offcanvasMenu();
 		mainMenuSticky();

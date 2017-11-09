@@ -264,8 +264,20 @@ p {
 }
 #fh5co-home .flexslider .flex-control-nav,
 #fh5co-home .flexslider .flex-direction-nav {
-  display: none;
+  display: inline-block;
 }
+
+#fh5co-home .flexslider .flex-control-paging.flex-control-nav {
+  bottom: -70px;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-home .flexslider .flex-control-paging.flex-control-nav {
+    bottom: -60px;
+  }
+}
+
+
+
 
 .fh5co-main-nav {
   position: relative;
@@ -1006,7 +1018,7 @@ p {
   width: 61px;
   position: absolute;
   content: "";
-  background: url(../images/0203-coffee-love.png) no-repeat;
+  background: url(../images/ContactUs.png) no-repeat;
   top: 0;
   left: 50%;
   margin-top: -50px;
