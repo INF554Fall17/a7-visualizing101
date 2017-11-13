@@ -2,87 +2,9 @@
 <head>
   <!-- Plotly.js -->
   <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js"></script>
-
-  <style>
-  .dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 8px;
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown a:hover {background-color: #f1f1f1}
-
-rect:hover {
-      fill: silver;
-    }
-
-#tooltip {
-      position: absolute;
-      width: 120px;
-      height: auto;
-      padding: 5px;
-      background-color: white;
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      border-radius: 10px;
-      -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-      -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-      pointer-events: none;
-    }
-
-    #tooltip.hidden {
-      display: none;
-    }
-
-    #tooltip p {
-      margin: 0;
-      font-family: Futura;
-      font-size: 16px;
-      line-height: 20px;
-    }
-
-.q0-9 { fill:rgb(198,219,239); }
-.q1-9 { fill:rgb(158,202,225); }
-.q2-9 { fill:rgb(107,174,214); }
-.q3-9 { fill:rgb(66,146,198); }
-.q4-9 { fill:rgb(33,113,181); }
-.q5-9 { fill:rgb(8,81,156); }
-.q6-9 { fill:rgb(8,48,107); }
-
-.show {display:block;}
-
-</style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.js"></script>
+    <script src="BarAndLineChart.js" ></script>
+    <link rel="stylesheet" href="BarAndLineChart.css" >
 </head>
 
 <body>
@@ -94,10 +16,11 @@ rect:hover {
 <div class="dropdown">
 <button onclick="myFunction()" class="dropbtn">Country</button>
   <div id="myDropdown" class="dropdown-content">
-    <a id="year_2000">Singapore</a>
-    <a id="year_2005">South Africa</a>
-    <a id="year_2010">United Kingdom</a>
-    <a id="year_2015">United States</a>
+    <label onclick="updateBarChart()" id="year_200">All</label>
+    <label onclick="updateBarChart('Singapore')" id="year_2000">Singapore</label>
+    <label onclick="updateBarChart('South Africa')" id="year_2005">South Africa</label>
+    <label onclick="updateBarChart('United Kingdom')" id="year_2010">United Kingdom</label>
+    <label onclick="updateBarChart('United States of America')" id="year_2015">United States</label>
   </div>
 </div>
 <div id="tooltip" class="hidden">
@@ -109,174 +32,7 @@ rect:hover {
 <!--  Svg Div -->
 <svg id="myDiv" style="width: 1600px; height: 1600px;"></svg>
 <script>
-
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-var quantize = d3.scaleQuantize()
-      .domain([ 1979, 2014 ])
-      .range(d3.range(7).map(function(i) { return "q" + i + "-9"; }));
- 
-//Feed Data
- d3.csv("Cancer_Stats.csv", function(row){
- 		 for(var key in row){
- 		 	if(key!="Countries")
- 		 		row[key]= +row[key];
- 		 }
- 		 return row;
- },function(error, data) {
-  //  console.log(data);
-
-    data = data.filter(function(d){
-    	return d["Countries"] == "Total";
-    })
-    console.log(data);
-  delete data[0]["Countries"];
- console.log(data);
-var dataArr=[];
-var dataYear=[];
-    for(key in data[0]){
-    	dataArr.push(data[0][key]);
-    	dataYear.push(key);
-    }
-
-		var height = 500;
-		var width = 900;
-		var barPadding = 2;
-		var barWidth = (width / dataArr.length) - barPadding;
-
-		var yScale = d3.scaleLinear()
-			.domain([0, d3.max(dataArr)])
-			.range([0, height]);
-
-
-		var xScale = d3.scaleBand()
-    .domain(dataArr)
-    .range([0, width]);
-
-    var yAxisBar = d3.axisLeft(yScale).tickFormat(function (d){
-               return d3.format(".1f")(d/10);});
-
-
-		var svg = d3.select("#myDiv")
-			.style('width', width + 'px')
-			.style('height', height + 'px');
-
-		svg.selectAll('rect')
-			.data(dataArr)
-			.enter()
-			.append('rect')
-			.attr('class', 'bar')
-			.attr("x", function (d, i) {
-				return xScale(d);
-			})
-			.attr("y", function (d, i) {
-				return height;
-			})
-			.attr("width", 24)
-			.attr("fill", function(d, i){ console.log(i);return fillBarColor(i);})
-			.on("mouseover", function(d,i) {
-
-
-					var xPosition = parseFloat(d3.select(this).attr("x")) + xScale.bandwidth() / 2;
-					var yPosition = parseFloat(d3.select(this).attr("y")) / 2 + height / 2;
-
-
-					d3.select("#tooltip")
-						.style("left", xPosition + "px")
-						.style("top", yPosition + "px")
-						.select("#value")
-						.text(d)
-
-					d3.select("#tooltip")
-						.style("left", xPosition + "px")
-						.style("top", yPosition + "px")
-						.select("#value2")
-						.text(dataYear[i])
-						
-
-
-					d3.select("#tooltip").classed("hidden", false);
-
-			   }).on("mouseout", function() {
-
-
-					d3.select("#tooltip").classed("hidden", true);
-
-			   })
-			.attr("height", 0)
-			.transition()
-			.duration(200)
-			.delay(function (d, i) {
-				return i * 50;
-			})
-			.attr("y", function (d, i) {
-				return height - yScale(d) - 25;
-			})
-			.attr("height", function (d, i) {
-				return yScale(d);
-			})
-
-
-svg.append("g")
-    .attr("class", "legendQuant")
-    .attr("transform", "translate(0, 10)");
-  
-var legend = d3.legendColor()
-    .labelFormat(d3.format(".0f"))
-    .useClass(true)
-    .title("Time period")
-    .titleWidth(100)
-    .scale(quantize);
-  
-svg.select(".legendQuant")
-    .call(legend);
-
-			function fillBarColor(i){
-if(i <= 5){
-    return "rgb(198,219,239)";
-}
-if(i > 5 && i <= 10){
-    return "rgb(158,202,225)";
-}
-if(i > 10 && i <= 15){
-    return "rgb(107,174,214)";
-}
-if(i > 15 && i <= 20){
-    return "rgb(66,146,198)";
-}
-if(i > 20 && i <= 25){
-    return "rgb(33,113,181)";
-}
-if(i > 25 && i <= 30){
-    return "rgb(8,81,156)"; 
-}
-if(i > 30 && i <= 36){
-    return "rgb(8,48,107)";
-}
-}
-
- });
-
-  </script>
+    renderBarChart();
+    </script>
 </body>
 </html>
