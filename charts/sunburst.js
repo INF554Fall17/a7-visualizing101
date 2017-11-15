@@ -1,5 +1,5 @@
 function renderSunBurst(){
-var width = 750;
+var width = 450;
 var height = 600;
 var radius = Math.min(width, height) / 2;
 
@@ -200,7 +200,7 @@ var arc = d3.arc()
 
 // Use d3.text and d3.csvParseRows so that we do not need to have a header
 // row, and can receive the csv as an array of arrays.
-d3.text("visit-sequences.csv", function(text) {
+d3.text("data/ranking.csv", function(text) {
   var csv = d3.csvParseRows(text);
   var json = buildHierarchy(csv);
   createVisualization(json);
@@ -305,7 +305,7 @@ function mouseleave(d) {
 function initializeBreadcrumbTrail() {
   // Add the svg area.
   var trail = d3.select("#sequence").append("svg:svg")
-      .attr("width", width)
+      .attr("width", 800)
       .attr("height", 50)
       .attr("id", "trail");
   // Add the label at the end, for the percentage.
@@ -359,12 +359,12 @@ function updateBreadcrumbs(nodeArray, percentageString) {
   });
 
   // Now move and update the percentage at the end.
-  d3.select("#trail").select("#endlabel")
+  /*d3.select("#trail").select("#endlabel")
       .attr("x", (nodeArray.length + 0.5) * (b.w + b.s))
       .attr("y", b.h / 2)
       .attr("dy", "0.35em")
       .attr("text-anchor", "middle")
-      .text(percentageString);
+      .text(percentageString);*/
 
   // Make the breadcrumb trail visible, if it's hidden.
   d3.select("#trail")
