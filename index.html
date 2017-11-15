@@ -58,7 +58,8 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-
+	<link rel="stylesheet" href="charts/sunburst.css">
+	
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -85,18 +86,18 @@
 					</li>
 				   <li style="background-image: url(images/stethoscope2.jpg);" data-stellar-background-ratio="0.5">
 					<div class="fh5co-text">
-						<h2 class="to-animate">Cooking is an art, but all art requires knowing something about the techniques and materials&rdquo;</h2>
+						<h2 class="to-animate">&ldquo;Cancer is only going to be a chapter in your life, not the whole story.&rdquo;</h2>
 					</div>
 					</li>
 				   <li style="background-image: url(images/CancerRally.jpg);" data-stellar-background-ratio="0.5">	
 						<div class="fh5co-text">
-							<h2 class="to-animate">&ldquo;Give a man food, and he can eat for a day. Give a man a job, and he can only eat for 30 minutes on break.&rdquo;</h2>
+							<h2 class="to-animate">&ldquo;You beat cancer by how you live, why you live and in the manner in which you live.&rdquo;</h2>
 							
 						</div>
 					</li>
 				   <li style="background-image: url(images/stethoscope.jpg);" data-stellar-background-ratio="0.5">
 					<div class="fh5co-text">
-							<h2 class="to-animate">&ldquo;Find something you’re passionate about and keep tremendously interested in it.&rdquo;</h2>
+							<h2 class="to-animate">&ldquo;When you have exhausted all possibilities, remember this: You haven't.&rdquo;</h2>
 						
 					</div>
 					</li>
@@ -115,7 +116,7 @@
 						<a href="#" data-nav-section="features">Features</a>
 					</div>
 					<div class="fh5co-logo">
-						<a href="index.html">foodee</a>
+						<a href="index.html">Fight Against Cancer</a>
 					</div>
 					<div class="fh5co-menu-2">
 						<a href="#" data-nav-section="menu">Menu</a>
@@ -128,11 +129,20 @@
 		</div>
 
 		<div id="fh5co-about" data-section="about">
-			<div class="fh5co-2col fh5co-bg to-animate-2" style="background-image: url(images/res_img_1.jpg)"></div>
+			<div class="fh5co-2col fh5co-bg to-animate-2" style="background-image: url(images/res_img_1.jpg)">
+				<div id="sequence"></div>
+			</div>
 			<div class="fh5co-2col fh5co-text">
 				<h2 class="heading to-animate">Ranking</h2>
 				<p class="to-animate">
 						<div id="myDiv" style="width: 700px; height: 500px;">
+								<div id="chart">
+								  <div id="explanation" style="visibility: hidden;">
+									<span id="percentage"></span><br/>
+									of Deaths Worldwide
+								  </div>
+								</div>
+					
 							</div>
 			</div>
 		</div>
@@ -146,13 +156,13 @@
 							
 							<li>
 								<blockquote>
-									<p>&ldquo;Cooking is an art, but all art requires knowing something about the techniques and materials&rdquo;</p>
+									<p>&ldquo;Cancer is only going to be a chapter in your life, not the whole story.&rdquo;</p>
 									<p class="quote-author">&mdash; Nathan Myhrvold</p>
 								</blockquote>
 							</li>
 							<li>
 								<blockquote>
-									<p>&ldquo;Give a man food, and he can eat for a day. Give a man a job, and he can only eat for 30 minutes on break.&rdquo;</p>
+									<p>&ldquo;You beat cancer by how you live, why you live and in the manner in which you live.&rdquo;</p>
 									<p class="quote-author">&mdash; Lev L. Spiro</p>
 								</blockquote>
 							</li>
@@ -653,7 +663,7 @@
 		<div class="container">
 			<div class="row row-padded">
 				<div class="col-md-12 text-center">
-					<p class="to-animate">&copy; 2016 Foodee Free HTML5 Template. <br> Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Demo Images: <a href="http://pexels.com/" target="_blank">Pexels</a> <br> Tasty Icons Free <a href="http://handdrawngoods.com/store/tasty-icons-free-food-icons/" target="_blank">handdrawngoods</a>
+					<p class="to-animate"><br> Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Demo Images: <a href="http://pexels.com/" target="_blank">Pexels</a> <br> Tasty Icons Free <a href="http://handdrawngoods.com/store/tasty-icons-free-food-icons/" target="_blank">handdrawngoods</a>
 					</p>
 					<p class="text-center to-animate"><a href="#" class="js-gotop">Go To Top</a></p>
 				</div>
@@ -702,7 +712,10 @@
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   
 	<!-- Charts -->
-	<!--<script src="js/CancerRank.js"></script>-->
+	<script src="charts/sunburst.js"></script>
+	<script>
+		   renderSunBurst();
+		</script>
 	<script>
 		$(function () {
 	       $('#date').datetimepicker();

@@ -1,4 +1,4 @@
-     body {
+/*body {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -6,7 +6,7 @@
   width: 960px;
   height: 700px;
   margin-top: 10px;
-}
+}*/
 
 #main {
   float: left;
@@ -19,8 +19,10 @@
 }
 
 #sequence {
-  width: 600px;
+  width: 500px;
   height: 70px;
+  margin-top:20px;
+  z-index:5;
 }
 
 #legend {
@@ -29,11 +31,15 @@
 
 #sequence text, #legend text {
   font-weight: 600;
+  font-size: 12px;
+  font-weight: 400;
   fill: #fff;
 }
 
 #chart {
   position: relative;
+  top: -90px;
+  left: 40px;
 }
 
 #chart path {
@@ -42,14 +48,14 @@
 
 #explanation {
   position: absolute;
-  top: 260px;
-  left: 305px;
+  top: 220px;
+  left: 153px;
   width: 140px;
   text-align: center;
-  color: #666;
-  z-index: -1;
+  color: #FFF;
+  z-index: 50;
 }
 
 #percentage {
-  font-size: 2.5em;
+  font-size: 1.5em;
 }

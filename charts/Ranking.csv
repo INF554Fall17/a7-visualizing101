@@ -1,11 +1,140 @@
-﻿Disease,Deaths in Thousands
-Cardio Vascular,17689
-Cancer,8763
-Infectious/ Parasitic,5706
-Respiratory ,3913
-Unintentional Injuries,3527
-Respiratory Infections,3199
-Digestive,2347
-Neonatal,2311
-Neurological,2011
-Diabetes,1586
+Communicable-Infectious-Tuberculosis,1373
+Communicable-Infectious-STD-Syphilis,92
+Communicable-Infectious-STD-Gonorrhoea,1
+Communicable-Infectious-HIV,1060
+Communicable-Infectious-Diarrhoeal,1389
+Communicable-Infectious-Childhood Diseases-Tetanus,64
+Communicable-Infectious-Childhood Diseases-Whooping cough,66
+Communicable-Infectious-Childhood Diseases-Diphtheria,3
+Communicable-Infectious-Childhood Diseases-Measles,140
+Communicable-Infectious-Meningitis,315
+Communicable-Infectious-Encephalitis,89
+Communicable-Infectious-Hepatitis-A,11
+Communicable-Infectious-Hepatitis-B,87
+Communicable-Infectious-Hepatitis-C,3
+Communicable-Infectious-Hepatitis-E,44
+Communicable-Infectious-Parasitic-Malaria,439
+Communicable-Infectious-Parasitic-Trypanosomiasis,5
+Communicable-Infectious-Parasitic-Chagas disease,8
+Communicable-Infectious-Parasitic-Schistosomiasis,24
+Communicable-Infectious-Parasitic-Leishmaniasis,21
+Communicable-Infectious-Parasitic-Cysticercosis,24
+Communicable-Infectious-Parasitic-Echinococcosis,17
+Communicable-Infectious-Parasitic-Dengue,35
+Communicable-Infectious-Parasitic-Yellow fever,12
+Communicable-Infectious-Parasitic-Rabies,26
+Communicable-Infectious-Intestinal-Ascariasis,3
+Communicable-Infectious-Intestinal-Food bourne,6
+Communicable-Infectious-Leprosy,16
+Communicable-Infectious-Other,333
+Communicable-Respiratory Infectious-Lower,3,190
+Communicable-Respiratory Infectious-Upper,5
+Communicable-Respiratory Infectious-Otitis,4
+Communicable-Maternal conditions,303
+Communicable-Neonatal conditions-Preterm birth,1058
+Communicable-Neonatal conditions-asphyxia,691
+Communicable-Neonatal conditions-Neonatal sepsis and infections,405
+Communicable-Neonatal conditions-Other,157
+Communicable-Nutritional deficiencies-Protein malnutrition,330
+Communicable-Nutritional deficiencies-Iodine deficiency,2
+Communicable-Nutritional deficiencies-Iron deficiency,78
+Communicable-Nutritional deficiencies-Other,28
+Noncommunicable-Cancer-Mouth & oropharynx-Lip and oral cavity,160
+Noncommunicable-Cancer-Mouth & oropharynx-Nasopharynx,55
+Noncommunicable-Cancer-Mouth & oropharynx-Other,104
+Noncommunicable-Cancer-Oesophagus cancer,415
+Noncommunicable-Cancer-Stomach cancer,754
+Noncommunicable-Cancer-Colon and rectum,774
+Noncommunicable-Cancer-Liver-secondary to hepatitis B,337
+Noncommunicable-Cancer-Liver-secondary to hepatitis C,137
+Noncommunicable-Cancer-Liver-secondary to alcohol use,238
+Noncommunicable-Cancer-Liver-Other,75
+Noncommunicable-Cancer-Pancreas,358
+Noncommunicable-Cancer-Trachea, bronchus, lung cancers,1695
+Noncommunicable-Cancer-Melanoma and Non-melanoma-Malignant skin melanoma,62
+Noncommunicable-Cancer-Melanoma and Non-melanoma-Non melanoma skin cancer,50
+Noncommunicable-Cancer-Breast,571
+Noncommunicable-Cancer-Cervix uteri,279
+Noncommunicable-Cancer-Corpus uteri,83
+Noncommunicable-Cancer-Ovary,162
+Noncommunicable-Cancer-Prostate,344
+Noncommunicable-Cancer-Testicular,12
+Noncommunicable-Cancer-Kidney,154
+Noncommunicable-Cancer-Bladder,185
+Noncommunicable-Cancer-Brain and nervous system,210
+Noncommunicable-Cancer-Gallbladder,170
+Noncommunicable-Cancer-Larynx,90
+Noncommunicable-Cancer-Thyroid,45
+Noncommunicable-Cancer-Mesothelioma,24
+Noncommunicable-Cancer-Lymphomas-Hodgkin lymphoma,27
+Noncommunicable-Cancer-Lymphomas-Non Hodgkin lymphoma,223
+Noncommunicable-Cancer-Lymphomas-Multiple myeloma,93
+Noncommunicable-Cancer-Leukaemia,290
+Noncommunicable-Cancer-Other,585
+Noncommunicable-Neoplasms,208
+Noncommunicable-Diabetes,1586
+Noncommunicable-Endocrine-Thalassaemias,19
+Noncommunicable-Endocrine-Sickle cell disorders and trait,117
+Noncommunicable-Endocrine-Other Haemoglobin,94
+Noncommunicable-Endocrine-Other,181
+Noncommunicable-Mental & substance disorder-Schizophrenia,19
+Noncommunicable-Mental & substance disorder-Alcohol disorder,129
+Noncommunicable-Mental & substance disorder-Drug disorder-Opioid,127
+Noncommunicable-Mental & substance disorder-Drug disorder-Cocaine,11
+Noncommunicable-Mental & substance disorder-Drug disorder-Amphetamine,11
+Noncommunicable-Mental & substance disorder-Drug disorder-Other,18
+Noncommunicable-Mental & substance disorder-Eating disorders,2
+Noncommunicable-Neurological conditions-Alzheimer,1542
+Noncommunicable-Neurological conditions-Parkinson,128
+Noncommunicable-Neurological conditions-Epilepsy,153
+Noncommunicable-Neurological conditions-Multiple sclerosis,23
+Noncommunicable-Neurological conditions-Other,165
+Noncommunicable-Cardiovascular diseases-Rheumatic,305
+Noncommunicable-Cardiovascular diseases-Hypertensive,942
+Noncommunicable-Cardiovascular diseases-Ischaemic heart disease,8756
+Noncommunicable-Cardiovascular diseases-Stroke-Ischaemic,2911
+Noncommunicable-Cardiovascular diseases-Stroke-Haemorrhagic,3329
+Noncommunicable-Cardiovascular diseases-Cardiomyopathy,413
+Noncommunicable-Cardiovascular diseases-Other,1032
+Noncommunicable-Respiratory diseases-Chronic,3170
+Noncommunicable-Respiratory diseases-Asthma,383
+Noncommunicable-Respiratory diseases-Other,360
+Noncommunicable-Digestive diseases-Peptic ulcer,235
+Noncommunicable-Digestive diseases-Cirrhosis-due to hepatitis B,463
+Noncommunicable-Digestive diseases-Cirrhosis-due to hepatitis C,259
+Noncommunicable-Digestive diseases-Cirrhosis-due to alcohol use,292
+Noncommunicable-Digestive diseases-Cirrhosis-Other,149
+Noncommunicable-Digestive diseases-Appendicitis,45
+Noncommunicable-Digestive diseases-Gastritis,47
+Noncommunicable-Digestive diseases-Paralytic ileus,232
+Noncommunicable-Digestive diseases-Inflammatory bowel disease,36
+Noncommunicable-Digestive diseases-Gallbladder and biliary diseases,109
+Noncommunicable-Digestive diseases-Pancreatitis,104
+Noncommunicable-Digestive diseases-Other,377
+Noncommunicable-Genitourinary diseases-Kidney-Acute,12
+Noncommunicable-Genitourinary diseases-Kidney-Chronic,334
+Noncommunicable-Genitourinary diseases-Kidney-Other,784
+Noncommunicable-Genitourinary diseases-Urolithiasis,15
+Noncommunicable-Genitourinary diseases-Other urinary diseases,230
+Noncommunicable-Genitourinary diseases-Gynecological diseases,8
+Noncommunicable-Skin diseases,92
+Noncommunicable-Musculoskeletal diseases-Rheumatoid arthritis,48
+Noncommunicable-Musculoskeletal diseases-Other,107
+Noncommunicable-Congenital anomalies-Neural tube defects,66
+Noncommunicable-Congenital anomalies-Cleft lip and cleft palate,1
+Noncommunicable-Congenital anomalies-Down syndrome,26
+Noncommunicable-Congenital anomalies-Congenital heart anomalies,302
+Noncommunicable-Congenital anomalies-Other chromosomal anomalies,24
+Noncommunicable-Congenital anomalies-Other congenital anomalies,227
+Noncommunicable-Congenital anomalies-Sudden Infant death,19
+Injuries-Unintentional-Road,1342
+Injuries-Unintentional-Poisonings,108
+Injuries-Unintentional-Falls,646
+Injuries-Unintentional-Fire,180
+Injuries-Unintentional-Drowning,360
+Injuries-Unintentional-Mechanical forces,202
+Injuries-Unintentional-Natural disasters,14
+Injuries-Unintentional-Other,675
+Injuries-Intentional-Self harm,788
+Injuries-Intentional-Interpersonal violence,468
+Injuries-Intentional-Collective violence,156
