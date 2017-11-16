@@ -1366,4 +1366,9 @@ p {
   padding-bottom: 40px;
 }
 
+#yearDropDown {
+width: 20% ;
+display: inline;
+}
+
 /*# sourceMappingURL=style.css.map */
