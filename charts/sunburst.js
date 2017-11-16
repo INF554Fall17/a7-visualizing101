@@ -246,6 +246,7 @@ function createVisualization(json) {
 
   // Get total size of the tree = value of root node from partition.
   totalSize = path.datum().value;
+  mouseover(nodes[5]);
  };
 
 // Fade all but the current sequence, and show it in the breadcrumb trail.
@@ -253,6 +254,7 @@ function mouseover(d) {
 
   var percentage =  (100*d.value / totalSize).toPrecision(3);
   var percentageString = percentage + "%";
+  var name = d["data"]["name"];
   if (percentage < 0.1) {
     percentageString = "< 0.1%";
   }
@@ -266,7 +268,8 @@ function mouseover(d) {
   var sequenceArray = d.ancestors().reverse();
   sequenceArray.shift(); // remove root node from the array
   updateBreadcrumbs(sequenceArray, percentageString);
-
+d3.select("#facts")
+.text(name+" Deaths WorldWide "+percentageString);
   // Fade all the segments.
   d3.selectAll("path")
       .style("opacity", 0.3);
