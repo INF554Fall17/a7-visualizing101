@@ -12,171 +12,121 @@ var color = d3.scaleOrdinal(d3["schemeCategory20c"]);
 
 // Mapping of step names to colors.
 var colors = {
-  /*
-  "A"
-"Acute"
-"Alcohol disorder"
-"Alzheimer"
-"Amphetamine"
-"Appendicitis"
-"Ascariasis"
-"Asthma"
-"B"
-"Bladder"
-"Brain and nervous system"
-"Breast"
-"C"
-"Cancer"
-"Cardiomyopathy"
-"Cardiovascular diseases"
-"Cervix uteri"
-"Chagas disease"
-"Childhood Diseases"
-"Chronic"
-"Cirrhosis"
-"Cleft lip and cleft palate"
-"Cocaine"
-"Collective violence"
-"Colon and rectum"
-"Communicable"
-"Congenital anomalies"
-"Congenital heart anomalies"
-"Corpus uteri"
-"Cysticercosis"
-"Dengue"
-"Diabetes"
-"Diarrhoeal"
-"Digestive diseases"
-"Diphtheria"
-"Down syndrome"
-"Drowning"
-"Drug disorder"
-"E"
-"Eating disorders"
-"Echinococcosis"
-"Encephalitis"
-"Endocrine"
-"Epilepsy"
-"Falls"
-"Fire"
-"Food bourne"
-"Gallbladder"
-"Gallbladder and biliary diseases"
-"Gastritis"
-"Genitourinary diseases"
-"Gonorrhoea"
-"Gynecological diseases"
-"HIV"
-"Haemorrhagic"
-"Hepatitis"
-"Hodgkin lymphoma"
-"Hypertensive"
-"Infectious"
-"Inflammatory bowel disease"
-"Injuries"
-"Intentional"
-"Interpersonal violence"
-"Intestinal"
-"Iodine deficiency"
-"Iron deficiency"
-"Ischaemic"
-"Ischaemic heart disease"
-"Kidney"
-"Larynx"
-"Leishmaniasis"
-"Leprosy"
-"Leukaemia"
-"Lip and oral cavity"
-"Liver"
-"Lower"
-"Lymphomas"
-"Malaria"
-"Malignant skin melanoma"
-"Maternal conditions"
-"Measles"
-"Mechanical forces"
-"Melanoma and Non"
-"Meningitis"& substance disorder"Mental & substance disorder"
-"Mesothelioma"& oropharynx"Mouth & oropharynx"
-"Multiple myeloma"
-"Multiple sclerosis"
-"Musculoskeletal diseases"
-"Nasopharynx"
-"Natural disasters"
-"Neonatal conditions"
-"Neonatal sepsis and infections"
-"Neoplasms"
-"Neural tube defects"
-"Neurological conditions"
-"Non Hodgkin lymphoma"
-"Non melanoma skin cancer"
-"Noncommunicable"
-"Nutritional deficiencies"
-"Oesophagus cancer"
-"Opioid"
-"Other"
-"Other Haemoglobin"
-"Other chromosomal anomalies"
-"Other congenital anomalies"
-"Other urinary diseases"
-"Otitis"
-"Ovary"
-"Pancreas"
-"Pancreatitis"
-"Paralytic ileus"
-"Parasitic"
-"Parkinson"
-"Peptic ulcer"
-"Poisonings"
-"Preterm birth"
-"Prostate"
-"Protein malnutrition"
-"Rabies"
-"Respiratory Infectious"
-"Respiratory diseases"
-"Rheumatic"
-"Rheumatoid arthritis"
-"Road"
-"STD"
-"Schistosomiasis"
-"Schizophrenia"
-"Self harm"
-"Sickle cell disorders and trait"
-"Skin diseases"
-"Stomach cancer"
-"Stroke"
-"Sudden Infant death"
-"Syphilis"
-"Testicular"
-"Tetanus"
-"Thalassaemias"
-"Thyroid"
-"Trachea bronchus lung cancers"
-"Trypanosomiasis"
-"Tuberculosis"
-"Unintentional"
-"Upper"
-"Urolithiasis"
-"Whooping cough"
-"Yellow fever"
-"asphyxia"
-"due to alcohol use"
-"due to hepatitis B"
-"due to hepatitis C"
-"melanoma"
-"secondary to alcohol use"
-"secondary to hepatitis B"
-"secondary to hepatitis C"
-  */  
-  "Communicable": "#5687d1",
-  "Infectious": "#7b615c",
-  "STD": "#de783b",
-  "Syphilis": "#6ab975",
-  "HIV": "#a173d1",
-  "Diarrhoeal": "#bbbbbb",
-  "Noncommunicable":"#f94f8a",
-  "Cancer":"#7b615c",
-  "Cardiovascular diseases":"#5687d1"
+ "B":"#778899",
+  "E":"#778899",
+  "Measles":"#778899",
+  "Tetanus":"#778899",
+  "Whooping cough":"#778899",
+  "STD":"#778899",
+  "Encephalitis": "#778899",  
+  "Hepatitis":"#778899",
+  "Meningitis": "#778899",
+  "Childhood Diseases":"#778899",
+  "Communicable": "#DCDCDC",
+  "Unintentional": "#D2691E",
+  "Intentional": "#7b615c",
+  "Syphilis": "#778899",
+  "HIV": "#566573  ",
+  "Noncommunicable":"#5687d1",
+  "Cancer":"#9370DB",
+  "Cardiovascular diseases":"#2ECC71  ",
+  "Injuries":"#A0522D",
+  "Ischaemic heart disease": "#16A085",
+  "Stroke": "#117864",
+  "Haemorrhagic":"#A2D9CE",
+  "Ischaemic":"#A9DFBF",
+  "Road": "#FFE4C4",
+  "Other": "#E6E6FA",
+  "Falls":"#FFF8DC",
+  "Drowning": "#F4A460",
+  "Self harm":"#FFEBCD",
+  "Interpersonal violence":"#D2B48C",
+  "Fire":"#DEB887",
+  "Collective violence": "#DEB887",
+  "Mechanical forces":"#DEB887",
+  "Poisonings":"#DEB887",
+  "Infectious":"#A9A9A9",
+  "Neonatal conditions":"#808080",
+  "Nutritional deficiencies":"#696969",
+  "Maternal conditions":"#696969",
+  "Preterm birth":"#5F6A6A  ",
+  "asphyxia":"#B0C4DE",
+  "Diarrhoeal":"#99A3A4",
+  "Tuberculosis":"#85929E",
+  "Parasitic":"#5F6A6A  ",
+  "Malaria":"#2F4F4F",
+  "Neonatal sepsis and infections":"#566573",
+  "Protein malnutrition":"#1B2631",
+  "iron deficiency":"#1B2631",
+  "Respiratory diseases":"#FF4500",
+  "Digestive diseases":"#FF7F50",
+  "Neurological conditions":"#E9967A",
+  "Diabetes":"#FF6347",
+  "Genitourinary diseases":"#B03A2E",
+  "Congenital anomalies":"#B22222",
+  "Endocrine":"#B22222",
+  "Mental & substance disorder":"#B22222",
+  "Neoplasms":"#B22222",
+  "Skin diseases":"#B22222",
+  "Musculoskeletal diseases":"#B22222",
+  "Rheumatoid arthritis":"#B22222",
+  "Alcohol disorder":"#800000",
+  "Drug disorder":"#800000",
+  "Other Haemoglobin":"#800000",
+  "Sickle cell disorders and trait":"#800000",
+  "Opioid":"#800000",
+  "Kidney":"#800000",
+  "Other urinary diseases":"#800000",
+  "Congenital heart anomalies":"#800000",
+  "Other congenital anomalies":"#800000",
+  "Neural tube defects":"#800000",
+  "Chronic":"#CB4335",
+  "Alzheimer":"#EB984E",
+  "Epilepsy":"#EB984E",
+  "Parkinson":"#EB984E",
+  "Paralytic ileus":"#FA8072",
+  "Peptic ulcer":"#FA8072",
+  "Cirrhosis":"#FA8072",
+  "Appendicitis":"#FA8072",
+  "Gastritis":"#FA8072",
+  "Pancreatitis":"#FA8072",
+  "Gallbladder and biliary diseases":"#FA8072",
+"due to alcohol use":"#CD5C5C",
+"due to hepatitis B":"#CD5C5C",
+"due to hepatitis C":"#CD5C5C",
+"Asthma":"  #E74C3C ",
+"Hypertensive":"#6B8E23",
+"Cardiomyopathy":"#808000",
+"Rheumatic":"#148F77",
+"Liver":"4B0082",
+"Colon and rectum":"#5B2C6F",
+"Stomach cancer":"#C39BD3",
+"Breast":"FF69B4",
+"Oesophagus cancer":"#DB7093",
+"Pancreas":"#C39BD3",
+"Prostate":"#D7BDE2",
+"Lymphomas":"#BB8FCE",
+"Corpus uteri":"  #800080",
+"Larynx":"  #800080",
+"Melanoma and Non":"  #800080",
+"melanoma":"#800080",
+"Non melanoma skin cancer":"#800080",
+"Malignant skin melanoma":"#800080",
+"Ovary":"#9932CC",
+"Gallbladder":"#9932CC",
+"Bladder":"#9932CC",
+"Brain and nervous system":"#9B59B6",
+"Cervix uteri":"#633974",
+"Mouth & oropharynx":"#633974",
+"Leukaemia":"#884EA0",
+"Nasopharynx":"#D2B4DE",
+"Lip and oral cavity":"#D2B4DE",
+"Multiple myeloma":"#D2B4DE",
+"Non Hodgkin lymphoma":"#D2B4DE",
+"secondary to alcohol use":"#633974",
+"secondary to hepatitis B":"#633974",
+"secondary to hepatitis C":"#633974"
+
 };
 
 // Total size of all segments; we set this later, after loading the data.
