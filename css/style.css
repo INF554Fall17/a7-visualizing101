@@ -1372,5 +1372,6 @@ display: inline;
 float:right;
 
 }
+/*#text { width: 0px; height: 2em; white-space: nowrap; overflow: hidden;  }*/
 
 /*# sourceMappingURL=style.css.map */
