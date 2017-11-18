@@ -38,8 +38,8 @@
 
 #chart {
   position: relative;
-  top: -90px;
-  left: 40px;
+  top: -70px;
+  left: 130px;
 }
 
 #chart path {
@@ -62,4 +62,7 @@
 #facts {
   color:#FFF;
   text-align:left;
+}
+#factsDesc{
+  color: #A9A9A9;
 }
