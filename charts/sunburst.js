@@ -5,7 +5,7 @@ var radius = Math.min(width, height) / 2;
 
 // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
 var b = {
-  w: 155, h: 30, s: 3, t: 10
+  w: 175, h: 30, s: 3, t: 10
 };
 var color = d3.scaleOrdinal(d3["schemeCategory20c"]);
 
@@ -28,7 +28,7 @@ var colors = {
   "Syphilis": "#778899",
   "HIV": "#566573  ",
   "Noncommunicable":"#5687d1",
-  "Cancer":"#9370DB",
+  "Cancer":{color:"#9370DB", desc:"Cancer is a group of diseases involving abnormal cell growth with the potential to invade or spread to other parts of the body. These contrast with benign tumors, which do not spread to other parts of the body. Cancerous tumors are malignant, which means they can spread into, or invade, nearby tissues. In addition, as these tumors grow, some cancer cells can break off and travel to distant places in the body through the blood or the lymph system and form new tumors far from the original tumor."},
   "Cardiovascular diseases":"#2ECC71  ",
   "Injuries":"#A0522D",
   "Ischaemic heart disease": "#16A085",
@@ -109,7 +109,7 @@ var colors = {
 "Corpus uteri":"  #800080",
 "Larynx":"  #800080",
 "Melanoma and Non":"  #800080",
-"melanoma":"#800080",
+"m1elanoma":"#800080",
 "Non melanoma skin cancer":"#800080",
 "Malignant skin melanoma":"#800080",
 "Ovary":"#9932CC",
@@ -187,7 +187,11 @@ function createVisualization(json) {
       .attr("display", function(d) { return d.depth ? null : "none"; })
       .attr("d", arc)
       .attr("fill-rule", "evenodd")
-      .style("fill", function(d) { return colors[d.data.name]; })
+      .style("fill", function(d) { if (typeof colors[d.data.name] == 'string' || typeof colors[d.data.name]=='undefined')
+                                      {return colors[d.data.name]}
+                                    else
+                                  {return colors[d.data.name].color;} 
+       })
       .style("opacity", 1)
       .on("mouseover", mouseover);
 
@@ -197,6 +201,7 @@ function createVisualization(json) {
   // Get total size of the tree = value of root node from partition.
   totalSize = path.datum().value;
   mouseover(nodes[5]);
+  defaultsunburst = nodes[5];
  };
 
 // Fade all but the current sequence, and show it in the breadcrumb trail.
@@ -205,6 +210,11 @@ function mouseover(d) {
   var percentage =  (100*d.value / totalSize).toPrecision(3);
   var percentageString = percentage + "%";
   var name = d["data"]["name"];
+  if(d.parent.data.name == "Cancer"){
+    if(name.indexOf("cancer") == -1)
+      {name+=" Cancer";}
+  }
+  var desc = colors[d["data"]["name"]].desc;
   if (percentage < 0.1) {
     percentageString = "< 0.1%";
   }
@@ -219,7 +229,10 @@ function mouseover(d) {
   sequenceArray.shift(); // remove root node from the array
   updateBreadcrumbs(sequenceArray, percentageString);
 d3.select("#facts")
-.text(name+" Deaths WorldWide "+percentageString);
+.text(name+" Deaths WorldWide:  "+percentageString);
+d3.select("#factsDesc")
+.text(desc)
+.style("font-color","white");
   // Fade all the segments.
   d3.selectAll("path")
       .style("opacity", 0.3)
@@ -246,15 +259,19 @@ function mouseleave(d) {
   // Transition each segment to full opacity and then reactivate it.
   d3.selectAll("path")
       .transition()
-      .duration(1000)
+      .duration(100)
       .style("opacity", 1)
       .attr("stroke-width","1px")
       .on("end", function() {
               d3.select(this).on("mouseover", mouseover);
+               mouseover(defaultsunburst);
             });
 
   d3.select("#explanation")
       .style("visibility", "hidden");
+
+ 
+ 
 }
 
 function initializeBreadcrumbTrail() {
@@ -299,7 +316,10 @@ function updateBreadcrumbs(nodeArray, percentageString) {
 
   entering.append("svg:polygon")
       .attr("points", breadcrumbPoints)
-      .style("fill", function(d) { return colors[d.data.name]; });
+      .style("fill", function(d)  { if (typeof colors[d.data.name] == 'string' || typeof colors[d.data.name]=='undefined')
+                                      {return colors[d.data.name]}
+                                    else
+                                  {return colors[d.data.name].color;} });
 
   entering.append("svg:text")
       .attr("x", (b.w + b.t) / 2)
