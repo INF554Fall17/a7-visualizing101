@@ -18,13 +18,13 @@
         .padding(.3);
 
 d3.queue()
-    .defer(d3.csv, "data.csv")
+    .defer(d3.csv, "pyramidData.csv")
     .await(ready);
 
 function ready(error, data){
 
     // types
-    var number_columns = ["year","index","typeOfCancer","total_males","total_females"];
+    var number_columns = ["year","index","typeOfCancer","total_males","total_females","M0-14","M15-59","M60+","F0-14","F15-59","F60+"];
 
     data.forEach(function(d){
 
@@ -98,7 +98,8 @@ function ready(error, data){
 
         // JOIN
         var male_bar = svg.selectAll(".bar.male")
-                .data(data, function(d){ return d.index; });
+                .data(data, function(d){ return d.index; })
+                ;
 
         var female_bar = svg.selectAll(".bar.female")
                 .data(data, function(d){ return d.index; });
@@ -121,13 +122,32 @@ function ready(error, data){
                 .attr("width", function(d){ return x_scale_female(d[tru + "_females"]); });
 
         // ENTER
-        male_bar.enter().append("rect")
+        male_bar.enter()
+            .append("rect")
                 .attr("class", "bar male")
                 .attr("x", (width / 2)+80)
                 .attr("y", function(d){ return y_scale(d.index); })
-                .attr("width", function(d){ return x_scale_male(d[tru + "_males"]); })
+                .attr("width", function(d){ return x_scale_male(d["M0-14"]); })
                 .attr("height", y_scale.bandwidth())
                 .attr("fill", "blue");
+                
+        male_bar.enter().
+            append("rect")
+                .attr("class", "bar male")
+                .attr("x",function(d){ return (width / 2)+80+x_scale_male(d["M0-14"])})
+                .attr("y", function(d){ return y_scale(d.index); })
+                .attr("width", function(d){ return x_scale_male(d["M15-59"]); })
+                .attr("height", y_scale.bandwidth())
+                .attr("fill", "black");
+
+        male_bar.enter().
+                append("rect")
+                    .attr("class", "bar male")
+                    .attr("x",function(d){ return (width / 2)+80+x_scale_male(d["M0-14"])+ x_scale_male(d["M15-59"])})
+                    .attr("y", function(d){ return y_scale(d.index); })
+                    .attr("width", function(d){ return x_scale_male(d["M60+"]); })
+                    .attr("height", y_scale.bandwidth())
+                    .attr("fill", "blue");
 
         label_bar.enter().append("text")
                  .attr("x",width/2)
@@ -137,14 +157,27 @@ function ready(error, data){
 
         female_bar.enter().append("rect")
                 .attr("class", "bar female")
-                .attr("x", function(d){ return (width / 2 - x_scale_female(d[tru + "_females"])-80); })
+                .attr("x", function(d){ return (width / 2 - x_scale_female(d["F0-14"])-80); })
                 .attr("y", function(d){ return y_scale(d.index); })
-                .attr("width", function(d){ return x_scale_female(d[tru + "_females"]); })
+                .attr("width", function(d){ return x_scale_female(d["F0-14"]); })
                 .attr("height", y_scale.bandwidth())
                 .attr("fill", "red");
         
+        female_bar.enter().append("rect")
+                .attr("class", "bar female")
+                .attr("x", function(d){ return (width / 2 - x_scale_female(d["F0-14"])-80 - x_scale_female(d["F15-59"])); })
+                .attr("y", function(d){ return y_scale(d.index); })
+                .attr("width", function(d){ return x_scale_female(d["F15-59"]); })
+                .attr("height", y_scale.bandwidth())
+                .attr("fill", "black");
 
-
+        female_bar.enter().append("rect")
+                .attr("class", "bar female")
+                .attr("x", function(d){ return (width / 2 - x_scale_female(d["F0-14"])-80 - x_scale_female(d["F15-59"]) - x_scale_female(d["F60+"])); })
+                .attr("y", function(d){ return y_scale(d.index); })
+                .attr("width", function(d){ return x_scale_female(d["F60+"]); })
+                .attr("height", y_scale.bandwidth())
+                .attr("fill", "red");
 
 
     }
