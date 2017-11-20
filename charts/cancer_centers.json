@@ -1,0 +1,49 @@
+{
+ "name": "Cancer Treatment Centers/Organisations",
+ "children": [
+  {
+   "name": "Cancer Centers",
+   "children": [
+    {
+     "name": "cancer_centers",
+     "children": [
+      {"name": "Germany : 12", "size": 12},
+      {"name": "United States of America : 58", "size": 58},
+      {"name": "China : 7", "size": 7},
+      {"name": "Japan : 6", "size": 6},
+      {"name": "India : 6", "size": 6},
+      {"name": "United Kingdom : 18", "size": 18},
+      {"name": "Canada : 17", "size": 17},
+      {"name": "Sweden : 6", "size": 6}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Cancer Organisations",
+   "children": [
+    {
+     "name": "cancer_organisations",
+     "children": [
+      {"name": "Bangladesh : 4", "size": 4},
+      {"name": "Germany : 21", "size": 21},
+      {"name": "United States of America : 58", "size": 58},
+      {"name": "China :10", "size": 10},
+      {"name": "Switzerland : 14", "size": 14},
+      {"name": "Spain : 14", "size": 14},
+      {"name": "Japan : 12", "size": 12},
+      {"name": "India : 12", "size": 12},
+      {"name": "United Kingdom : 44", "size": 44},
+      {"name": "Mexico : 6", "size": 6},
+      {"name": "Australia : 32", "size": 32},
+      {"name": "Canada : 19", "size": 19},
+      {"name": "Pakistan : 8", "size": 8},
+      {"name": "Sweden : 16", "size": 16},
+      {"name": "Thailand : 11", "size": 11},
+      {"name": "Brazil : 12", "size": 12}
+     ]
+    }
+   ]
+  }
+ ]
+}
