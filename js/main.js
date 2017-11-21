@@ -39,9 +39,9 @@
 	  	});
 
 	  	$('#fh5co-home .flexslider .slides > li').css('height', $(window).height()-50);	
-  	/*	$(window).resize(function(){
+  		$(window).resize(function(){
 	  		$('#fh5co-home .flexslider .slides > li').css('height', $(window).height()-50);	
-	  	});*/
+	  	});
 
 	};
 
@@ -273,7 +273,7 @@
 
 
 	var aboutAnimate = function() {
-		var about = $('#fh5co-about');
+		var about = $('.fh5co-about');
 		if ( about.length > 0 ) {	
 
 			about.waypoint( function( direction ) {

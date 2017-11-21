@@ -394,7 +394,7 @@ p {
   }
 }
 
-#fh5co-about {
+.fh5co-about {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -407,28 +407,28 @@ p {
   width: 100%;
 }
 
-#fh5co-about .fh5co-2col {
+.fh5co-about .fh5co-2col {
   width: 50%;
 }
 @media screen and (max-width: 1200px) {
-  #fh5co-about .fh5co-2col {
+  .fh5co-about .fh5co-2col {
     width: 100%;
   }
 }
-#fh5co-about .fh5co-text {
+.fh5co-about .fh5co-text {
   padding: 2em 6em;
   text-align: left;
   background: #130d08 url(../images/wood_1.png) repeat;
 }
 @media screen and (max-width: 1200px) {
-  #fh5co-about .fh5co-text {
+  .fh5co-about .fh5co-text {
     padding: 1em;
   }
 }
-#fh5co-about .fh5co-text .btn {
+.fh5co-about .fh5co-text .btn {
   color: #fff;
 }
-#fh5co-about .fh5co-text .heading {
+.fh5co-about .fh5co-text .heading {
   margin-bottom: 30px;
   color: #fff;
   font-style: italic;
@@ -437,7 +437,7 @@ p {
   padding-bottom: 30px;
   text-align: center;
 }
-#fh5co-about .fh5co-text .heading:after {
+.fh5co-about .fh5co-text .heading:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -447,11 +447,11 @@ p {
   background: #fb6e14;
   margin-left: -20px;
 }
-#fh5co-about .fh5co-text p {
+.fh5co-about .fh5co-text p {
   line-height: 2;
   color: #a99c92;
 }
-#fh5co-about .fh5co-text p span.firstcharacter {
+.fh5co-about .fh5co-text p span.firstcharacter {
   float: left;
   color: #903;
   font-size: 75px;
@@ -465,18 +465,18 @@ p {
   color: #fff;
   font-family: "Playfair Display", serif;
 }
-#fh5co-about .fh5co-bg {
+.fh5co-about .fh5co-bg {
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (max-width: 1200px) {
-  #fh5co-about .fh5co-bg {
+  .fh5co-about .fh5co-bg {
     width: 100%;
     min-height: 500px;
   }
 }
 @media screen and (max-width: 768px) {
-  #fh5co-about .fh5co-bg {
+  .fh5co-about .fh5co-bg {
     width: 100%;
     min-height: 300px;
   }
