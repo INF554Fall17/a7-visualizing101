@@ -23,7 +23,7 @@
 
     d3.tsv('/public/risk_factors.tsv', function(error, data) {
         if (error) throw error;
-        d3.select('#chart')
+        d3.select('#riskFactorsChart')
             .datum(data) // bind data to the div
             .call(donut); // draw chart in div
     });
