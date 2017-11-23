@@ -190,6 +190,21 @@
 			</div>
 		</div>
 
+		<div class="fh5co-about" data-section="about">
+			
+			<div class="fh5co-2col fh5co-bg to-animate-2" style="background-image: url(images/res_img_1.jpg)">
+				<div id="pyramidChart">
+				</div>
+			</div>
+			<div class="fh5co-2col fh5co-text">
+				<h2 class="heading to-animate">Pyramid Chart</h2>
+					<hr/>
+					<br/>
+					<div id="riskFactorsDesc">
+
+					</div>
+			</div>
+		</div>
 
 <!-- CHART 2
  --><!-- <div id="fh5co-about" data-section="about">
@@ -763,7 +778,8 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Stellar Parallax -->
 	<script src="js/jquery.stellar.min.js"></script>
-
+	<script src="js/underscore-min.js"></script>
+	
 
 <!-- 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
  -->	<!-- Animation Green Sock-->
@@ -781,11 +797,13 @@
 	<!-- Charts -->
 	<script src="charts/sunburst.js"></script>
 	<script src="charts/risk_factors.js"></script>
-
+	<script src="charts/pyramid.js"></script>
+	
 	<script>
 		
 		   renderSunBurst();
 		   renderRisk_Factors();
+		   renderPyramidChart();
 		</script>
 	<script>
 		$(function () {

@@ -1,8 +1,8 @@
-	
+function renderPyramidChart(){	
 	var margin = {top: 0, bottom: 0, left: 0, right: 0},
-    width = window.innerWidth - margin.left - margin.right,
-    height = window.innerHeight - margin.top - margin.bottom,
-    svg = d3.select("#viz")
+    width = 800 - margin.left - margin.right,
+    height = 800 - margin.top - margin.bottom,
+    svg = d3.select("#pyramidChart")
 
      ,
     t = d3.transition()
@@ -30,6 +30,7 @@
      //        .attr("align", "right")
         
       var svg =      svg.append("svg")
+      .attr("id","viz")
             // .attr("width", width + margin.left + margin.right)
             // .attr("height", height + margin.top + margin.bottom)
             .attr("viewBox", "0 0 "+(width + margin.left + margin.right)+" "+(height + margin.top + margin.bottom))
@@ -39,18 +40,19 @@
     svg.append("image")
     .attr("xlink:href","../images/female.png").attr("height", "100px").attr("width", "100px")
     .attr("x", (width / 2)-150  )
-    .attr("y", y_scale(0)-30)
+    .attr("y", 0)
     ;
 
 svg.append("image")
     .attr("xlink:href","../images/male.png").attr("height", "100px").attr("width", "100px")
     .attr("x", (width / 2)+50  )
-    .attr("y", y_scale(0)-30)
+    .attr("y", 0)
     ;
 
 d3.queue()
-    .defer(d3.csv, "pyramidData.csv")
+    .defer(d3.csv, "charts/pyramidData.csv")
     .await(ready);
+}
 
 function ready(error, data){
 
@@ -68,6 +70,22 @@ function ready(error, data){
         return d;
 
     });
+
+    var margin = {top: 0, bottom: 0, left: 0, right: 0},
+    width = 800 - margin.left - margin.right,
+    height = 800 - margin.top - margin.bottom,
+    svg = d3.select("#viz")
+
+     ,
+    t = d3.transition()
+        .duration(750),
+    x_scale_male = d3.scaleLinear()
+        .range([0, (width /2)]),
+    x_scale_female = d3.scaleLinear()
+        .range([0, (width /2)]),
+    y_scale = d3.scaleBand()
+        .rangeRound([100, height])
+        .padding(.3);
 
     // y domain
     y_scale.domain(data.map(function(d){ return d.index; }));
