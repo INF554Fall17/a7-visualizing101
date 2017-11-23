@@ -125,9 +125,11 @@ function ready(error, data){
         male_bar.enter()
             .append("rect")
                 .attr("class", "bar male")
-                .attr("x", (width / 2)+80)
+                .attr("x", (width / 2)+80)  
+                .attr("y", function(d){ return y_scale(20); })
+                .transition(t)
                 .attr("y", function(d){ return y_scale(d.index); })
-                .attr("width", function(d){ return x_scale_male(d["M0-14"]); })
+                .attr("width", function(d){ return x_scale_male(d["M0-14"]); })  
                 .attr("height", y_scale.bandwidth())
                 .attr("fill", "blue");
                 
@@ -135,7 +137,9 @@ function ready(error, data){
             append("rect")
                 .attr("class", "bar male")
                 .attr("x",function(d){ return (width / 2)+80+x_scale_male(d["M0-14"])})
-                .attr("y", function(d){ return y_scale(d.index); })
+                .attr("y", function(d){ return y_scale(20); })
+                .transition(t)
+                .attr("y", function(d){ return y_scale(d.index); }) 
                 .attr("width", function(d){ return x_scale_male(d["M15-59"]); })
                 .attr("height", y_scale.bandwidth())
                 .attr("fill", "black");
@@ -144,7 +148,9 @@ function ready(error, data){
                 append("rect")
                     .attr("class", "bar male")
                     .attr("x",function(d){ return (width / 2)+80+x_scale_male(d["M0-14"])+ x_scale_male(d["M15-59"])})
-                    .attr("y", function(d){ return y_scale(d.index); })
+                    .attr("y", function(d){ return y_scale(20); })
+                    .transition(t)
+                    .attr("y", function(d){ return y_scale(d.index); }) 
                     .attr("width", function(d){ return x_scale_male(d["M60+"]); })
                     .attr("height", y_scale.bandwidth())
                     .attr("fill", "blue");
@@ -157,24 +163,33 @@ function ready(error, data){
 
         female_bar.enter().append("rect")
                 .attr("class", "bar female")
-                .attr("x", function(d){ return (width / 2 - x_scale_female(d["F0-14"])-80); })
-                .attr("y", function(d){ return y_scale(d.index); })
+                .attr("x", function(d){ return (width / 2)-80; })
+                .attr("y", function(d){ return y_scale(20); })
+                .transition(t)
+                .attr("y", function(d){ return y_scale(d.index); }) 
+                .attr("x", function(d){ return (width / 2 - x_scale_female(d["F0-14"])-80); })                
                 .attr("width", function(d){ return x_scale_female(d["F0-14"]); })
                 .attr("height", y_scale.bandwidth())
                 .attr("fill", "red");
         
         female_bar.enter().append("rect")
                 .attr("class", "bar female")
-                .attr("x", function(d){ return (width / 2 - x_scale_female(d["F0-14"])-80 - x_scale_female(d["F15-59"])); })
+                .attr("x", function(d){ return (width / 2)-80- x_scale_female(d["F0-14"]); }) 
+                .attr("y", function(d){ return y_scale(20); })
+                .transition(t)
                 .attr("y", function(d){ return y_scale(d.index); })
+                .attr("x", function(d){ return (width / 2 - x_scale_female(d["F0-14"])-80 - x_scale_female(d["F15-59"])); })
                 .attr("width", function(d){ return x_scale_female(d["F15-59"]); })
                 .attr("height", y_scale.bandwidth())
                 .attr("fill", "black");
 
         female_bar.enter().append("rect")
                 .attr("class", "bar female")
-                .attr("x", function(d){ return (width / 2 - x_scale_female(d["F0-14"])-80 - x_scale_female(d["F15-59"]) - x_scale_female(d["F60+"])); })
+                .attr("x", function(d){ return (width / 2)-80- x_scale_female(d["F0-14"])- x_scale_female(d["F15-59"]); }) 
+                .attr("y", function(d){ return y_scale(20); })
+                .transition(t)
                 .attr("y", function(d){ return y_scale(d.index); })
+                .attr("x", function(d){ return (width / 2 - x_scale_female(d["F0-14"])-80 - x_scale_female(d["F15-59"]) - x_scale_female(d["F60+"])); })
                 .attr("width", function(d){ return x_scale_female(d["F60+"]); })
                 .attr("height", y_scale.bandwidth())
                 .attr("fill", "red");
