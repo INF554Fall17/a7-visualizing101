@@ -1,8 +1,8 @@
 	
 	var margin = {top: 0, bottom: 0, left: 0, right: 0},
-    width = window.innerWidth - margin.left - margin.right - 600,
+    width = window.innerWidth - margin.left - margin.right,
     height = window.innerHeight - margin.top - margin.bottom,
-    svg2 = d3.select("#viz")
+    svg = d3.select("#viz")
 
      ,
     t = d3.transition()
@@ -12,7 +12,7 @@
     x_scale_female = d3.scaleLinear()
         .range([0, (width /2)]),
     y_scale = d3.scaleBand()
-        .rangeRound([0, height])
+        .rangeRound([100, height])
         .padding(.3);
 
      // var headersvg =  svg2.append("div")
@@ -21,18 +21,33 @@
      //        .attr("src","../images/female.png")
      //        .attr("width", "90px")
      //        .attr("height", "100px")
+     //        .attr("align", "left")
 
      //        headersvg.append("img")
      //        .attr("src","../images/male.png")
      //        .attr("width", "80px")
-     //        .attr("height", "110px")
-            
-      var svg =      svg2.append("svg")
+     //        .attr("height", "100px")
+     //        .attr("align", "right")
+        
+      var svg =      svg.append("svg")
             // .attr("width", width + margin.left + margin.right)
             // .attr("height", height + margin.top + margin.bottom)
             .attr("viewBox", "0 0 "+(width + margin.left + margin.right)+" "+(height + margin.top + margin.bottom))
             .append("g")
             .attr("transform", "translate(" + margin.left + ", " + margin.top + ")")
+            
+    svg.append("image")
+    .attr("xlink:href","../images/female.png").attr("height", "100px").attr("width", "100px")
+    .attr("x", (width / 2)-150  )
+    .attr("y", y_scale(0)-30)
+    ;
+
+svg.append("image")
+    .attr("xlink:href","../images/male.png").attr("height", "100px").attr("width", "100px")
+    .attr("x", (width / 2)+50  )
+    .attr("y", y_scale(0)-30)
+    ;
+
 d3.queue()
     .defer(d3.csv, "pyramidData.csv")
     .await(ready);
