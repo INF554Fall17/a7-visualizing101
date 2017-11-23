@@ -1,3 +1,21 @@
+function renderRisk_Factors(){
+
+var donut = donutChart()
+        .width(1000)
+        .height(600)
+        .cornerRadius(3) // sets how rounded the corners are on each slice
+        .padAngle(0.015) // effectively dictates the gap between slices
+        .variable('Value')
+        .category('RiskFactors');
+
+    d3.tsv('charts/risk_factors.tsv', function(error, data) {
+        if (error) throw error;
+        d3.select('#riskFactorsChart')
+            .datum(data) // bind data to the div
+            .call(donut); // draw chart in div
+    });
+}
+
 function donutChart() {
     var width,
         height,
