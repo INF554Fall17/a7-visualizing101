@@ -2,7 +2,7 @@ function renderRisk_Factors(){
 
 var donut = donutChart()
         .width(800)
-        .height(600)
+        .height(800)
         .cornerRadius(3) // sets how rounded the corners are on each slice
         .padAngle(0.015) // effectively dictates the gap between slices
         .variable('Value')
