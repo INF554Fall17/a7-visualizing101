@@ -19,8 +19,7 @@
 }
 
 #sequence {
-  width: 500px;
-  height: 70px;
+
   margin-top:20px;
   z-index:5;
 }
@@ -38,8 +37,7 @@
 
 #chart {
   position: relative;
-  top: -70px;
-  left: 130px;
+
 }
 
 #chart path {
