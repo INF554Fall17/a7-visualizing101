@@ -1,9 +1,9 @@
 RiskFactors	Value
-Salt, Food Additivies & Contaminants	0.01
+Contaminant Food	0.01
 Diet and Obesity	0.31	
 Socioeconomic Status	0.03
 Tobacco and Smoking	0.31
-Drugs & Medical Procedure	0.01
+Drugs	0.01
 Pollution	0.02
 Alcohol	0.05
 Sedentary Lifestyle	0.05	
@@ -11,4 +11,4 @@ Occupational Exposure	0.05
 UV radiation	0.02
 Family History	0.05	
 Viruses	0.05	
-Perinatal Factors/Growth	0.05	
+Perinatal Factors	0.05	

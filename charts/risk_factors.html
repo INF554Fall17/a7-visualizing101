@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <title>Reusable Donut Chart in D3 v4</title>
     <script src="https://d3js.org/d3.v4.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="/public/risk_factors.css">
-    <script src="/public/risk_factors.js"></script>
+  
+    <link rel="stylesheet" href="risk_factors.css">
+  
 </head>
 <body>
 
-<div id="chart"></div>
-
+<div id="riskFactorsChart"></div>
+<script src="risk_factors.js"></script>
 <script>
     var donut = donutChart()
         .width(1000)
@@ -21,7 +21,7 @@
         .variable('Value')
         .category('RiskFactors');
 
-    d3.tsv('/public/risk_factors.tsv', function(error, data) {
+    d3.tsv('risk_factors.tsv', function(error, data) {
         if (error) throw error;
         d3.select('#riskFactorsChart')
             .datum(data) // bind data to the div

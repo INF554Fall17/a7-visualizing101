@@ -1,7 +1,7 @@
 function renderRisk_Factors(){
 
 var donut = donutChart()
-        .width(1000)
+        .width(800)
         .height(600)
         .cornerRadius(3) // sets how rounded the corners are on each slice
         .padAngle(0.015) // effectively dictates the gap between slices
@@ -35,7 +35,9 @@ function donutChart() {
             // ===========================================================================================
             // Set up constructors for making donut. See https://github.com/d3/d3-shape/blob/master/README.md
             var radius = Math.min(width, height) / 2;
-
+            var legendRectSize = (radius * 0.05);
+            var legendSpacing = radius * 0.02;
+            
             // creates a new pie generator
             var pie = d3.pie()
                 .value(function(d) { return floatFormat(d[variable]); })
@@ -58,9 +60,8 @@ function donutChart() {
             // ===========================================================================================
             // append the svg object to the selection
             var svg = selection.append('svg')
-                .attr('width', width + margin.left + margin.right)
-                .attr('height', height + margin.top + margin.bottom)
-              .append('g')
+                .attr('viewBox','0 0 '+(width + margin.left + margin.right)+' '+(height + margin.top + margin.bottom))
+                        .append('g')
                 .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
             // ===========================================================================================
 
@@ -83,7 +84,31 @@ function donutChart() {
 
             // ===========================================================================================
             // add text labels
-            var label = svg.select('.labelName').selectAll('text')
+            var legend = svg.selectAll('.risk_factor_legend')
+            .data(data)
+            .enter()
+            .append('g')
+            .attr('class', 'risk_factor_legend')
+            .attr('transform', function(d, i) {
+                var height = legendRectSize + legendSpacing;
+                var offset =  height +110;
+                var horz = -4 * legendRectSize;
+                var vert = i * height - offset ;
+                return 'translate(' + horz + ',' + vert + ')';
+            });
+
+            legend.append('rect')
+            .attr('width', legendRectSize)
+            .attr('height', legendRectSize)
+            .style('fill', function(d){return colour(d["RiskFactors"]);})
+            .style('stroke', function(d){ return colour(d["RiskFactors"]);});
+
+            legend.append('text')
+            .attr("class","riskFactorLabel")
+            .attr('x', legendRectSize + legendSpacing)
+            .attr('y', legendRectSize - legendSpacing)
+            .text(function(d) { return d["RiskFactors"]    ; });
+           /* var label = svg.select('.labelName').selectAll('text')
                 .data(pie)
               .enter().append('text')
                 .attr('dy', '.35em')
@@ -104,22 +129,12 @@ function donutChart() {
                 .style('text-anchor', function(d) {
                     // if slice centre is on the left, anchor text to start, otherwise anchor to end
                     return (midAngle(d)) < Math.PI ? 'start' : 'end';
-                });
+                });*/
             // ===========================================================================================
 
             // ===========================================================================================
             // add lines connecting labels to slice. A polyline creates straight lines connecting several points
-            var polyline = svg.select('.lines')
-                .selectAll('polyline')
-                .data(pie)
-              .enter().append('polyline')
-                .attr('points', function(d) {
-
-                    // see label transform function for explanations of these three lines.
-                    var pos = outerArc.centroid(d);
-                    pos[0] = radius * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
-                    return [arc.centroid(d), outerArc.centroid(d), pos]
-                });
+        
             // ===========================================================================================
 
             // ===========================================================================================
@@ -139,6 +154,9 @@ function donutChart() {
                 // add tooltip (svg circle element) when mouse enters label or slice
                 selection.on('mouseenter', function (data) {
 
+                    d3.select('#riskFactorsDesc')
+                      .html(toolTipHTML(data));
+
                     svg.append('text')
                         .attr('class', 'toolCircle')
                         .attr('dy', -15) // hard-coded. can adjust this to adjust text vertical alignment in tooltip
@@ -152,11 +170,16 @@ function donutChart() {
                         .style('fill', colour(data.data[category])) // colour based on category mouse is over
                         .style('fill-opacity', 0.35);
 
+                    d3.selectAll('.risk_factor_legend')
+                        .attr("visibility","hidden");
+
                 });
 
                 // remove the tooltip when mouse leaves the slice/label
                 selection.on('mouseout', function () {
                     d3.selectAll('.toolCircle').remove();
+                    d3.selectAll('.risk_factor_legend')
+                    .attr("visibility","visible");
                 });
             }
 
