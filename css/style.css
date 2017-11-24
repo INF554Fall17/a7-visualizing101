@@ -922,15 +922,20 @@ p {
   color: #fff;
 }
 #fh5co-events .fh5co-heading .heading:before, #fh5co-events .fh5co-heading .heading::before {
-  height: 200px;
-  width: 200px;
   position: absolute;
   content: "";
   background: url(../images/team.png) no-repeat;
-  top: 0;
+  
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  content: "";
+  background: url(../images/team.png) no-repeat;
+  top: 40%;
   left: 50%;
-  margin-top: -30px;
-  margin-left: -24px;
+  background-size: contain;
+  margin-top: -100px;
+  margin-left: -60px;
 }
 #fh5co-events .fh5co-heading .sub-heading {
   color: #a99c92;

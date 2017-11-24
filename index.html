@@ -97,7 +97,7 @@
 					</li>
 				   <li style="background-image: url(images/CancerRally.jpg);" data-stellar-background-ratio="0.5">	
 						<div class="fh5co-text">
-							<h2 class="to-animate" style="margin-top: -147px">&ldquo;You beat cancer by how you live, <br/>why you live and in the manner in which you live.&rdquo;</h2>
+							<h2 class="to-animate" style="margin-top: -187px">&ldquo;You beat cancer by how you live, <br/>why you live and in the manner in which you live.&rdquo;</h2>
 							
 						</div>
 					</li>
@@ -119,12 +119,14 @@
 					<div class="fh5co-menu-1">
 						<a href="#" data-nav-section="home">Home</a>
 						<a href="#" data-nav-section="about">Spread of Cancer</a>
-						<a href="#" data-nav-section="features">Treatment</a>
+						<a href="#" data-nav-section="riskfactors">Risk Factors</a>
+				<!--		<a href="#" data-nav-section="features">Risk Factors</a>-->
 					</div>
 					<div class="fh5co-logo">
 						<a href="index.html">Fight Against Cancer</a>
 					</div>
 					<div class="fh5co-menu-2">
+						<a href="#" data-nav-section="pyramidchart">Pyramid Chart</a>
 						<a href="#" data-nav-section="events">Our Team</a>
 						<a href="#" data-nav-section="reservation">Take Action!</a>
 						<label for="Year" class="sr-only">Year</label>
@@ -168,29 +170,58 @@
 									
 									<br/>
 
-								<div id="factsDesc">
+								<div id="factsDesc" class="factsDesc">
 									</div>
 
 					
 							</div>
 			</div>
 		</div>
-		<div class="fh5co-about" data-section="about">
+		<div class="fh5co-about" id="riskfactor" data-section="riskfactors">
 			<div class="fh5co-2col fh5co-text">
 				<h2 class="heading to-animate">Risk Factors</h2>
+				<div id="riskFactorsDesc">
+						<tspan>Hover to see details of the risk factors.</tspan>
+				</div>
 					<hr/>
 					<br/>
-					<div id="riskFactorsDesc">
-
+					
+					<div id="riskFactorsDetailedIcons">
+						<div>
+						<img id="Contaminated_Food" src="images/knife_spoon_burned.png" class="riskFactorsDetailedIconsRow1"></img>
+						<img id="Diet_and_Obesity" src="images/obesity.png" class="riskFactorsDetailedIconsRow1"></img>
+						<img id="Tobacco_and_Smoking" src="images/no_smoking.png" class="riskFactorsDetailedIconsRow1"></img>
+						<img id="Sedentary_Lifestyle" src="images/sedentary.png" class="riskFactorsDetailedIconsRow1"></img>
+						<img id="Pollution" src="images/pollution.png" class="riskFactorsDetailedIconsRow1"></img>
+						<img id="Occupational_Exposure" src="images/occupation.png" class="riskFactorsDetailedIconsRow1"></img>
+						</div>
+						<div id="riskFactorsDetailedDesc" style="height:220px" class="factsDesc">
+					
+						</div>
+						<div id=riskFactorsDetailedIconsNext>
+						<img id="Socioeconomic_Status" src="images/money.png" class="riskFactorsDetailedIconsRow2"></img>
+						<img id="Drugs" src="images/drugs.png" class="riskFactorsDetailedIconsRow2"></img>
+						<img id="Alcohol" src="images/alcohal.png" class="riskFactorsDetailedIconsRow2"></img>
+						<img id="UV_radiation" src="images/UV.png" class="riskFactorsDetailedIconsRow2"></img>
+						<img id="Family_History" src="images/FamilyTree.png" class="riskFactorsDetailedIconsRow2"></img>
+						<img id="Viruses" src="images/virus.png" class="riskFactorsDetailedIconsRow2"></img>
+						<img id="Perinatal_Factors" src="images/prenatal.png" class="riskFactorsDetailedIconsRow2"></img>
+						</div>
 					</div>
+					
 			</div>
 			<div class="fh5co-2col fh5co-bg to-animate-2" style="background-image: url(images/res_img_1.jpg)">
 				<div id="riskFactorsChart">
 				</div>
+				<div>
+						<p style="color: white; text-align: center; padding-right: 15px; margin-top: -70px"> Donut Chart showing the various risk factors leading to cancer. Hover to see details </p>
+						
+					</div>
+
 			</div>
 		</div>
 
-		<div class="fh5co-about" data-section="about">
+		<div class="fh5co-about" data-section="pyramidchart">
 			
 			<div class="fh5co-2col fh5co-bg to-animate-2" style="background-image: url(images/res_img_1.jpg)">
 				<div id="pyramidChart">
@@ -201,11 +232,39 @@
 					<hr/>
 					<br/>
 					<div id="riskFactorsDesc">
-
+						
 					</div>
 			</div>
 		</div>
+		<div class="fh5co-about" data-section="about">
+				<div class="fh5co-2col fh5co-text">
+						<h2 class="heading to-animate">Mortality Rate Ranking	</h2>
+						
+						<p class="to-animate">
+								<div id="myDiv">
+										<div id="facts" > 
+											</div>
+									
+											<hr/>
+											
+											<br/>
+	
+		
+							
+									</div>
+					</div>	
+			
+			<div class="fh5co-2col fh5co-bg to-animate-2" style="background-image: url(images/res_img_1.jpg)">
+					<div id="chart">
+							
+					</div>
+					<div>
+					<p style="color: white; text-align: center; padding-right: 15px; margin-top: -70px"> Sunburst chart showing the ranking of diseases by mortality rate<br/> Hover to see details. </p>
+					</div>
+				</div>
+	
 
+			</div>
 <!-- CHART 2
  --><!-- <div id="fh5co-about" data-section="about">
  	<div class="fh5co-2col fh5co-text">

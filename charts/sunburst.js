@@ -133,12 +133,12 @@ var colors = {
 var totalSize = 0; 
 
 var vis = d3.select("#chart").append("svg:svg")
-    .attr("viewBox","0 0 "+width+" "+height)
+    .attr("viewBox","0 0 "+(width+150)+" "+(height-100))
   //  .attr("width", width)
   //  .attr("height", height)
     .append("svg:g")
     .attr("id", "container")
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+    .attr("transform", "translate(" + (width+100)/ 2 + "," + (height-150) / 2 + ")");
 
 var partition = d3.partition()
     .size([2 * Math.PI, radius * radius]);

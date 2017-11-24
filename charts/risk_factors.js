@@ -6,7 +6,8 @@ var donut = donutChart()
         .cornerRadius(3) // sets how rounded the corners are on each slice
         .padAngle(0.015) // effectively dictates the gap between slices
         .variable('Value')
-        .category('RiskFactors');
+        .category('RiskFactors')
+        .desc('desc');
 
     d3.tsv('charts/risk_factors.tsv', function(error, data) {
         if (error) throw error;
@@ -23,6 +24,7 @@ function donutChart() {
         colour = d3.scaleOrdinal(d3.schemeCategory20c), // colour scheme
         variable, // value in data that will dictate proportions on chart
         category, // compare data by
+        desc,
         padAngle, // effectively dictates the gap between slices
         floatFormat = d3.format('.4r'),
         cornerRadius, // sets how rounded the corners are on each slice
@@ -91,7 +93,7 @@ function donutChart() {
             .attr('class', 'risk_factor_legend')
             .attr('transform', function(d, i) {
                 var height = legendRectSize + legendSpacing;
-                var offset =  height +110;
+                var offset =  height +140;
                 var horz = -4 * legendRectSize;
                 var vert = i * height - offset ;
                 return 'translate(' + horz + ',' + vert + ')';
@@ -156,12 +158,20 @@ function donutChart() {
 
                     d3.select('#riskFactorsDesc')
                       .html(toolTipHTML(data));
+                    
+                    d3.select('#riskFactorsDetailedDesc')
+                      .html("<tspan>"+data.data[desc]+"</tspan>");
+
+                      d3.selectAll('.riskFactorsDetailedIconsRow1').style("opacity",0.3);
+                      d3.selectAll('.riskFactorsDetailedIconsRow2').style("opacity",0.3);
+
+                        d3.select("#"+data.data[category].replace(/ /g,'_')).style('opacity',1); 
 
                     svg.append('text')
                         .attr('class', 'toolCircle')
                         .attr('dy', -15) // hard-coded. can adjust this to adjust text vertical alignment in tooltip
                         .html(toolTipHTML(data)) // add text to the circle.
-                        .style('font-size', '.9em')
+                        .style('font-size', '1.3em')
                         .style('text-anchor', 'middle'); // centres text in tooltip
 
                     svg.append('circle')
@@ -177,9 +187,15 @@ function donutChart() {
 
                 // remove the tooltip when mouse leaves the slice/label
                 selection.on('mouseout', function () {
+                    d3.selectAll('.riskFactorsDetailedIconsRow1').style("opacity",1);
+                    d3.selectAll('.riskFactorsDetailedIconsRow2').style("opacity",1);
                     d3.selectAll('.toolCircle').remove();
                     d3.selectAll('.risk_factor_legend')
                     .attr("visibility","visible");
+                    d3.select('#riskFactorsDesc')
+                    .html("<tspan >Hover to see details of the risk factors.</tspan>");
+                    d3.select('#riskFactorsDetailedDesc')
+                    .html("<tspan> This chart shows us the leading lifestyle choices we make daily that leads to cancer. As we can see, smoking,tobacco and the consumption of contaminated food are the top causes of cancer.</tspan>");
                 });
             }
 
@@ -191,7 +207,7 @@ function donutChart() {
                     i   = 0;
 
                 for (var key in data.data) {
-
+                    if(key!='desc'){
                     // if value is a number, format it as a percentage
                     var value = (!isNaN(parseFloat(data.data[key]))) ? percentFormat(data.data[key]) : data.data[key];
 
@@ -200,6 +216,7 @@ function donutChart() {
                     if (i === 0) tip += '<tspan x="0">' + key + ': ' + value + '</tspan>';
                     else tip += '<tspan x="0" dy="1.2em">' + key + ': ' + value + '</tspan>';
                     i++;
+                    }
                 }
 
                 return tip;
@@ -264,5 +281,10 @@ function donutChart() {
         return chart;
     };
 
+    chart.desc = function(value){
+        if (!arguments.length) return desc;
+        desc = value;
+        return chart;
+    };
     return chart;
 }

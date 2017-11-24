@@ -10,7 +10,26 @@
 
 
 .riskFactorLabel{
-font-size: 15px;
+    fill:white;
+font-size: 17px;
 font-style: italic;
-font-weight: 10px;
+font-weight: 20px;
+}
+.riskFactorsDetailedIconsRow1{
+height:15%;
+width:15%;
+}
+
+.riskFactorsDetailedIconsRow2{
+    height:13%;
+    width:13%;
+    }
+
+    #riskFactorsDetailedIconsNext{
+    
+      
+
+        }
+#riskFactorsDesc{
+    color: white;
 }
