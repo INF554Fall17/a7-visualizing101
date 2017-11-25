@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <style>
+    g.axis path, g.axis line {
+        fill: none;
+        stroke: black;
+        shape-rendering: crispEdges;
+    }
+
+    g.brush rect.extent {
+        fill-opacity: 0.5;
+    }
+
+    .resize path {
+        fill-opacity: 0.2;
+    }
+</style>
+</head>
+<body>
+    <div align="center" style="margin-top: 20px;">5-year relative survival, by stage at diagnosis 2006-2012</div>
+    <div id="chart"></div>
+    <script>
+    var nestedData;
+
+    var main_margin = {
+            top: 100,
+            right: 80,
+            bottom: 80,
+            left: 70
+        },
+
+        width = 1500 - main_margin.left - main_margin.right,
+        mini_x_height = 10;
+        main_height = 600 - main_margin.top - main_margin.bottom,
+
+        mini_x_margin = {
+            top: main_height,
+            right: main_margin.right + 10,
+            bottom: main_margin.bottom,
+            left: main_margin.left + 10
+        },
+        
+        mini_x_width = 1500 - mini_x_margin.left - mini_x_margin.right,
+        
+        mini_y_margin = {
+            top: main_margin.top + 10,
+            right: 0,
+            bottom: main_margin.bottom + 10,
+            left: 0
+        },
+        mini_y_width = 10,
+        mini_y_height = 525 - mini_y_margin.top - mini_y_margin.bottom;
+
+
+    var color = d3.scale.category10();
+
+    // x0 is the groups scale on the x axis.
+    var main_x0 = d3.scale.ordinal().rangeRoundBands([0, width], 0.2);
+    var mini_x0 = d3.scale.ordinal().rangeRoundBands([0, width], 0.2);
+
+    var main_xZoom = d3.scale.linear()
+        .range([0, width])
+        .domain([0, width]);
+
+    // x1 is the series scale on the x axis.
+    var main_x1 = d3.scale.ordinal();
+    var mini_x1 = d3.scale.ordinal();
+
+    // y is the value scale on the y axis.
+    var main_y0 = d3.scale.linear().range([main_height, 0]);
+
+    var mini_y0 = d3.scale.linear().range([mini_y_height, 0]);
+
+    var main_xAxis = d3.svg.axis()
+        .scale(main_x0)
+        .orient("bottom");
+
+    var mini_xAxis = d3.svg.axis()
+        .scale(mini_x0)
+        .orient("bottom");
+
+    var main_yAxis = d3.svg.axis()
+        .scale(main_y0)
+        .orient("left");
+
+    var mini_yAxis = d3.svg.axis()
+        .scale(mini_y0)
+        .orient("left");
+
+    var svg = d3.select("#chart").append("svg")
+        .attr("width", width + main_margin.left + main_margin.right)
+        .attr("height", main_height + main_margin.top + main_margin.bottom);
+
+    var main = svg.append("g")
+        .attr("transform", "translate(" + main_margin.left + "," + main_margin.top + ")");
+
+    main.append("defs").append("clipPath")
+        .attr("id", "clip")
+        .append("rect")
+        .attr("width", width)
+        .attr("height", main_height + mini_x_height + main_margin.bottom);
+
+    var mini_x = svg.append("g")
+        .attr("transform", "translate(" + mini_x_margin.left + "," + (main_margin.top + main_height) + ")")
+        .attr("width", mini_x_width);
+
+    var mini_y = svg.append("g")
+        .attr("width", mini_y_width)
+        .attr("transform", "translate(" + (main_margin.left - mini_y_width) + ", " + mini_y_margin.top + ")")
+        .attr("height", mini_y_height);
+
+    //Country,Year,Cost
+    //cancer_type,stage,survival_rate
+
+    d3.csv("/public/cancer_survival_by_stages.csv", function(error, data) {
+
+        var seriesValues = d3.set(data.map(function(x){return x.stage;})).values();
+
+        nestedData = d3.nest()
+            .key(function(d) { return d.cancer_type;})
+            .entries(data);
+
+        var groupValues = d3.set(data.map(function (x) { return x.cancer_type; })).values();
+
+        // Define the axis domains
+        main_x0.domain(groupValues);
+        mini_x0.domain(groupValues);
+
+        main_x1.domain(seriesValues).rangeRoundBands([0, main_x0.rangeBand()], 0);
+        mini_x1.domain(seriesValues).rangeRoundBands([0, main_x0.rangeBand()], 0);
+
+        main_y0.domain([0, d3.max(nestedData, function (d) { return d3.max(d.values, function (d) { return d.survival_rate; }); })]);
+        mini_y0.domain(main_y0.domain());
+
+        var xBrush = d3.svg.brush().x(mini_x0).on("brush", xBrushed);
+        var yBrush = d3.svg.brush().y(mini_y0).on("brush", yBrushed);
+
+        // Add the x axis
+        main.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + (main_height + mini_x_height) + ")")
+            .attr("clip-path", "url(#clip)")
+            .call(main_xAxis)
+            .selectAll(".tick text")
+            .call(wrap, main_x0.rangeBand());
+
+        // Add the y axis
+        main.append("g")
+            .attr("class", "y axis")
+            .attr("transform", "translate(" + (-mini_y_width) + ", 0)")
+            .call(main_yAxis)
+            .append("text")
+            .attr("transform", "rotate(-90), translate(" + -(main_height / 2) + ", " + -(mini_y_width + main_margin.left - 20) + ")")
+            .attr("dy", ".71em")
+            .style("text-anchor", "middle")
+            .text("Survival Rate in %");
+
+        var x_arc = d3.svg.arc()
+        .outerRadius(mini_x_height / 2)
+        .startAngle(0)
+        .endAngle(function(d, i) {
+             return i ? -Math.PI : Math.PI;
+        });
+
+        var brush_x_grab = mini_x.append("g")
+            .attr("class", "x brush")
+            .call(xBrush);
+
+        brush_x_grab.selectAll(".resize").append("path")
+            .attr("transform", "translate(0," + mini_x_height / 2 + ")")
+            .attr("d", x_arc);
+
+        brush_x_grab.selectAll("rect").attr("height", mini_x_height);
+
+        var y_arc = d3.svg.arc()
+            .outerRadius(mini_y_width / 2)
+            .startAngle(-(Math.PI/2))
+            .endAngle(function(d, i) {
+                return i ? -((3 * Math.PI) / 2) : ((Math.PI) / 2);
+        });
+
+        var brush_y_grab = mini_y.append("g")
+            .attr("class", "y brush")
+            .call(yBrush);
+
+        brush_y_grab.selectAll(".resize").append("path")
+            .attr("transform", "translate(" + (mini_y_width / 2) + ", 0)")
+            .attr("d", y_arc);
+
+        brush_y_grab.selectAll("rect").attr("width", mini_y_width);
+
+        // Create the main bars
+        var bar = main.selectAll(".bars")
+            .data(nestedData)
+            .enter().append("g")
+            .attr("clip-path", "url(#clip)")
+            .attr("class", function(d) {
+                return d.key + "-group bar";
+            });
+
+        bar.selectAll("rect")
+            .data(function(d) {
+                return d.values;
+            })
+            .enter().append("rect")
+            .attr("class", function(d) {
+                return d.stage;
+            })
+            .attr("transform", function(d) {
+                return "translate(" + main_x0(d.cancer_type) + ",0)";
+            })
+            .attr("width", function(d) {
+                return main_x1.rangeBand();
+            })
+            .attr("x", function(d) {
+                return main_x1(d.stage);
+            })
+            .attr("y", function(d) {
+                return main_y0(d.survival_rate);
+            })
+            .attr("height", function(d) {
+                return main_height - main_y0(d.survival_rate);
+            })
+            .style("fill", function (d) {
+                return color(d.stage);
+            });
+
+
+        // Draws the series items onto a legend
+        var legend = svg.selectAll(".legend")
+            .data(seriesValues.slice())
+            .enter().append("g")
+            .attr("class", "legend")
+            .attr("transform", function (d, i) { return "translate(50," + (10 + (i * 20)) + ")"; });
+
+        legend.append("rect")
+            .attr("x", width - 18)
+            .attr("width", 18)
+            .attr("height", 18)
+            .style("fill", color);
+
+        legend.append("text")
+            .attr("x", width - 24)
+            .attr("y", 9)
+            .attr("dy", ".35em")
+            .style("text-anchor", "end")
+            .text(function (d) { return d; });
+
+        // Called to re-draw the bars on the main chart when the brush on the x axis
+        // has been altered.
+        function xBrushed() {
+            var originalRange = main_xZoom.range();
+            main_xZoom.domain(xBrush.empty() ? originalRange : xBrush.extent());
+            main_x0.rangeRoundBands([main_xZoom(originalRange[0]), main_xZoom(originalRange[1])], .1);
+
+            main_x1.rangeRoundBands([0, main_x0.rangeBand()], 0);
+
+            bar.selectAll("rect")
+                .attr("transform", function (d) {
+                    return "translate(" + main_x0(d.cancer_type) + ",0)";
+                })
+                .attr("width", function (d) {
+                    return main_x1.rangeBand();
+                })
+                .attr("x", function (d) {
+                    return main_x1(d.stage);
+                });
+
+            main.select("g.x.axis").call(main_xAxis).selectAll(".tick text").call(wrap, main_x0.rangeBand());
+        };
+
+        // Called to re-draw the bars on the main chart when the
+        // brush on the y axis has been altered.
+        function yBrushed() {
+            main_y0.domain(yBrush.empty() ? mini_y0.domain() : yBrush.extent());
+
+            bar.selectAll("rect")
+                .attr("y", function(d) {
+                    return main_y0(d.survival_rate);
+                })
+                .attr("height", function(d) {
+                    return main_height - main_y0(d.survival_rate);
+                });
+
+            main.select("g.y.axis").call(main_yAxis);
+        };
+
+        // This comes from the example at http://bl.ocks.org/mbostock/7555321
+        // for wrapping long axis tick labels
+        function wrap(text, width) {
+            text.each(function () {
+                var text = d3.select(this),
+                    words = text.text().split(/\s+/).reverse(),
+                    word,
+                    line = [],
+                    lineNumber = 0,
+                    lineHeight = 1.1, // ems
+                    y = text.attr("y"),
+                    dy = parseFloat(text.attr("dy")),
+                    tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
+                while (word = words.pop()) {
+                    line.push(word);
+                    tspan.text(line.join(" "));
+                    if (tspan.node().getComputedTextLength() > width) {
+                        line.pop();
+                        tspan.text(line.join(" "));
+                        line = [word];
+                        tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+                    }
+                }
+            });
+        };
+
+        // Set the initial brush selections.
+        // svg.select(".x.brush").call(xBrush.extent(main_xZoom.domain()));
+        svg.select(".x.brush").call(xBrush.extent([0,610]));
+        svg.select(".y.brush").call(yBrush.extent(mini_y0.domain()));
+
+        // Forces a refresh of the brushes and main chart based
+        // on the selected extents.
+        xBrushed();
+        yBrushed();
+
+    });
+
+</script>
+</body>
+</html>

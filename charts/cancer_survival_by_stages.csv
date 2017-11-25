@@ -1,0 +1,89 @@
+cancer_type,stage,survival_rate
+Brain and other nervous system,All stages combined,34
+Brain and other nervous system,Localized,37
+Brain and other nervous system,Distant,36
+Brain and other nervous system,Regional,22
+Breast,All stages combined,90
+Breast,Localized,99
+Breast,Distant,26
+Breast,Regional,85
+Cervix,All stages combined,68
+Cervix,Localized,91
+Cervix,Distant,17
+Cervix,Regional,57
+Colorectum,All stages combined,65
+Colorectum,Localized,90
+Colorectum,Distant,14
+Colorectum,Regional,71
+Esophagus,All stages combined,18
+Esophagus,Localized,41
+Esophagus,Distant,5
+Esophagus,Regional,23
+Hodgkin lymphoma,All stages combined,86
+Hodgkin lymphoma,Localized,92
+Hodgkin lymphoma,Distant,77
+Hodgkin lymphoma,Regional,93
+Kidney and renal pelvis,All stages combined,74
+Kidney and renal pelvis,Localized,93
+Kidney and renal pelvis,Distant,12
+Kidney and renal pelvis,Regional,66
+Larynx,All stages combined,61
+Larynx,Localized,76
+Larynx,Distant,35
+Larynx,Regional,45
+Liver and intrahepatic bile duct,All stages combined,18
+Liver and intrahepatic bile duct,Localized,31
+Liver and intrahepatic bile duct,Distant,3
+Liver and intrahepatic bile duct,Regional,11
+Lung and bronchus,All stages combined,18
+Lung and bronchus,Localized,55
+Lung and bronchus,Distant,4
+Lung and bronchus,Regional,28
+Melanoma of the skin,All stages combined,92
+Melanoma of the skin,Localized,98
+Melanoma of the skin,Distant,18
+Melanoma of the skin,Regional,63
+Myeloma,All stages combined,49
+Myeloma,Localized,70
+Myeloma,Distant,47
+Myeloma,Regional
+Non-Hodgkin lymphoma,All stages combined,71
+Non-Hodgkin lymphoma,Localized,83
+Non-Hodgkin lymphoma,Distant,63
+Non-Hodgkin lymphoma,Regional,74
+Oral cavity and pharynx,All stages combined,64
+Oral cavity and pharynx,Localized,83
+Oral cavity and pharynx,Distant,38
+Oral cavity and pharynx,Regional,63
+Ovary,All stages combined,46
+Ovary,Localized,92
+Ovary,Distant,29
+Ovary,Regional,73
+Pancreas,All stages combined,8
+Pancreas,Localized,29
+Pancreas,Distant,3
+Pancreas,Regional,11
+Prostate,All stages combined,99
+Prostate,Localized,99.5
+Prostate,Distant,29
+Prostate,Regional,99.9
+Stomach,All stages combined,30
+Stomach,Localized,67
+Stomach,Distant,5
+Stomach,Regional,31
+Testis,All stages combined,95
+Testis,Localized,99
+Testis,Distant,74
+Testis,Regional,96
+Thyroid,All stages combined,98
+Thyroid,Localized,99.5
+Thyroid,Distant,55
+Thyroid,Regional,98
+Urinary bladder,All stages combined,78
+Urinary bladder,Localized,70
+Urinary bladder,Distant,5
+Urinary bladder,Regional,35
+Uterine corpus,All stages combined,82
+Uterine corpus,Localized,95
+Uterine corpus,Distant,17
+Uterine corpus,Regional,69
