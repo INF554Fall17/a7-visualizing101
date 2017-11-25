@@ -133,11 +133,12 @@ var colors = {
 var totalSize = 0; 
 
 var vis = d3.select("#chart").append("svg:svg")
-    .attr("width", width)
-    .attr("height", height)
+    .attr("viewBox","0 0 "+(width+150)+" "+(height-100))
+  //  .attr("width", width)
+  //  .attr("height", height)
     .append("svg:g")
     .attr("id", "container")
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+    .attr("transform", "translate(" + (width+100)/ 2 + "," + (height-150) / 2 + ")");
 
 var partition = d3.partition()
     .size([2 * Math.PI, radius * radius]);
@@ -169,6 +170,24 @@ function createVisualization(json) {
   vis.append("svg:circle")
       .attr("r", radius)
       .style("opacity", 0);
+
+
+  vis.append("text")
+  .attr("id","percentage")
+ .attr("text-anchor","left")
+  .attr("dx",-40  )
+  .attr("dy","-1em")
+  .attr("fill","#FFF")
+  .style("font-size", "1.5em")
+
+  vis.append("text")
+  .attr("dy","0.5em")
+  .attr("dx",-70)
+  .attr("fill","#FFF")
+  .text("of Deaths WorldWide")
+  .style("font-size", ".8em");
+  
+
 
   // Turn the data into a d3 hierarchy and calculate the sums.
   var root = d3.hierarchy(json)
@@ -222,8 +241,8 @@ function mouseover(d) {
   d3.select("#percentage")
       .text(percentageString);
 
-  d3.select("#explanation")
-      .style("visibility", "");
+ // d3.select("#explanation")
+ //     .style("visibility", "");
 
   var sequenceArray = d.ancestors().reverse();
   sequenceArray.shift(); // remove root node from the array
@@ -234,7 +253,7 @@ d3.select("#factsDesc")
 .text(desc)
 .style("font-color","white");
   // Fade all the segments.
-  d3.selectAll("path")
+  d3.select('#chart').selectAll("path")
       .style("opacity", 0.3)
 
   // Then highlight only those that are an ancestor of the current segment.
@@ -277,13 +296,17 @@ function mouseleave(d) {
 function initializeBreadcrumbTrail() {
   // Add the svg area.
   var trail = d3.select("#sequence").append("svg:svg")
-      .attr("width", 800)
-      .attr("height", 50)
+        .attr("viewBox","0 0 800 50")
+     // .attr("width", 800)
+     // .attr("height", 50)
+     //.attr("z-index","9")
       .attr("id", "trail");
   // Add the label at the end, for the percentage.
   trail.append("svg:text")
     .attr("id", "endlabel")
-    .style("fill", "#000");
+    .style("fill", "#000")
+    .attr("textLength",b.w)
+    .attr("lengthAdjust","spacingAndGlyphs");
 }
 
 // Generate a string that describes the points of a breadcrumb polygon.

@@ -1,12 +1,13 @@
 function renderRisk_Factors(){
 
 var donut = donutChart()
-        .width(1000)
-        .height(600)
+        .width(800)
+        .height(800)
         .cornerRadius(3) // sets how rounded the corners are on each slice
         .padAngle(0.015) // effectively dictates the gap between slices
         .variable('Value')
-        .category('RiskFactors');
+        .category('RiskFactors')
+        .desc('desc');
 
     d3.tsv('charts/risk_factors.tsv', function(error, data) {
         if (error) throw error;
@@ -23,6 +24,7 @@ function donutChart() {
         colour = d3.scaleOrdinal(d3.schemeCategory20c), // colour scheme
         variable, // value in data that will dictate proportions on chart
         category, // compare data by
+        desc,
         padAngle, // effectively dictates the gap between slices
         floatFormat = d3.format('.4r'),
         cornerRadius, // sets how rounded the corners are on each slice
@@ -35,7 +37,9 @@ function donutChart() {
             // ===========================================================================================
             // Set up constructors for making donut. See https://github.com/d3/d3-shape/blob/master/README.md
             var radius = Math.min(width, height) / 2;
-
+            var legendRectSize = (radius * 0.05);
+            var legendSpacing = radius * 0.02;
+            
             // creates a new pie generator
             var pie = d3.pie()
                 .value(function(d) { return floatFormat(d[variable]); })
@@ -58,9 +62,8 @@ function donutChart() {
             // ===========================================================================================
             // append the svg object to the selection
             var svg = selection.append('svg')
-                .attr('width', width + margin.left + margin.right)
-                .attr('height', height + margin.top + margin.bottom)
-              .append('g')
+                .attr('viewBox','0 0 '+(width + margin.left + margin.right)+' '+(height + margin.top + margin.bottom))
+                        .append('g')
                 .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
             // ===========================================================================================
 
@@ -83,7 +86,31 @@ function donutChart() {
 
             // ===========================================================================================
             // add text labels
-            var label = svg.select('.labelName').selectAll('text')
+            var legend = svg.selectAll('.risk_factor_legend')
+            .data(data)
+            .enter()
+            .append('g')
+            .attr('class', 'risk_factor_legend')
+            .attr('transform', function(d, i) {
+                var height = legendRectSize + legendSpacing;
+                var offset =  height +140;
+                var horz = -4 * legendRectSize;
+                var vert = i * height - offset ;
+                return 'translate(' + horz + ',' + vert + ')';
+            });
+
+            legend.append('rect')
+            .attr('width', legendRectSize)
+            .attr('height', legendRectSize)
+            .style('fill', function(d){return colour(d["RiskFactors"]);})
+            .style('stroke', function(d){ return colour(d["RiskFactors"]);});
+
+            legend.append('text')
+            .attr("class","riskFactorLabel")
+            .attr('x', legendRectSize + legendSpacing)
+            .attr('y', legendRectSize - legendSpacing)
+            .text(function(d) { return d["RiskFactors"]    ; });
+           /* var label = svg.select('.labelName').selectAll('text')
                 .data(pie)
               .enter().append('text')
                 .attr('dy', '.35em')
@@ -104,22 +131,12 @@ function donutChart() {
                 .style('text-anchor', function(d) {
                     // if slice centre is on the left, anchor text to start, otherwise anchor to end
                     return (midAngle(d)) < Math.PI ? 'start' : 'end';
-                });
+                });*/
             // ===========================================================================================
 
             // ===========================================================================================
             // add lines connecting labels to slice. A polyline creates straight lines connecting several points
-            var polyline = svg.select('.lines')
-                .selectAll('polyline')
-                .data(pie)
-              .enter().append('polyline')
-                .attr('points', function(d) {
-
-                    // see label transform function for explanations of these three lines.
-                    var pos = outerArc.centroid(d);
-                    pos[0] = radius * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
-                    return [arc.centroid(d), outerArc.centroid(d), pos]
-                });
+        
             // ===========================================================================================
 
             // ===========================================================================================
@@ -139,11 +156,22 @@ function donutChart() {
                 // add tooltip (svg circle element) when mouse enters label or slice
                 selection.on('mouseenter', function (data) {
 
+                    d3.select('#riskFactorsDesc')
+                      .html(toolTipHTML(data));
+                    
+                    d3.select('#riskFactorsDetailedDesc')
+                      .html("<tspan>"+data.data[desc]+"</tspan>");
+
+                      d3.selectAll('.riskFactorsDetailedIconsRow1').style("opacity",0.3);
+                      d3.selectAll('.riskFactorsDetailedIconsRow2').style("opacity",0.3);
+
+                        d3.select("#"+data.data[category].replace(/ /g,'_')).style('opacity',1); 
+
                     svg.append('text')
                         .attr('class', 'toolCircle')
                         .attr('dy', -15) // hard-coded. can adjust this to adjust text vertical alignment in tooltip
                         .html(toolTipHTML(data)) // add text to the circle.
-                        .style('font-size', '.9em')
+                        .style('font-size', '1.3em')
                         .style('text-anchor', 'middle'); // centres text in tooltip
 
                     svg.append('circle')
@@ -152,11 +180,22 @@ function donutChart() {
                         .style('fill', colour(data.data[category])) // colour based on category mouse is over
                         .style('fill-opacity', 0.35);
 
+                    d3.selectAll('.risk_factor_legend')
+                        .attr("visibility","hidden");
+
                 });
 
                 // remove the tooltip when mouse leaves the slice/label
                 selection.on('mouseout', function () {
+                    d3.selectAll('.riskFactorsDetailedIconsRow1').style("opacity",1);
+                    d3.selectAll('.riskFactorsDetailedIconsRow2').style("opacity",1);
                     d3.selectAll('.toolCircle').remove();
+                    d3.selectAll('.risk_factor_legend')
+                    .attr("visibility","visible");
+                    d3.select('#riskFactorsDesc')
+                    .html("<tspan >Hover to see details of the risk factors.</tspan>");
+                    d3.select('#riskFactorsDetailedDesc')
+                    .html("<tspan> This chart shows us the leading lifestyle choices we make daily that leads to cancer. As we can see, smoking,tobacco and the consumption of contaminated food are the top causes of cancer.</tspan>");
                 });
             }
 
@@ -168,7 +207,7 @@ function donutChart() {
                     i   = 0;
 
                 for (var key in data.data) {
-
+                    if(key!='desc'){
                     // if value is a number, format it as a percentage
                     var value = (!isNaN(parseFloat(data.data[key]))) ? percentFormat(data.data[key]) : data.data[key];
 
@@ -177,6 +216,7 @@ function donutChart() {
                     if (i === 0) tip += '<tspan x="0">' + key + ': ' + value + '</tspan>';
                     else tip += '<tspan x="0" dy="1.2em">' + key + ': ' + value + '</tspan>';
                     i++;
+                    }
                 }
 
                 return tip;
@@ -241,5 +281,10 @@ function donutChart() {
         return chart;
     };
 
+    chart.desc = function(value){
+        if (!arguments.length) return desc;
+        desc = value;
+        return chart;
+    };
     return chart;
 }

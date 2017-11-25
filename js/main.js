@@ -313,6 +313,46 @@
 		}
 	};
 
+	var riskAnimate = function() {
+		var about = $('#riskfactor');
+		if ( about.length > 0 ) {	
+
+			about.waypoint( function( direction ) {
+										
+				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+
+
+					setTimeout(function() {
+						about.find('.to-animate').each(function( k ) {
+							var el = $(this);
+							
+							setTimeout ( function () {
+								el.addClass('fadeInUp animated');
+							},  k * 200, 'easeInOutExpo' );
+							
+						});
+					}, 200);
+
+					setTimeout(function() {
+						about.find('.to-animate-2').each(function( k ) {
+							var el = $(this);
+							
+							setTimeout ( function () {
+								el.addClass('fadeIn animated');
+							},  k * 200, 'easeInOutExpo' );
+							
+						});
+					}, 200);
+
+					
+
+					$(this.element).addClass('animated');
+						
+				}
+			} , { offset: '80%' } );
+
+		}
+	};
 	var sayingsAnimate = function() {
 		var sayings = $('#fh5co-sayings');
 		if ( sayings.length > 0 ) {	
@@ -589,6 +629,7 @@
 		// Animations
 		homeAnimate();
 		aboutAnimate();
+		riskAnimate();
 		sayingsAnimate();
 		featureAnimate();
 		typeAnimate();

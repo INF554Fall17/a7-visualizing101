@@ -19,8 +19,7 @@
 }
 
 #sequence {
-  width: 500px;
-  height: 70px;
+
   margin-top:20px;
   z-index:5;
 }
@@ -30,16 +29,15 @@
 }
 
 #sequence text, #legend text {
-  font-weight: 600;
-  font-size: 12px;
+  font-weight: 500;
+  font-size: 13px;
   font-weight: 400;
   fill: #fff;
 }
 
 #chart {
   position: relative;
-  top: -70px;
-  left: 130px;
+
 }
 
 #chart path {
@@ -63,6 +61,7 @@
   color:#FFF;
   text-align:left;
 }
-#factsDesc{
+.factsDesc{
   color: #A9A9A9;
+  text-align: justify;
 }

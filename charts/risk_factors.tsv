@@ -1,14 +1,14 @@
-RiskFactors	Value
-Salt, Food Additivies & Contaminants	0.01
-Diet and Obesity	0.31	
-Socioeconomic Status	0.03
-Tobacco and Smoking	0.31
-Drugs & Medical Procedure	0.01
-Pollution	0.02
-Alcohol	0.05
-Sedentary Lifestyle	0.05	
-Occupational Exposure	0.05
-UV radiation	0.02
-Family History	0.05	
-Viruses	0.05	
-Perinatal Factors/Growth	0.05	
+RiskFactors	Value	desc
+Contaminated Food	0.01	Chemical contamination can lead to acute poisoning or long-term diseases, such as cancer.
+Diet and Obesity	0.31	Fat tissue (also called adipose tissue) produces excess amounts of estrogen, high levels of which have been associated with increased risks of breast, endometrial, ovarian, and some other cancers. Obese people often have increased blood levels of insulin and insulin-like growth factor-1 (IGF-1).
+Socioeconomic Status	0.03	Low socioeconomic status (SES) is a risk factor that accounts for combined effects of education, income, and employment status variables. Recent data has shown that low SES predicts for poor outcomes in cancer patients.
+Tobacco and Smoking	0.31	Smoking can cause cancer and then block your body from fighting it: Poisons in cigarette smoke can weaken the body's immune system, making it harder to kill cancer cells. When this happens, cancer cells keep growing without being stopped. Poisons in tobacco smoke can damage or change a cell's DNA.
+Drugs	0.01	These "immunosuppressive" drugs make the immune system less able to detect and destroy cancer cells or fight off infections that cause cancer. Infection with HIV also weakens the immune system and increases the risk of certain cancers.
+Pollution	0.02	Air pollution is associated with an increased risk of lung cancer. And there was enough evidence to say that a specific part of air pollution known as PM 2.5 (solid dust-like particles, or 'Particulate Matter', less than 2.5 millionths of a metre across) can cause cancer.
+Alcohol	0.05	Drinking lots of alcohol can damage the cells of the liver, causing a disease called cirrhosis. Cirrhosis can make you more likely to develop liver cancer.
+Sedentary Lifestyle	0.05	Research shows that being physically active helps reduce the risk of a variety of cancer types, as well as heart disease, diabetes, and many other diseases. Physical activity also indirectly reduces the risk of developing obesity-related cancers because of its role in helping to maintain a healthy weight.
+Occupational Exposure	0.05	Occupational studies have identified many chemicals that cause cancer in humans, and they have provided direction for initiatives aimed at reducing or eliminating these carcinogens in the workplace and elsewhere.
+UV radiation	0.02	Exposure to UV radiation is the main factor that causes skin cells to become cancer cells. Almost all skin cancers (approximately 99% of non-melanoma skin cancers and 95% of melanoma) are caused by too much UV radiation from the sun or other sources such as solaria (solariums, sunbeds, and sun lamps).
+Family History	0.05	The more relatives who have had the same or related types of cancer, and the younger they were at diagnosis, the stronger someone’s family history is. This means that it is more likely that the cancers are being caused by an inherited faulty gene.
+Viruses	0.05	Both DNA and RNA viruses have been shown to be capable of causing cancer in humans. Epstein-Barr virus, human papilloma virus, hepatitis B virus, and human herpes virus-8 are the four DNA viruses that are capable of causing the development of human cancers.
+Perinatal Factors	0.05	Emerging evidence suggests that breast cancer may originate during early life. In particular, offspring of mothers who during pregnancy exhibited behaviors that are associated with increased incidence of breast cancer, may be at risk.
