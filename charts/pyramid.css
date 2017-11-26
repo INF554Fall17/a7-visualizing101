@@ -1,0 +1,76 @@
+.pyramid_details{
+    cursor: pointer;
+}
+
+.toolTip {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    display: none;
+    width: auto;
+    height: auto;
+    background: none repeat scroll 0 0 white;
+    border: 0 none;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: -3px 3px 15px #888888;
+    color: black;
+    font: 12px sans-serif;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+#pyramidChartBarChart rect {
+    stroke-width: 2;
+}
+
+
+
+#pyramidChartBarChart text{
+   
+    font-size: 3px;
+    fill: white;
+}
+
+
+#pyramidChartBarChart .axis path{
+    fill: none;
+    stroke: #FFF;
+    stroke-width: 0.2px;
+}
+
+#pyramidChartBarChart .axis line {
+    fill: none;
+    stroke: #FFF;
+    shape-rendering: crispEdges;
+}
+
+#pyramidChartBarChart .axis .tick line {
+    stroke-width: 0.2;
+    stroke: #FFFFF0;
+    opacity: 0.2;
+}
+
+#pyramidChartBarChart .axisHorizontal path{
+    fill: none;
+}
+
+#pyramidChartBarChart .axisHorizontal line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+#pyramidChartBarChart .axisHorizontal .tick line {
+    stroke-width: 1;
+    stroke: rgba(0, 0, 0, 0.2);
+}
+
+.pyramiddetailsbar {
+    fill: #FFFFF0;
+    fill-opacity: .9;
+}
+
+#pyramidChartBarChart .x.axis path {
+    display: none;
+}
