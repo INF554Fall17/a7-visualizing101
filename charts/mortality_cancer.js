@@ -126,6 +126,25 @@ function calcColorScale(data) {
   return scale;
 }
 
+function calcColorScaleGreen(data) {
+
+  // TODO: minor, check how many data poins we've got
+  // with few datapoints the resulting legend gets confusing
+
+  // get values and sort
+  let data_values = Object.values(data).sort( function(a, b){ return a-b; });
+
+  quantiles_calc = quantiles.map( function(elem) {
+                  return Math.ceil(d3.quantile(data_values, elem));
+  });
+
+  let scale = d3.scaleQuantile()
+              .domain(quantiles_calc)
+              .range(d3.schemeGreens[(quantiles_calc.length)-1]);
+
+  return scale;
+}
+
 /// event handlers /////
 
 function legendMouseOver(color_key, color, data) {
