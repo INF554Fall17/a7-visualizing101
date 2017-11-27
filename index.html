@@ -60,9 +60,8 @@
 
 	<link rel="stylesheet" href="charts/sunburst.css">
 		<link rel="stylesheet" href="charts/risk_factors.css">
-
 		<link rel="stylesheet" href="charts/pyramid.css">
-		
+		<link rel="stylesheet" href="charts/mortality_world_map.css">
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -241,35 +240,64 @@
 					</div>
 			</div>
 		</div>
-		<div class="fh5co-about" data-section="about">
-				<div class="fh5co-2col fh5co-text">
-						<h2 class="heading to-animate">Mortality Rate Ranking</h2>
-						
-						<p class="to-animate">
-								<div id="myDiv">
-										<div id="facts" > 
-											</div>
-									
-											<hr/>
-											
-											<br/>
+		<div id="fh5co-sayings">
+			<div class="container">
+				<div class="row to-animate">
 
-	
-		
+					<div class="flexslider">
+						<ul class="slides">
 							
-									</div>
-					</div>	
-			
-			<div class="fh5co-2col fh5co-bg to-animate-2" style="background-image: url(images/res_img_1.jpg)">
-					<div id="chart">
+							<li>
+								<blockquote>
+									<p>&ldquo;Cancer is only going to be a chapter in your life, not the whole story.&rdquo;</p>
+									<p class="quote-author">&mdash; Nathan Myhrvold</p>
+								</blockquote>
+							</li>
+							<li>
+								<blockquote>
+									<p>&ldquo;You beat cancer by how you live, why you live and in the manner in which you live.&rdquo;</p>
+									<p class="quote-author">&mdash; Lev L. Spiro</p>
+								</blockquote>
+							</li>
+							<li>
+								<blockquote>
+									<p>&ldquo;Find something you’re passionate about and keep tremendously interested in it.&rdquo;</p>
+									<p class="quote-author">&mdash; Julia Child</p>
+								</blockquote>
+							</li>
+							<li>
+								<blockquote>
+									<p>&ldquo;Never work before breakfast; if you have to work before breakfast, eat your breakfast first.&rdquo;</p>
+									<p class="quote-author">&mdash; Josh Billings</p>
+								</blockquote>
+							</li>
 							
+							
+						</ul>
 					</div>
-					
-					
-				</div>
-	
 
+				</div>
 			</div>
+		</div>
+
+		<div id="fh5co-featured" data-section="features">
+		
+			<div class="container">
+					<div class="row text-center fh5co-heading row-padded">
+				<h2 class="heading to-animate">Global Mortality v/s Survival Rate</h2>
+				</div>
+				<p class="to-animate">
+						
+							
+									<hr/>
+									
+									<br/>
+						<div id="worldMortalitySurvivalMap">
+							</div>
+					
+							</div>
+			</div>
+		</div>
 <!-- CHART 2
  --><!-- <div id="fh5co-about" data-section="about">
  	<div class="fh5co-2col fh5co-text">
@@ -331,7 +359,7 @@
 			</div>
 		</div> -->
 
-		<div id="fh5co-featured" data-section="features">
+		<!-- <div id="fh5co-featured" data-section="features">
 			<div class="container">
 				<div class="row text-center fh5co-heading row-padded">
 					<div class="col-md-8 col-md-offset-2">
@@ -399,7 +427,7 @@
 				</div>
 
 			</div>
-		</div>
+		</div> -->
 
 		<div id="fh5co-type" style="background-image: url(images/slide_3.jpg);" data-stellar-background-ratio="0.5">
 			<div class="fh5co-overlay"></div>
@@ -857,17 +885,21 @@
 	<!-- Chart Standard Library-->
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+	<script src="https://d3js.org/d3-geo-projection.v1.min.js"></script>
 	<!-- Charts -->
 	<script src="charts/sunburst.js"></script>
 	<script src="charts/risk_factors.js"></script>
 	<script src="charts/pyramid.js"></script>
-	
+	<script src="charts/mortality_cancer.js"></script>
+
 	<script>
 		
 		   renderSunBurst();
 		   renderRisk_Factors();
 		   renderPyramidChart();
+		   renderMortalityWorldMap();
 		</script>
 	<script>
 		$(function () {

@@ -1,0 +1,19 @@
+
+    .countries{
+      stroke: #fff;
+    }
+    .legend rect{
+      stroke: #000;
+    }
+
+    .legend, .legend_title text{
+      font-size:10pt;
+      fill: #a9a9a9;
+    }
+
+    .barlabel {
+      font-size:8pt;
+      text-anchor: middle;
+      fill:#a9a9a9;
+
+    }
