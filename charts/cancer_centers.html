@@ -13,11 +13,11 @@
 		}
 
 		.node--leaf {
-		  fill: white;
+			fill:white;
 		}
 
 		.label {
-		  font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+		  font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
 		  text-anchor: middle;
 		  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
 		}
@@ -63,7 +63,11 @@
 		    .data(nodes)
 		    .enter().append("circle")
 		      .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
-		      .style("fill", function(d) { return d.children ? color(d.depth) : null; })
+		      .style("fill", function(d) {
+		      	if(d.depth == 3) {
+		      		return getRandomColor(d);
+		      	}
+		      	return d.children ? color(d.depth) : null; })
 		      .on("click", function(d) { if (focus !== d) zoom(d), d3.event.stopPropagation(); });
 
 		  var text = g.selectAll("text")
@@ -105,6 +109,18 @@
 		    circle.attr("r", function(d) { return d.r * k; });
 		  }
 		});
+
+		function getRandomColor(d) {
+			  	  if(d.data.size <= 10)
+			  	  	return '#00cd00';
+			  	  else if(d.data.size > 10 && d.data.size<=20)
+			  	  	return '#66e166';
+			  	  else if(d.data.size >20)
+			  	  	return '#b2f0b2';
+			  	  else {
+			  	  	return "#FFFFFF";
+			  	  }
+		}
 
 </script>
 </body>
