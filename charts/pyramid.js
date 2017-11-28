@@ -420,9 +420,9 @@ var yAxis = d3.axisLeft(y);
 //.tickFormat(formatPercent);
 
 var svg = d3.select("#pyramidChartBarChart").append("svg")
-        .attr("viewBox","0 0 "+(width + margin.left + margin.right)+" "+(height + margin.top + margin.bottom+5))
+        .attr("viewBox","0 0 "+(width + margin.left + margin.right)+" "+(height + margin.top + margin.bottom+39))
         .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        .attr("transform", "translate(" + margin.left + "," + (margin.top+30) + ")");
 
 svg.append("g")
         .attr("class", "x axis")
@@ -471,8 +471,9 @@ function changePyramidHorizontalChart(dataset) {
             .call(yAxis)
             .append("text")
             .attr("transform", "rotate(0)")
-            .attr("x", 50)
+            .attr("x", 45)
             .attr("dx", ".1em")
+            .attr("y",75)
             .style("text-anchor", "end")
             .text("Number of cases");
 

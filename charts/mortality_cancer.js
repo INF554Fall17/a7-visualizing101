@@ -3,7 +3,7 @@ function renderMortalityWorldMap(){
   // only works if array.length-1 is between 3 and 9 (d3 color scheme)
   
   var init_year = 2000;
-  var headline = "Cancer Mortality & Survival Rate in ";
+  // var headline = "Cancer Mortality & Survival Rate in ";
   var centered;
 
   /// main
@@ -14,7 +14,8 @@ function renderMortalityWorldMap(){
       .attr("min", "2000")
       .attr("max", "2015")
       .attr("value", init_year)
-      .attr("id", "year");
+      .attr("id", "year")
+      .attr("step", "5");
 
 //  d3.select("#worldMortalitySurvivalMap").insert("h2", ":first-child").text(headline + init_year);
 
@@ -138,7 +139,7 @@ function updateMap(color, data) {
     .call(setPathTitle, data);
 
   // update headline
-  d3.select("h2").text(headline + d3.select("#year").node().value);
+  // d3.select("h2").text(headline + d3.select("#year").node().value);
 }
 
 function renderLegend(color, data) {
@@ -274,7 +275,7 @@ function calcColorScaleGreen(data) {
 /// event handlers /////
 
 function legendMouseOver(color_key, color, data) {
-
+  var color_na = d3.rgb("#d4d4d4");
   // cancels ongoing transitions (e.g., for quick mouseovers)
   d3.selectAll("svg#map path").interrupt();
 
