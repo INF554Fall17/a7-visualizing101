@@ -420,9 +420,9 @@ var yAxis = d3.axisLeft(y);
 //.tickFormat(formatPercent);
 
 var svg = d3.select("#pyramidChartBarChart").append("svg")
-        .attr("viewBox","0 0 "+(width + margin.left + margin.right)+" "+(height + margin.top + margin.bottom+39))
+        .attr("viewBox","0 0 "+(width + margin.left + margin.right+20)+" "+(height + margin.top + margin.bottom+39))
         .append("g")
-        .attr("transform", "translate(" + margin.left + "," + (margin.top+30) + ")");
+        .attr("transform", "translate(" + (margin.left+10) + "," + (margin.top+30) + ")");
 
 svg.append("g")
         .attr("class", "x axis")
@@ -458,6 +458,14 @@ function changePyramidHorizontalChart(dataset) {
     y.domain(dataset.map(function(d) { return d.label; }));
     x.domain([0, d3.max(dataset, function(d) { return d.value; })]);
 
+    yAxis.tickFormat(function(d,i){
+        if(d.indexOf('M')>-1){
+            return d.replace('M','Male ');
+        }else
+        if(d.indexOf('F')>-1){
+            return d.replace('F','Female ');
+        }
+    });
     svg.append("g")
             .attr("class", "x axis")
             .attr("transform", "translate(0," + height + ")")
