@@ -66,8 +66,22 @@ function renderMortalityWorldMap(){
 
     let data_all = d['mortality'];
 
+
+    var dataAll =[];
+    for(key in data_all){
+      var dataYear = data_all[key];
+        for(key in dataYear){
+          var datum = dataYear[key];
+          dataAll.push(datum);
+        }
+    }
+    
+
+   
+
+
     let data = data_all[init_year];
-    let color = calcColorScale(data);
+    let color = calcColorScale(dataAll);
 
     let data_all_survival = dataset_survival['survival'];
 
@@ -100,10 +114,10 @@ function renderMortalityWorldMap(){
 
     // was the slider used?
     d3.select("#year").on("input", function() {
-        let upd_color = calcColorScale(data_all[this.value]);
+      //  let upd_color = calcColorScale(data_all[this.value]);
         let upd_color_survival = calcColorScaleGreen(data_all_survival[this.value]);
-        updateMap(upd_color, data_all[this.value]);
-        renderLegend(upd_color, data_all[this.value]);
+        updateMap(color, data_all[this.value]);
+        renderLegend(color, data_all[this.value]);
         renderBars(upd_color_survival, data_all_survival[this.value]);
     });
 
@@ -234,7 +248,7 @@ var y = d3.scaleLinear().range([svgBarsHeight, 0]);
 }
 
 function calcColorScale(data) {
-  var quantiles = [0, 0.2, 0.4, 0.6, 0.8, 1];
+  var quantiles = [0, 0.1,0.2,0.3,0.4, 0.5,0.6,0.7, 0.8, 1];
   // TODO: minor, check how many data poins we've got
   // with few datapoints the resulting legend gets confusing
 
