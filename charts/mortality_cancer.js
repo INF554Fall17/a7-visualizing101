@@ -23,8 +23,8 @@ function renderMortalityWorldMap(){
   var width = 960, height = 425;
   var svg_map = d3.select("#worldMortalitySurvivalMap").insert("svg")
                 .attr("id", "map")
-                .attr("height", height)
-                .attr("width", width);
+                .attr("viewBox", "0 0 "+(width)+" "+(height));
+                
   var path = d3.geoPath(d3.geoRobinson());
 
   // init legend container
@@ -47,8 +47,7 @@ function renderMortalityWorldMap(){
   var svg_bars = d3.select("#worldMortalitySurvivalMap")
       .append("svg")
         .attr("id", "bars")
-        .attr("width", svgBarsWidth + margin.left + margin.right)
-        .attr("height", svgBarsHeight + margin.top + margin.bottom)
+        .attr("viewBox", "0 0 "+(svgBarsWidth + margin.left + margin.right)+" "+(svgBarsHeight + margin.top + margin.bottom))        
       .append("g")
         .attr("class", "bars")
         .attr("transform", "translate(" + margin.left + ", " + margin.top + ")");
@@ -171,7 +170,7 @@ function renderLegend(color, data) {
         .merge(legend)
           .attr("width", "20")
           .attr("height", "20")
-          .attr("y", function(d, i) { return (svg_height-29) - 25*i; })
+          .attr("y", function(d, i) { return ((svg_height+330)-29) + 25*i; })
           .attr("x", 30)
           .attr("fill", function(d, i) { return d3.rgb(d); })
           .on("mouseover", function(d) { legendMouseOver(d, color, data); })
@@ -181,7 +180,7 @@ function renderLegend(color, data) {
 
   text.data(legend_items)
     .enter().append("text").merge(text)
-      .attr("y", function(d, i) { return (svg_height-14) - 25*i; })
+      .attr("y", function(d, i) { return ((svg_height+330)-14) + 25*i; })
       .attr("x", 60)
       .text(function(d, i) { return d; });
 
