@@ -237,9 +237,20 @@
 						</div>
 			</div>
 			<div class="fh5co-2col fh5co-text" style="padding:1em 3em">
-				<h2 class="heading to-animate">Pyramid Chart</h2>
+				<h2 class="heading to-animate">Cancer Cases</h2>
+				<div id="riskFactorsDesc">
+					<tspan>Chart showing the cancer cases reported according to type of cancer and age groups. Cancer type: <label style="font-weight:200" id="cancerType">All</label></tspan>
+					<tspan id="totalPyramidDetails" style="float:right; padding-right:0.2em; text-decoration:underline; visibility:hidden">Clear Selection</tspan>
+				</div>
 					<hr/>
 					<br/>
+					<div id="cancerStats" >
+						<div style="float:left;max-width:50%">
+							<img src="images/male_white.png" style="height:15%;width:15%"></img>
+							<span style="color:#FFF" id="MaleCancerStats"></span></div>
+						<div style="float:right;max-width:50%"><img src="images/female_white.png" style="height:20%;width:20%"></img>
+							<span style="color:#FFF" id="FemaleCancerStats"></span></div>
+					</div>
 					<div id="pyramidChartBarChart" style="width:100%;height:70%">
 						
 					</div>
