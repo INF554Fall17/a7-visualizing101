@@ -68,10 +68,11 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
+	
 	</head>
 	<body>
-
+		
+		  
 	<div id="fh5co-container">
 		<div id="fh5co-home" class="js-fullheight" data-section="home">	
 			<div class="flexslider">
@@ -97,7 +98,7 @@
 					</li>
 				   <li style="background-image: url(images/CancerRally.jpg);" data-stellar-background-ratio="0.5">	
 						<div class="fh5co-text">
-							<h2 class="to-animate" style="margin-top: -187px">&ldquo;You beat cancer by how you live, <br/>why you live and in the manner in which you live.&rdquo;</h2>
+							<h2 class="to-animate" style="margin-top: -157px">&ldquo;You beat cancer by how you live, <br/>why you live and in the manner in which you live.&rdquo;</h2>
 							
 						</div>
 					</li>
@@ -107,11 +108,14 @@
 						
 					</div>
 					</li>
-			  	</ul>
+				  </ul>
 
 			</div>
 			
 		</div>
+	
+	
+		  
 		
 		<div class="js-sticky">
 			<div class="fh5co-main-nav">
@@ -143,46 +147,8 @@
 				
 			</div>
 		</div>
-
-		<div id="fh5co-sayings" data-sectin="about">
-			<div class="container">
-				<div class="row to-animate">
-
-					<div class="flexslider">
-						<ul class="slides">
-							
-							<li>
-								<blockquote>
-									<p>&ldquo;Cancer is only going to be a chapter in your life, not the whole story.&rdquo;</p>
-									<p class="quote-author">&mdash; Nathan Myhrvold</p>
-								</blockquote>
-							</li>
-							<li>
-								<blockquote>
-									<p>&ldquo;You beat cancer by how you live, why you live and in the manner in which you live.&rdquo;</p>
-									<p class="quote-author">&mdash; Lev L. Spiro</p>
-								</blockquote>
-							</li>
-							<li>
-								<blockquote>
-									<p>&ldquo;Find something you’re passionate about and keep tremendously interested in it.&rdquo;</p>
-									<p class="quote-author">&mdash; Julia Child</p>
-								</blockquote>
-							</li>
-							<li>
-								<blockquote>
-									<p>&ldquo;Never work before breakfast; if you have to work before breakfast, eat your breakfast first.&rdquo;</p>
-									<p class="quote-author">&mdash; Josh Billings</p>
-								</blockquote>
-							</li>
-							
-							
-						</ul>
-					</div>
-
-				</div>
-			</div>
-		</div>
+		
+		
 
 		<div class="fh5co-about" data-section="understandingCancer">
 			<div class="fh5co-2col fh5co-bg to-animate-2" style="background-image: url(images/res_img_1.jpg)">
@@ -235,7 +201,7 @@
 						<img id="Occupational_Exposure" src="images/occupation.png" class="riskFactorsDetailedIconsRow1"></img>
 						</div>
 						<div id="riskFactorsDetailedDesc" style="height:220px" class="factsDesc">
-					
+						<tspan> This chart shows us the leading lifestyle choices we make daily that leads to cancer. As we can see, smoking,tobacco and the consumption of contaminated food are the top causes of cancer.</tspan>
 						</div>
 						<div id=riskFactorsDetailedIconsNext>
 						<img id="Socioeconomic_Status" src="images/money.png" class="riskFactorsDetailedIconsRow2"></img>
@@ -938,6 +904,13 @@
 	       $('#date').datetimepicker();
 	   });
 	</script>
+	<script>$(function() {
+			$('#scrol').on('click', function(e) {
+			  e.preventDefault();
+			  $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+			});
+		  });
+		</script>
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
 
