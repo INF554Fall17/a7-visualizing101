@@ -324,6 +324,32 @@ function ready(error, data){
     function pyramidDetailsChart(selection){
         selection.on('click', function (data) {
             //console.log(data);
+            d3.select('#cancerType').text(data["typeOfCancer"]);
+            d3.select('#MaleCancerStats').text(data["total_males"]);
+            d3.select('#FemaleCancerStats').text(data["total_females"]);
+            d3.select('#totalPyramidDetails').style('visibility',"visible")
+            .on('click',
+        function(){
+            var total=[
+                {label:"M0-14",value:49782}
+                ,{label:"M15-29",value:82643}
+                ,{label:"M30-49",value:450612}
+                ,{label:"M50-59",value:793304}
+                ,{label:"M60-69",value:1267872}
+                ,{label:"M70+",value:2338211}
+                ,{label:"F0-14",value:36987}
+                ,{label:"F15-29",value:69047}
+                ,{label:"F30-49",value:496183}
+                ,{label:"F50-59",value:616455}
+                ,{label:"F60-69",value:820122}
+                ,{label:"F70+",value:1742101}
+            ];
+            changePyramidHorizontalChart(total);
+            d3.select('#totalPyramidDetails').style('visibility',"hidden");
+            d3.select('#cancerType').text("All");
+            d3.select('#MaleCancerStats').text("");
+            d3.select('#FemaleCancerStats').text("");
+        });
             var dataset = [];
            for( key in data){
                if(key.indexOf('M')==0||key.indexOf('F')==0){
