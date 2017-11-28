@@ -362,7 +362,7 @@ p {
 }
 
 .fh5co-heading .heading {
-  font-size: 50px;
+  font-size: 30px;
   font-style: italic;
   position: relative;
   padding-bottom: 30px;
@@ -551,7 +551,6 @@ p {
 }
 
 #fh5co-featured {
-  padding: 7em 0;
   background: #130d08 url(../images/wood_1.png) repeat;
 }
 @media screen and (max-width: 768px) {
@@ -564,17 +563,7 @@ p {
   padding-top: 30px !important;
   color: #fff;
 }
-#fh5co-featured .fh5co-heading .heading:before, #fh5co-featured .fh5co-heading .heading::before {
-  height: 64px;
-  width: 64px;
-  position: absolute;
-  content: "";
-  background: url(../images/0103-served-plate_64.png) no-repeat;
-  top: 0;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -32px;
-}
+
 #fh5co-featured .fh5co-heading .sub-heading {
   color: #a99c92;
 }
@@ -1394,12 +1383,14 @@ p {
   padding-bottom: 40px;
 }
 
+
 #yearDropDown {
 width: 20% ;
 display: inline;
 float:right;
 
 }
+
 /*#text { width: 0px; height: 2em; white-space: nowrap; overflow: hidden;  }*/
 
 /*# sourceMappingURL=style.css.map */
