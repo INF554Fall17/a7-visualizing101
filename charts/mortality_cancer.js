@@ -170,8 +170,8 @@ function renderLegend(color, data) {
         .merge(legend)
           .attr("width", "20")
           .attr("height", "20")
-          .attr("y", function(d, i) { return ((svg_height+330)-29) + 25*i; })
-          .attr("x", 30)
+          .attr("y", function(d, i) { return ((svg_height+245)-29) + 25*i; })
+          .attr("x", 15)
           .attr("fill", function(d, i) { return d3.rgb(d); })
           .on("mouseover", function(d) { legendMouseOver(d, color, data); })
           .on("mouseout", function() { legendMouseOut(color, data); });
@@ -180,14 +180,15 @@ function renderLegend(color, data) {
 
   text.data(legend_items)
     .enter().append("text").merge(text)
-      .attr("y", function(d, i) { return ((svg_height+330)-14) + 25*i; })
-      .attr("x", 60)
+      .attr("y", function(d, i) { return ((svg_height+245)-14) + 25*i; })
+      .attr("x", 45)
+      .attr("z-index",5)
       .text(function(d, i) { return d; });
 
   d3.select("svg#map g.legend_title text")
-        .text("Legend (quintile ranges)")
-        .attr("x", 30)
-        .attr("y", 286);
+        .text("Legend(%)")
+        .attr("x", 15)
+        .attr("y", 210);
 }
 
 function renderBars(color, data) {
@@ -247,7 +248,7 @@ var y = d3.scaleLinear().range([svgBarsHeight, 0]);
 }
 
 function calcColorScale(data) {
-  var quantiles = [0, 0.1,0.2,0.3,0.4, 0.5,0.6,0.7, 0.8, 1];
+  var quantiles = [0, 0.1,0.2,0.3,0.4, 0.5,0.6,0.7];
   // TODO: minor, check how many data poins we've got
   // with few datapoints the resulting legend gets confusing
 
