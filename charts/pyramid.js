@@ -318,15 +318,53 @@ function ready(error, data){
                 .attr("height", y_scale.bandwidth())
                 .attr("fill", "rgb(8,48,107)");
 
-
+        var ageData = ["0-14","15-29","30-49","50-59","60-69","70+"].reverse();
+        var legendRectSize=20;
+        var legendSpacing=10;
+        svg.append('text').attr('x',38).attr('y',480).attr('class','pyramid_legendLabel').text("Legend");
+        var legend = svg.selectAll('.pyramid_legend')
+                .data(ageData)
+                .enter()
+                .append('g')
+                .attr('class', 'pyramid_legend')
+                .attr('transform', function(d, i) {
+                    var height = 20;
+                    var offset =  -500;
+                    var horz =  40;
+                    var vert = i * height - offset ;
+                    return 'translate(' + horz + ',' + vert + ')';
+                });
+    
+                legend.append('rect')
+                .attr('width', legendRectSize)
+                .attr('height', legendRectSize)
+                .style('fill', function(d,i){
+                    switch(i){
+                        case 5: return "rgb(158,202,225)";
+                        case 4: return "rgb(107,174,214)";
+                        case 3: return "rgb(66,146,198)";
+                        case 2: return "rgb(33,113,181)";
+                        case 1: return  "rgb(8,81,156)";
+                        case 0: return "rgb(8,48,107)"; 
+                    }
+                    
+                })
+             //   .style('stroke', function(d){ return colour(d["RiskFactors"]);});
+    
+                legend.append('text')
+                .attr("class","pyramidLabel")
+                .attr('x', (legendRectSize + legendSpacing) )
+                .attr('y', (legendRectSize - legendSpacing))
+                .text(function(d) { return d    ; });
+    
     }
-
+    var formatComma = d3.format(",");
     function pyramidDetailsChart(selection){
         selection.on('click', function (data) {
             //console.log(data);
             d3.select('#cancerType').text(data["typeOfCancer"]);
-            d3.select('#MaleCancerStats').text(data["total_males"]);
-            d3.select('#FemaleCancerStats').text(data["total_females"]);
+            d3.select('#MaleCancerStats').text(formatComma(data["total_males"])+" cases");
+            d3.select('#FemaleCancerStats').text(formatComma(data["total_females"])+" cases");
             d3.select('#totalPyramidDetails').style('visibility',"visible")
             .on('click',
         function(){
@@ -347,8 +385,8 @@ function ready(error, data){
             changePyramidHorizontalChart(total);
             d3.select('#totalPyramidDetails').style('visibility',"hidden");
             d3.select('#cancerType').text("All");
-            d3.select('#MaleCancerStats').text("");
-            d3.select('#FemaleCancerStats').text("");
+            d3.select('#MaleCancerStats').text(formatComma(4982424)+" cases");
+            d3.select('#FemaleCancerStats').text(formatComma(3780895)+" cases");
         });
             var dataset = [];
            for( key in data){
@@ -430,7 +468,7 @@ var margin = {
         height = parseInt(d3.select('#pyramidChartBarChart').style('height'), 10) - margin.top - margin.bottom;
 
 
-
+        var formatComma = d3.format(",");
 var formatPercent = d3.format("");
 
 var y = d3.scaleBand()
@@ -446,15 +484,17 @@ var yAxis = d3.axisLeft(y);
 //.tickFormat(formatPercent);
 
 var svg = d3.select("#pyramidChartBarChart").append("svg")
-        .attr("viewBox","0 0 "+(width + margin.left + margin.right+20)+" "+(height + margin.top + margin.bottom+39))
+        .attr("viewBox","0 0 "+(width + margin.left + margin.right+20)+" "+(height + margin.top + margin.bottom+10))
         .append("g")
-        .attr("transform", "translate(" + (margin.left+10) + "," + (margin.top+30) + ")");
+        .attr("transform", "translate(" + (margin.left+10) + "," + (margin.top) + ")");
 
 svg.append("g")
         .attr("class", "x axis")
-        .attr("transform", "translate(0," + height + ")")
+        .attr("transform", "translate(0," + height+20 + ")")
         .call(xAxis);
 
+        d3.select('#MaleCancerStats').text(formatComma(4982424)+" cases");
+        d3.select('#FemaleCancerStats').text(formatComma(3780895)+" cases");
 //d3.select("input[value=\"total\"]").property("checked", true);
 changePyramidHorizontalChart(total);
 }
@@ -511,7 +551,7 @@ function changePyramidHorizontalChart(dataset) {
             .style("text-anchor", "end")
             .text("Number of cases");
 
-
+    var formatComma = d3.format(",");
     var bar = svg.selectAll("rect")
             .data(dataset, function(d) { return d.label; });
     // new data:
@@ -525,7 +565,7 @@ function changePyramidHorizontalChart(dataset) {
                 div.style("left", d3.event.pageX+10+"px");
                 div.style("top", d3.event.pageY-25+"px");
                 div.style("display", "inline-block");
-                div.html(((d.label).indexOf('M')>-1?'Male':'Female')+"<br>"+(d.value));
+                div.html(((d.label).indexOf('M')>-1?'Male':'Female')+"<br>"+formatComma(d.value)+" cases");
             })
             .on("mouseout", function(d){
                 div.style("display", "none");

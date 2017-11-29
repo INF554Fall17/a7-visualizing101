@@ -74,3 +74,13 @@
 #pyramidChartBarChart .x.axis path {
     display: none;
 }
+
+.pyramid_legendLabel{
+    font-size: 15px;
+    fill:white;
+}
+
+.pyramid_legend{
+    font-size: 15px;
+    fill:white;
+}
